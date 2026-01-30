@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+DynamicImport-Package: *
+Bundle-ManifestVersion: 2
+Bundle-Name: aspectjweaver_1.8.7
+Bundle-SymbolicName: aspectjweaver_1.8.7
+Bundle-Version: 1.0.0
+Export-Package: org.aspectj.weaver.loadtime,org.aspectj.asm,org.aspectj.
+ asm.internal,org.aspectj.bridge,org.aspectj.bridge.context,org.aspectj.
+ util,org.aspectj.apache.bcel,org.aspectj.apache.bcel.classfile,org.aspe
+ ctj.apache.bcel.classfile.annotation,org.aspectj.apache.bcel.generic,or
+ g.aspectj.apache.bcel.util,org.aspectj.weaver,org.aspectj.weaver.bcel,o
+ rg.aspectj.weaver.bcel.asm,org.aspectj.weaver.loadtime.definition,org.a
+ spectj.weaver.ltw,org.aspectj.weaver.model,org.aspectj.weaver.tools,org
+ .aspectj.weaver.tools.cache,aj.org.objectweb.asm,aj.org.objectweb.asm.s
+ ignature,org.aspectj.lang,org.aspectj.lang.reflect,org.aspectj.runtime,
+ org.aspectj.runtime.internal,org.aspectj.runtime.internal.cflowstack,or
+ g.aspectj.runtime.reflect,org.aspectj.internal.lang.annotation,org.aspe
+ ctj.internal.lang.reflect,org.aspectj.lang.annotation,org.aspectj.lang.
+ annotation.control,org.aspectj.lang.internal.lang,org.aspectj.weaver.as
+ t,org.aspectj.weaver.internal.tools,org.aspectj.weaver.patterns,org.asp
+ ectj.weaver.reflect
+Bundle-ClassPath: .,aspectjweaver-1.8.7.jar
+

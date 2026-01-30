@@ -22,12 +22,14 @@
 
     <!--When the primary user store is using LDAP user store, in MT mode following tenant manager will be used.-->
     <TenantManager class="org.wso2.carbon.user.core.tenant.CommonHybridLDAPTenantManager">
-        <Property name="MultiTenantRealmConfigBuilder">org.wso2.carbon.user.core.config.multitenancy.CommonLDAPRealmConfigBuilder</Property>
-        <Property name="RootPartition">dc=wso2,dc=org</Property>
-        <Property name="OrganizationalObjectClass">organizationalUnit</Property>
-        <Property name="OrganizationalAttribute">ou</Property>
-        <Property name="OrganizationalSubContextObjectClass">organizationalUnit</Property>
         <Property name="OrganizationalSubContextAttribute">ou</Property>
+        <Property name="OrganizationalAttribute">ou</Property>
+        <Property name="RootPartition">dc=wso2,dc=org</Property>
+        <Property name="OrganizationalSubContextObjectClass">organizationalUnit</Property>
+        <Property name="MultiTenantRealmConfigBuilder">org.wso2.carbon.user.core.config.multitenancy.CommonLDAPRealmConfigBuilder</Property>
+        <Property name="OrganizationalObjectClass">organizationalUnit</Property>
     </TenantManager>
+    <!-- To add custom tenant managers -->
+
 </TenantManagers>
 

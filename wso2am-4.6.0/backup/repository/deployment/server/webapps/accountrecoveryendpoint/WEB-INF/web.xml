@@ -1,12 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><!--
-  ~ Copyright (c) 2016, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright (c) 2021, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
   ~
-  ~  WSO2 Inc. licenses this file to you under the Apache License,
-  ~  Version 2.0 (the "License"); you may not use this file except
-  ~  in compliance with the License.
-  ~  You may obtain a copy of the License at
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
   ~
-  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~ http://www.apache.org/licenses/LICENSE-2.0
   ~
   ~ Unless required by applicable law or agreed to in writing,
   ~ software distributed under the License is distributed on an
@@ -16,15 +18,20 @@
   ~ under the License.
   -->
 
-<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
-        "http://java.sun.com/dtd/web-app_2_3.dtd" >
-
-<web-app metadata-complete="true">
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0" metadata-complete="true">
     <absolute-ordering />
+
+    <!--  Custom Page configurations -->
+    <!-- *************** Global configurations ********************** -->
     <context-param>
         <param-name>EnableEmailNotification</param-name>
-        <param-value>true</param-value>
+        <param-value>false</param-value>
     </context-param>
+    <!-- *************** End of Global configurations ********************** -->
+    <!--  End of Custom Page configurations -->
     <context-param>
         <param-name>ProcessAllSecurityQuestions</param-name>
         <param-value>false</param-value>
@@ -45,6 +52,9 @@
         <param-name>UserPortalUrl</param-name>
         <param-value>https://localhost:9443/dashboard/index.jag</param-value>
     </context-param-->
+
+    <!-- *************** Layout Store URL Configuration ********************** -->
+    <!-- *************** End of Layout Store URL Configuration ********************** -->
 
     <listener>
         <listener-class>org.wso2.carbon.identity.mgt.endpoint.util.listener.IdentityManagementEndpointContextListener</listener-class>
@@ -71,7 +81,7 @@
         </filter-class>
         <init-param>
            <param-name>patterns</param-name>
-           <param-value>"text/html" ,"application/json" ,"plain/text"</param-value>
+           <param-value>"text/html.*" ,"application/json" ,"plain/text"</param-value>
         </init-param>
         <init-param>
            <param-name>filterAction</param-name>
@@ -87,7 +97,9 @@
 
     <filter-mapping>
         <filter-name>ContentTypeBasedCachePreventionFilter</filter-name>
-        <url-pattern>*</url-pattern>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>REQUEST</dispatcher>
     </filter-mapping>
 
     <filter>
@@ -271,7 +283,7 @@
         <location>/error.jsp</location>
     </error-page>
 
-   <!-- custom error pages -->
+    <!-- custom error pages -->
     <error-page>
         <error-code>400</error-code>
         <location>/errors/error_400.jsp</location>
@@ -325,5 +337,4 @@
             <secure>true</secure>
         </cookie-config>
     </session-config>
-
 </web-app>

@@ -16,7 +16,7 @@
   ~ under the License.
   -->
 
-<eventProcessorConfiguration>
+<eventProcessorConfiguration xmlns:svns="http://org.wso2.securevault/configuration">
 
     <!-- Single Mode Config -->
     <mode name="Single" enable="true">
@@ -72,7 +72,7 @@
             <publisherBufferSize>1024</publisherBufferSize>
             <publisherConnectionStatusCheckInterval>30000</publisherConnectionStatusCheckInterval>
         </presentation>
-        <persistence enable="true">
+        <persistence enable="false">
             <persistenceIntervalInMinutes>15</persistenceIntervalInMinutes>
             <persisterSchedulerPoolSize>10</persisterSchedulerPoolSize>
             <persister class="org.wso2.carbon.event.processor.core.internal.persistence.FileSystemPersistenceStore">

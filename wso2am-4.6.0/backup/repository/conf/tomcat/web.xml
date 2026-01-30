@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
-  ~ Copyright 2005-2011 WSO2, Inc. (http://wso2.com)
+  ~ Copyright 2019 WSO2, Inc. (http://wso2.com)
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -14,8 +14,13 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee                              http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
     <!-- ======================== Introduction ============================== -->
     <!-- This document defines default values for *all* web applications      -->
     <!-- loaded into this instance of Tomcat.  As each application is         -->
@@ -25,7 +30,11 @@
     <!--                                                                      -->
     <!-- WARNING:  Do not configure application-specific resources here!      -->
     <!-- They should go in the "/WEB-INF/web.xml" file in your application.   -->
+
+
     <!-- ================== Built In Servlet Definitions ==================== -->
+
+
     <!-- The default servlet for all web applications, that serves static     -->
     <!-- resources.  It processes all requests that are not mapped to other   -->
     <!-- servlets with servlet mappings (defined either here or in your own   -->
@@ -84,6 +93,8 @@
     <!--                                                                      -->
     <!--
                                                                       -->
+
+
     <servlet>
         <servlet-name>default</servlet-name>
         <servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
@@ -101,6 +112,8 @@
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
+
+
     <!-- The JSP page compiler and execution servlet, which is the mechanism  -->
     <!-- used by Tomcat to support JSP pages.  Traditionally, this servlet    -->
     <!-- is mapped to the URL pattern "*.jsp".  This servlet supports the     -->
@@ -219,6 +232,7 @@
     <!--                                                                      -->
     <!--   xpoweredBy          Determines whether X-Powered-By response       -->
     <!--                       header is added by generated servlet.  [false] -->
+
     <servlet>
         <servlet-name>jsp</servlet-name>
         <servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
@@ -240,6 +254,8 @@
         </init-param>
         <load-on-startup>3</load-on-startup>
     </servlet>
+
+
     <!-- NOTE: An SSI Filter is also available as an alternative SSI          -->
     <!-- implementation. Use either the Servlet or the Filter but NOT both.   -->
     <!--                                                                      -->
@@ -271,6 +287,7 @@
     <!--                       from the SSI processing. [UTF-8]               -->
     <!--                                                                      -->
     <!--   allowExec           Is use of the exec command enabled? [false]    -->
+
     <!--
         <servlet>
             <servlet-name>ssi</servlet-name>
@@ -296,6 +313,8 @@
             <load-on-startup>4</load-on-startup>
         </servlet>
     -->
+
+
     <!-- Common Gateway Includes (CGI) processing servlet, which supports     -->
     <!-- execution of external applications that conform to the CGI spec      -->
     <!-- requirements.  Typically, this servlet is mapped to the URL pattern  -->
@@ -324,6 +343,7 @@
     <!--   stderrTimeout        The time (in milliseconds) to wait for the    -->
     <!--                        reading of stderr to complete before          -->
     <!--                        terminating the CGI process. [2000]           -->
+
     <!--
         <servlet>
             <servlet-name>cgi</servlet-name>
@@ -339,29 +359,38 @@
              <load-on-startup>5</load-on-startup>
         </servlet>
     -->
+
+
     <!-- ================ Built In Servlet Mappings ========================= -->
+
+
     <!-- The servlet mappings for the built in servlets defined above.  Note  -->
     <!-- that, by default, the CGI and SSI servlets are *not* mapped.  You    -->
     <!-- must uncomment these mappings (or add them to your application's own -->
     <!-- web.xml deployment descriptor) to enable these services              -->
+
     <!-- The mapping for the default servlet -->
     <!--servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping-->
+
     <!-- The mappings for the JSP servlet -->
     <servlet-mapping>
         <servlet-name>jsp</servlet-name>
         <url-pattern>*.jsp</url-pattern>
     </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>jsp</servlet-name>
         <url-pattern>*.jspx</url-pattern>
     </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+
     <!-- The mapping for the SSI servlet -->
     <!--
         <servlet-mapping>
@@ -369,14 +398,19 @@
             <url-pattern>*.shtml</url-pattern>
         </servlet-mapping>
     -->
+
     <!-- The mapping for the CGI Gateway servlet -->
+
     <!--
         <servlet-mapping>
             <servlet-name>cgi</servlet-name>
             <url-pattern>/cgi-bin/*</url-pattern>
         </servlet-mapping>
     -->
+
+
     <!-- ================== Built In Filter Definitions ===================== -->
+
     <!-- NOTE: An SSI Servlet is also available as an alternative SSI         -->
     <!-- implementation. Use either the Servlet or the Filter but NOT both.   -->
     <!--                                                                      -->
@@ -408,6 +442,7 @@
     <!--                       the server root?  (0=false, 1=true) [0]        -->
     <!--                                                                      -->
     <!--   allowExec           Is use of the exec command enabled? [false]    -->
+
     <!--
         <filter>
             <filter-name>ssi</filter-name>
@@ -432,7 +467,21 @@
             </init-param>
         </filter>
     -->
+
+
+    <filter>
+        <filter-name>URIMethodBlockFilter</filter-name>
+        <filter-class>org.wso2.carbon.ui.filters.URIMethodBlockFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>URIMethodBlockFilter</filter-name>
+        <url-pattern>/services/*</url-pattern>
+        <url-pattern>/t/*</url-pattern>
+    </filter-mapping>
+
     <!-- ==================== Built In Filter Mappings ====================== -->
+
     <!-- The mapping for the SSI Filter -->
     <!--
         <filter-mapping>
@@ -440,38 +489,28 @@
             <url-pattern>*.shtml</url-pattern>
         </filter-mapping>
     -->
+
+
     <!-- ==================== Default Session Configuration ================= -->
     <!-- You can set the default session timeout (in minutes) for all newly   -->
     <!-- created sessions by modifying the value below.                       -->
+
     <session-config>
         <session-timeout>30</session-timeout>
         <tracking-mode>COOKIE</tracking-mode>
     </session-config>
+
+
     <!-- ===================== Default MIME Type Mappings =================== -->
     <!-- When serving static resources, Tomcat will automatically generate    -->
     <!-- a "Content-Type" header based on the resource's filename extension,  -->
     <!-- based on these mappings.  Additional mappings can be added here (to  -->
     <!-- apply to all web applications), or in your own application's web.xml -->
     <!-- deployment descriptor.                                               -->
+
     <mime-mapping>
         <extension>abs</extension>
         <mime-type>audio/x-mpeg</mime-type>
-    </mime-mapping>
-    <mime-mapping>
-        <extension>woff2</extension>
-        <mime-type>font/woff2</mime-type>
-    </mime-mapping>
-    <mime-mapping>
-        <extension>woff</extension>
-        <mime-type>font/woff</mime-type>
-    </mime-mapping>
-    <mime-mapping>
-        <extension>json</extension>
-        <mime-type>application/json</mime-type>
-    </mime-mapping>
-    <mime-mapping>
-        <extension>map</extension>
-        <mime-type>application/json</mime-type>
     </mime-mapping>
     <mime-mapping>
         <extension>ai</extension>
@@ -1179,6 +1218,7 @@
         <extension>zip</extension>
         <mime-type>application/zip</mime-type>
     </mime-mapping>
+
     <!-- ==================== Default Welcome File List ===================== -->
     <!-- When a request URI refers to a directory, the default servlet looks  -->
     <!-- for a "welcome file" within that directory and, if present, to the   -->
@@ -1192,9 +1232,12 @@
     <!-- deployment descriptor, that list *replaces* the list configured      -->
     <!-- here, so be sure to include any of the default values that you wish  -->
     <!-- use within your application.                                         -->
+
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.htm</welcome-file>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
+
+
 </web-app>

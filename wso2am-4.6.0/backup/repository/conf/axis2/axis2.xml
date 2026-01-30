@@ -17,7 +17,7 @@
   ~  under the License.
   -->
 
-<axisconfig name="AxisJava2.0">
+<axisconfig name="AxisJava2.0"  xmlns:svns="http://org.wso2.securevault/configuration">
 
     <!-- ================================================= -->
     <!--                  Parameters                       -->
@@ -46,6 +46,9 @@
     <!-- Sandesha2 persistance storage manager -->
     <parameter name="Sandesha2StorageManager" locked="false">inmemory</parameter>
 
+    <!-- This property will enable strict service URL validation -->
+    <parameter name="strictServicePathValidation" locked="false"></parameter>
+
     <!-- Our HTTP endpoints can handle both REST and SOAP under the following service path. In -->
     <!-- case of a servlet container, if you change this you have to manually change the -->
     <!-- settings of your servlet container to map this context path to proper Axis2 servlets -->
@@ -58,8 +61,8 @@
     <parameter name="ModulesDirectory">axis2modules</parameter>
 
     <!-- User agent and the server details to be used in the http communication -->
-    <parameter name="userAgent" locked="true">WSO2 AM 2.1.0</parameter>
-    <parameter name="server" locked="true">WSO2 AM 2.1.0</parameter>
+    <parameter name="userAgent" locked="true">WSO2 AM 4.6.0</parameter>
+    <parameter name="server" locked="true">WSO2 AM 4.6.0</parameter>
 
     <!-- During a fault, stacktrace can be sent with the fault message. The following flag -->
     <!-- will control that behaviour -->
@@ -87,6 +90,9 @@
     <!-- Synapse Server name parameter -->
     <parameter name="SynapseConfig.ServerName" locked="false">localhost</parameter>
 
+    <!-- Configuration to include full Security Exception Message -->
+    <parameter name="includeFullWSSecurityExceptionMessage" locked="false">true</parameter>
+
     <!-- To override repository/services you need to uncomment following parameter and value -->
     <!-- SHOULD be absolute file path. -->
     <!--<parameter name="ServicesDirectory" locked="false">service</parameter>-->
@@ -98,6 +104,7 @@
     <!-- If you have a frontend host which exposes this webservice using a different public URL -->
     <!-- use this parameter to override autodetected url -->
     <!--<parameter name="httpFrontendHostUrl" locked="false">https://someotherhost/context</parameter>-->
+
 
     <!-- ================================================= -->
     <!--                  Listeners                        -->
@@ -152,66 +159,32 @@
     <!-- for different message format serializations in Axis2. These message formats are -->
     <!-- expected to be resolved based on the content type. -->
     <messageFormatters>
-       <messageFormatter contentType="application/x-www-form-urlencoded"
-                          class="org.apache.axis2.transport.http.XFormURLEncodedFormatter"/>
-        <messageFormatter contentType="multipart/form-data"
-                          class="org.apache.axis2.transport.http.MultipartFormDataFormatter"/>
-        <messageFormatter contentType="text/html"
-                          class="org.apache.axis2.transport.http.ApplicationXMLFormatter"/>
-        <messageFormatter contentType="application/xml"
-                          class="org.apache.axis2.transport.http.ApplicationXMLFormatter"/>
-        <messageFormatter contentType="text/xml"
-                         class="org.apache.axis2.transport.http.SOAPMessageFormatter"/>
-        <messageFormatter contentType="application/soap+xml"
-                         class="org.apache.axis2.transport.http.SOAPMessageFormatter"/>
-        <messageFormatter contentType="text/plain"
+    <messageFormatter contentType="application/x-www-form-urlencoded"
+                              class="org.apache.axis2.transport.http.XFormURLEncodedFormatter"/>
+    <messageFormatter contentType="multipart/form-data"
+                              class="org.apache.axis2.transport.http.MultipartFormDataFormatter"/>
+    <messageFormatter contentType="application/xml"
+                              class="org.apache.axis2.transport.http.ApplicationXMLFormatter"/>
+    <messageFormatter contentType="text/xml"
+                              class="org.apache.axis2.transport.http.SOAPMessageFormatter"/>
+    <messageFormatter contentType="application/soap+xml"
+                              class="org.apache.axis2.transport.http.SOAPMessageFormatter"/>
+    <messageFormatter contentType="application/json"
+                              class="org.apache.synapse.commons.json.JsonStreamFormatter"/>
+    <messageFormatter contentType="application/json/badgerfish"
+                              class="org.apache.axis2.json.JSONBadgerfishMessageFormatter"/>
+    <messageFormatter contentType="text/javascript"
+                              class="org.apache.axis2.json.JSONMessageFormatter"/>
+    <messageFormatter contentType="text/plain"
                          class="org.apache.axis2.format.PlainTextFormatter"/>
-
-        <!--JSON Message Formatters-->
-        <messageFormatter contentType="application/json"
-                          class="org.apache.synapse.commons.json.JsonStreamFormatter"/>
-        <!--messageFormatter contentType="application/json"
-                          class="org.apache.synapse.commons.json.JsonFormatter"/-->
-        <messageFormatter contentType="application/json/badgerfish"
-                          class="org.apache.axis2.json.JSONBadgerfishMessageFormatter"/>
-        <messageFormatter contentType="text/javascript"
-                          class="org.apache.axis2.json.JSONMessageFormatter"/>
-        <messageFormatter contentType="application/octet-stream" 
-                          class="org.wso2.carbon.relay.ExpandingMessageFormatter"/>
-
-        <!-- See https://wso2.org/jira/browse/ESBJAVA-1725 before enabling bellow line -->
-        <!--messageFormatter contentType=".*"
-                        class="org.wso2.carbon.relay.ExpandingMessageFormatter"/-->
-
-        <!--messageFormatter contentType="application/x-www-form-urlencoded"
-                        class="org.wso2.carbon.relay.ExpandingMessageFormatter"/>
-        <messageFormatter contentType="multipart/form-data"
-                        class="org.wso2.carbon.relay.ExpandingMessageFormatter"/>
-        <messageFormatter contentType="multipart/related"
-                          class="org.wso2.carbon.relay.ExpandingMessageFormatter"/>
-        <messageFormatter contentType="application/xml"
-                        class="org.wso2.carbon.relay.ExpandingMessageFormatter"/>
+        <messageFormatter contentType="text/event-stream"
+                             class="org.apache.axis2.format.PlainTextFormatter"/>
         <messageFormatter contentType="text/html"
-                        class="org.wso2.carbon.relay.ExpandingMessageFormatter"/>
-        <messageFormatter contentType="text/plain"
-                          class="org.wso2.carbon.relay.ExpandingMessageFormatter"/>
-        <messageFormatter contentType="application/soap+xml"
-                        class="org.wso2.carbon.relay.ExpandingMessageFormatter"/>
-        <messageFormatter contentType="text/xml"
-                        class="org.wso2.carbon.relay.ExpandingMessageFormatter"/>
-        <messageFormatter contentType="application/json"
-                          class="org.wso2.carbon.relay.ExpandingMessageFormatter"/>
-        <messageFormatter contentType="application/json/badgerfish"
-                          class="org.wso2.carbon.relay.ExpandingMessageFormatter"/>
-        <messageFormatter contentType="text/javascript"
-                          class="org.wso2.carbon.relay.ExpandingMessageFormatter"/>
-        <messageFormatter contentType="application/octet-stream"
-                          class="org.wso2.carbon.relay.ExpandingMessageFormatter"/-->
+                          class="org.apache.axis2.transport.http.ApplicationXMLFormatter"/>
 
-	    <!--messageFormatter contentType="x-application/hessian"
-                         class="org.apache.synapse.format.hessian.HessianMessageFormatter"/>
-        <messageFormatter contentType=""
-                         class="org.apache.synapse.format.hessian.HessianMessageFormatter"/-->
+        <messageFormatter contentType="application/octet-stream"
+                          class="org.wso2.carbon.relay.ExpandingMessageFormatter"/>
+
     </messageFormatters>
 
     <!-- ================================================= -->
@@ -222,65 +195,27 @@
     <!-- different message formats in Axis2. These message formats are expected to be -->
     <!-- resolved based on the content type. -->
     <messageBuilders>
-	<messageBuilder contentType="application/xml"
-                        class="org.apache.axis2.builder.ApplicationXMLBuilder"/>
-        <messageBuilder contentType="text/html"
+    <messageBuilder contentType="application/xml"
+                            class="org.apache.axis2.builder.ApplicationXMLBuilder"/>
+    <messageBuilder contentType="application/x-www-form-urlencoded"
+                            class="org.apache.synapse.commons.builders.XFormURLEncodedBuilder"/>
+
+    <messageBuilder contentType="multipart/form-data"
+                            class="org.apache.axis2.builder.MultipartFormDataBuilder"/>
+    <messageBuilder contentType="application/json"
+                            class="org.apache.synapse.commons.json.JsonStreamBuilder"/>
+    <messageBuilder contentType="application/json/badgerfish"
+                            class="org.apache.axis2.json.JSONBadgerfishOMBuilder"/>
+    <messageBuilder contentType="text/javascript"
+                            class="org.apache.axis2.json.JSONBuilder"/>
+    <messageBuilder contentType="text/html"
                         class="org.wso2.carbon.relay.BinaryRelayBuilder"/>
-        <messageBuilder contentType="application/x-www-form-urlencoded"
-                        class="org.apache.synapse.commons.builders.XFormURLEncodedBuilder"/>
-        <messageBuilder contentType="multipart/form-data"
-                        class="org.apache.axis2.builder.MultipartFormDataBuilder"/>
         <messageBuilder contentType="text/plain"
                         class="org.apache.axis2.format.PlainTextBuilder"/>
-
-        <!--JSON Message Builders-->
-        <messageBuilder contentType="application/json"
-                        class="org.apache.synapse.commons.json.JsonStreamBuilder"/>
-        <!--messageBuilder contentType="application/json"
-                        class="org.apache.synapse.commons.json.JsonBuilder"/-->
-        <messageBuilder contentType="application/json/badgerfish"
-                        class="org.apache.axis2.json.JSONBadgerfishOMBuilder"/>
-        <messageBuilder contentType="text/javascript"
-                        class="org.apache.axis2.json.JSONBuilder"/>
-        <messageBuilder contentType="application/octet-stream" 
-                        class="org.wso2.carbon.relay.BinaryRelayBuilder"/>
-
-        <!--messageBuilder contentType="text/javascript"
-                        class="org.apache.axis2.json.JSONStreamBuilder"/-->
-
-        <!--See  https://wso2.org/jira/browse/ESBJAVA-1725 before enabling bellow line -->
-	<!--messageBuilder contentType=".*"
-                        class="org.wso2.carbon.relay.BinaryRelayBuilder"/-->
-
-	<!--messageBuilder contentType="application/xml"
-                        class="org.wso2.carbon.relay.BinaryRelayBuilder"/>
-        <messageBuilder contentType="application/x-www-form-urlencoded"
-                        class="org.wso2.carbon.relay.BinaryRelayBuilder"/>
-        <messageBuilder contentType="multipart/form-data"
-                        class="org.wso2.carbon.relay.BinaryRelayBuilder"/>
-        <messageBuilder contentType="multipart/related"
-                       class="org.wso2.carbon.relay.BinaryRelayBuilder"/>
-        <messageBuilder contentType="application/soap+xml"
-                       class="org.wso2.carbon.relay.BinaryRelayBuilder"/>
-        <messageBuilder contentType="text/plain"
-                       class="org.wso2.carbon.relay.BinaryRelayBuilder"/>
-        <messageBuilder contentType="text/html"
-                        class="org.wso2.carbon.relay.BinaryRelayBuilder"/>
-        <messageBuilder contentType="text/xml"
-                       class="org.wso2.carbon.relay.BinaryRelayBuilder"/>
-        <messageBuilder contentType="application/json"
-                        class="org.wso2.carbon.relay.BinaryRelayBuilder"/>
-        <messageBuilder contentType="application/json/badgerfish"
-                        class="org.wso2.carbon.relay.BinaryRelayBuilder"/>
-        <messageBuilder contentType="text/javascript"
-                        class="org.wso2.carbon.relay.BinaryRelayBuilder"/>
+        <messageBuilder contentType="text/event-stream"
+                                class="org.apache.axis2.format.PlainTextBuilder"/>
         <messageBuilder contentType="application/octet-stream"
-                        class="org.wso2.carbon.relay.BinaryRelayBuilder"/-->
-
-        <!--messageBuilder contentType="x-application/hessian"
-                        class="org.apache.synapse.format.hessian.HessianMessageBuilder"/>
-        <messageBuilder contentType=""
-                         class="org.apache.synapse.format.hessian.HessianMessageBuilder"/-->
+                        class="org.wso2.carbon.relay.BinaryRelayBuilder"/>
     </messageBuilders>
 
     <!-- ================================================= -->
@@ -288,31 +223,18 @@
     <!-- ================================================= -->
 
     <transportReceiver name="http" class="org.apache.synapse.transport.passthru.PassThroughHttpListener">
-        <parameter name="port" locked="false">8280</parameter>
-        <parameter name="non-blocking" locked="false">true</parameter>
-        <!--parameter name="bind-address" locked="false">hostname or IP address</parameter-->
-        <!--parameter name="WSDLEPRPrefix" locked="false">https://apachehost:port/somepath</parameter-->
         <parameter name="httpGetProcessor" locked="false">org.wso2.carbon.mediation.transport.handlers.PassThroughNHttpGetProcessor</parameter>
-        <!--<parameter name="priorityConfigFile" locked="false">location of priority configuration file</parameter>-->
+        <parameter name="non-blocking" locked="false">true</parameter>
+        <parameter name="port" locked="false">8280</parameter>
     </transportReceiver>
 
-    <!-- the non blocking http transport based on HttpCore + NIO extensions -->
-    <!--transportReceiver name="http" class="org.apache.synapse.transport.nhttp.HttpCoreNIOListener">
-        <parameter name="port" locked="false">8280</parameter>
-        <parameter name="non-blocking" locked="false">true</parameter-->
-        <!--parameter name="bind-address" locked="false">hostname or IP address</parameter-->
-        <!--parameter name="WSDLEPRPrefix" locked="false">https://apachehost:port/somepath</parameter-->
-        <!--parameter name="httpGetProcessor" locked="false">org.wso2.carbon.transport.nhttp.api.NHttpGetProcessor</parameter-->
-        <!--<parameter name="priorityConfigFile" locked="false">location of priority configuration file</parameter>
-    </transportReceiver-->
-
    <transportReceiver name="https" class="org.apache.synapse.transport.passthru.PassThroughHttpMultiSSLListener">
+        <parameter name="SSLVerifyClient" locked="false">optional</parameter>
+        <parameter name="httpGetProcessor" locked="false">org.wso2.carbon.mediation.transport.handlers.PassThroughNHttpGetProcessor</parameter>
         <parameter name="port" locked="false">8243</parameter>
+        <parameter name="HttpsProtocols" locked="false">TLSv1,TLSv1.1,TLSv1.2</parameter>
         <parameter name="non-blocking" locked="false">true</parameter>
-        <!--parameter name="bind-address" locked="false">hostname or IP address</parameter-->
-        <!--parameter name="WSDLEPRPrefix" locked="false">https://apachehost:port/somepath</parameter-->
-       <parameter name="httpGetProcessor" locked="false">org.wso2.carbon.mediation.transport.handlers.PassThroughNHttpGetProcessor</parameter>
-        <parameter name="keystore" locked="false">
+            <parameter name="keystore" locked="false">
             <KeyStore>
                 <Location>repository/resources/security/wso2carbon.jks</Location>
                 <Type>JKS</Type>
@@ -335,213 +257,31 @@
            <filePath>repository/resources/security/listenerprofiles.xml</filePath>
            <fileReadInterval>600000</fileReadInterval>
        </parameter>
-       <parameter name="SSLVerifyClient">optional</parameter>
-        <!--<parameter name="SSLVerifyClient">require</parameter>
-            supports optional|require or defaults to none -->
     </transportReceiver>
 
-    <!-- the non blocking https transport based on HttpCore + SSL-NIO extensions -->
-    <!--transportReceiver name="https" class="org.apache.synapse.transport.nhttp.HttpCoreNIOSSLListener">
-        <parameter name="port" locked="false">8243</parameter>
-        <parameter name="non-blocking" locked="false">true</parameter-->
-        <!--parameter name="bind-address" locked="false">hostname or IP address</parameter-->
-        <!--parameter name="WSDLEPRPrefix" locked="false">https://apachehost:port/somepath</parameter-->
-        <!--<parameter name="priorityConfigFile" locked="false">location of priority configuration file</parameter>-->
-        <!--parameter name="httpGetProcessor" locked="false">org.wso2.carbon.transport.nhttp.api.NHttpGetProcessor</parameter>
-        <parameter name="keystore" locked="false">
-            <KeyStore>
-                <Location>repository/resources/security/wso2carbon.jks</Location>
-                <Type>JKS</Type>
-                <Password>wso2carbon</Password>
-                <KeyPassword>wso2carbon</KeyPassword>
-            </KeyStore>
-        </parameter>
-        <parameter name="truststore" locked="false">
-            <TrustStore>
-                <Location>repository/resources/security/client-truststore.jks</Location>
-                <Type>JKS</Type>
-                <Password>wso2carbon</Password>
-            </TrustStore>
-        </parameter-->
-        <!--<parameter name="SSLVerifyClient">require</parameter>
-            supports optional|require or defaults to none -->
-    <!--/transportReceiver-->
-
     <transportReceiver name="local" class="org.wso2.carbon.core.transports.local.CarbonLocalTransportReceiver"/>
-    <!-- Pass-through HTTP Transport Receivers -->
-    <!--<transportReceiver name="passthru-http" class="org.wso2.carbon.transport.passthru.PassThroughHttpListener">
-        <parameter name="port">8281</parameter>
-        <parameter name="non-blocking">true</parameter>-->
-        <!--parameter name="bind-address" locked="false">hostname or IP address</parameter-->
-        <!--parameter name="WSDLEPRPrefix" locked="false">https://apachehost:port/somepath</parameter-->
-    <!--</transportReceiver>-->
 
-    <!--<transportReceiver name="passthru-https" class="org.wso2.carbon.transport.passthru.PassThroughHttpSSLListener">
-        <parameter name="port" locked="false">8244</parameter>
-        <parameter name="non-blocking" locked="false">true</parameter>-->
-        <!--parameter name="bind-address" locked="false">hostname or IP address</parameter-->
-        <!--parameter name="WSDLEPRPrefix" locked="false">https://apachehost:port/somepath</parameter-->
-        <!--<parameter name="keystore" locked="false">
-            <KeyStore>
-                <Location>repository/resources/security/wso2carbon.jks</Location>
-                <Type>JKS</Type>
-                <Password>wso2carbon</Password>
-                <KeyPassword>wso2carbon</KeyPassword>
-            </KeyStore>
-        </parameter>
-        <parameter name="truststore" locked="false">
-            <TrustStore>
-                <Location>repository/resources/security/client-truststore.jks</Location>
-                <Type>JKS</Type>
-                <Password>wso2carbon</Password>
-            </TrustStore>
-        </parameter>-->
-        <!--<parameter name="SSLVerifyClient">require</parameter>
-            supports optional|require or defaults to none -->
-    <!--</transportReceiver>-->
+    <!--Uncomment this and configure as appropriate for JMS transport support, after setting up your JMS environment (e.g. ActiveMQ)-->
 
-    <!--<transportReceiver name="vfs" class="org.apache.synapse.transport.vfs.VFSTransportListener"/>-->
-
-    <!--<transportReceiver name="mailto" class="org.apache.axis2.transport.mail.MailTransportListener">-->
-        <!-- configure any optional POP3/IMAP properties
-        check com.sun.mail.pop3 and com.sun.mail.imap package documentation for more details-->
-    <!--</transportReceiver>-->
-
-    <!--<transportReceiver name="admin/https" class="org.wso2.esb.transport.tomcat.HttpsTransportListener">-->
-        <!--<parameter name="port" locked="false">9444</parameter>-->
-        <!--<parameter name="non-blocking" locked="false">true</parameter>-->
-    <!--</transportReceiver>-->
-
-    <!--Uncomment this and configure as appropriate for JMS transport support, after setting up your JMS environment (e.g. ActiveMQ)
-    <transportReceiver name="jms" class="org.apache.axis2.transport.jms.JMSListener">
-        <parameter name="myTopicConnectionFactory" locked="false">
-        	<parameter name="java.naming.factory.initial" locked="false">org.apache.activemq.jndi.ActiveMQInitialContextFactory</parameter>
-        	<parameter name="java.naming.provider.url" locked="false">tcp://localhost:61616</parameter>
-        	<parameter name="transport.jms.ConnectionFactoryJNDIName" locked="false">TopicConnectionFactory</parameter>
-		    <parameter name="transport.jms.ConnectionFactoryType" locked="false">topic</parameter>
-        </parameter>
-
-        <parameter name="myQueueConnectionFactory" locked="false">
-        	<parameter name="java.naming.factory.initial" locked="false">org.apache.activemq.jndi.ActiveMQInitialContextFactory</parameter>
-        	<parameter name="java.naming.provider.url" locked="false">tcp://localhost:61616</parameter>
-        	<parameter name="transport.jms.ConnectionFactoryJNDIName" locked="false">QueueConnectionFactory</parameter>
-		    <parameter name="transport.jms.ConnectionFactoryType" locked="false">queue</parameter>
-        </parameter>
-
-        <parameter name="default" locked="false">
-        	<parameter name="java.naming.factory.initial" locked="false">org.apache.activemq.jndi.ActiveMQInitialContextFactory</parameter>
-        	<parameter name="java.naming.provider.url" locked="false">tcp://localhost:61616</parameter>
-        	<parameter name="transport.jms.ConnectionFactoryJNDIName" locked="false">QueueConnectionFactory</parameter>
-		    <parameter name="transport.jms.ConnectionFactoryType" locked="false">queue</parameter>
-        </parameter>
-    </transportReceiver>-->
-
-    <!--Uncomment this and configure as appropriate for JMS transport support with Apache Qpid -->
-    <!--transportReceiver name="jms" class="org.apache.axis2.transport.jms.JMSListener">
-        <parameter name="myTopicConnectionFactory" locked="false">
-            <parameter name="java.naming.factory.initial" locked="false">org.apache.qpid.jndi.PropertiesFileInitialContextFactory</parameter>
-            <parameter name="java.naming.provider.url" locked="false">repository/conf/jndi.properties</parameter>
-            <parameter name="transport.jms.ConnectionFactoryJNDIName" locked="false">TopicConnectionFactory</parameter>
-            <parameter name="transport.jms.ConnectionFactoryType" locked="false">topic</parameter>
-        </parameter>
-
-        <parameter name="myQueueConnectionFactory" locked="false">
-            <parameter name="java.naming.factory.initial" locked="false">org.apache.qpid.jndi.PropertiesFileInitialContextFactory</parameter>
-            <parameter name="java.naming.provider.url" locked="false">repository/conf/jndi.properties</parameter>
-            <parameter name="transport.jms.ConnectionFactoryJNDIName" locked="false">QueueConnectionFactory</parameter>
-            <parameter name="transport.jms.ConnectionFactoryType" locked="false">queue</parameter>
-        </parameter>
-
-        <parameter name="default" locked="false">
-            <parameter name="java.naming.factory.initial" locked="false">org.apache.qpid.jndi.PropertiesFileInitialContextFactory</parameter>
-            <parameter name="java.naming.provider.url" locked="false">repository/conf/jndi.properties</parameter>
-            <parameter name="transport.jms.ConnectionFactoryJNDIName" locked="false">QueueConnectionFactory</parameter>
-            <parameter name="transport.jms.ConnectionFactoryType" locked="false">queue</parameter>
-        </parameter>
-    </transportReceiver-->
-
-    <!--Uncomment this for FIX transport support
-    <transportReceiver name="fix" class="org.apache.synapse.transport.fix.FIXTransportListener"/>
-    -->
-
-    <!--<transportReceiver name="http"-->
-                       <!--class="org.wso2.carbon.core.transports.http.HttpTransportListener">-->
-        <!--
-           Uncomment the following if you are deploying this within an application server. You
-           need to specify the HTTP port of the application server
-        -->
-        <!--<parameter name="port">9763</parameter>-->
-
-        <!--
-       Uncomment the following to enable Apache2 mod_proxy. The port on the Apache server is 80
-       in this case.
-        -->
-        <!--<parameter name="proxyPort">80</parameter>-->
-    <!--</transportReceiver>-->
-
-    <!--<transportReceiver name="https"-->
-                       <!--class="org.wso2.carbon.core.transports.http.HttpsTransportListener">-->
-        <!--
-           Uncomment the following if you are deploying this within an application server. You
-           need to specify the HTTPS port of the application server
-        -->
-        <!--<parameter name="port">9443</parameter>-->
-
-        <!--
-       Uncomment the following to enable Apache2 mod_proxy. The port on the Apache server is 443
-       in this case.
-        -->
-        <!--<parameter name="proxyPort">443</parameter>-->
-    <!--</transportReceiver>-->
 
     <!-- ================================================= -->
     <!--             Transport Outs (Senders)              -->
     <!-- ================================================= -->
 
     <transportSender name="http" class="org.apache.synapse.transport.passthru.PassThroughHttpSender">
-        <parameter name="non-blocking" locked="false">true</parameter>
+            <parameter name="non-blocking" locked="false">true</parameter>
     </transportSender>
 
-    <!-- the non-blocking http transport based on HttpCore + NIO extensions -->
-    <!--transportSender name="http" class="org.apache.synapse.transport.nhttp.HttpCoreNIOSender">
-        <parameter name="non-blocking" locked="false">true</parameter>
-    </transportSender>
-    <transportSender name="https" class="org.apache.synapse.transport.nhttp.HttpCoreNIOSSLSender">
-        <parameter name="non-blocking" locked="false">true</parameter>
-        <parameter name="keystore" locked="false">
-            <KeyStore>
-                <Location>repository/resources/security/wso2carbon.jks</Location>
-                <Type>JKS</Type>
-                <Password>wso2carbon</Password>
-                <KeyPassword>wso2carbon</KeyPassword>
-            </KeyStore>
-        </parameter>
-        <parameter name="truststore" locked="false">
-            <TrustStore>
-                <Location>repository/resources/security/client-truststore.jks</Location>
-                <Type>JKS</Type>
-                <Password>wso2carbon</Password>
-            </TrustStore>
-        </parameter-->
-        <!--<parameter name="HostnameVerifier">DefaultAndLocalhost</parameter>-->
-            <!--supports Strict|AllowAll|DefaultAndLocalhost or the default if none specified -->
-    <!--/transportSender-->
+        <transportSender name="httpws" class="org.apache.synapse.transport.netty.sender.Axis2HttpTransportSender">
+            <parameter name="non-blocking" locked="false">true</parameter>
+        </transportSender>
 
-    <!-- Transport sender for the non blocking local transport-->
-    <!--transportSender name="local" class="org.apache.axis2.transport.local.NonBlockingLocalTransportSender"/-->
     <transportSender name="local" class="org.wso2.carbon.core.transports.local.CarbonLocalTransportSender"/>
 
-    <!-- Pass-through HTTP Transport Senders -->
-    <!--<transportSender name="passthru-http"  class="org.wso2.carbon.transport.passthru.PassThroughHttpSender">
-        <parameter name="non-blocking" locked="false">true</parameter>
-        <parameter name="warnOnHTTP500" locked="false">*</parameter>-->
-        <!--parameter name="http.proxyHost" locked="false">localhost</parameter>
-        <parameter name="http.proxyPort" locked="false">3128</parameter>
-        <parameter name="http.nonProxyHosts" locked="false">localhost|moon|sun</parameter-->
-    <!--</transportSender>-->
-
     <transportSender name="https" class="org.apache.synapse.transport.passthru.PassThroughHttpSSLSender">
-        <parameter name="non-blocking" locked="false">true</parameter>
+            <parameter name="non-blocking" locked="false">true</parameter>
+            <parameter name="HostnameVerifier" locked="false">DefaultAndLocalhost</parameter>
+            <parameter name="HttpsProtocols" locked="false">TLSv1,TLSv1.1,TLSv1.2</parameter>
         <parameter name="keystore" locked="false">
             <KeyStore>
                 <Location>repository/resources/security/wso2carbon.jks</Location>
@@ -565,80 +305,43 @@
             <filePath>repository/resources/security/sslprofiles.xml</filePath>
             <fileReadInterval>600000</fileReadInterval>
         </parameter>
-        <!--<parameter name="HostnameVerifier">DefaultAndLocalhost</parameter>-->
-            <!--supports Strict|AllowAll|DefaultAndLocalhost or the default if none specified -->
     </transportSender>
 
-    <!--<transportSender name="passthru-https" class="org.wso2.carbon.transport.passthru.PassThroughHttpSSLSender">
-        <parameter name="non-blocking" locked="false">true</parameter>
-        <parameter name="keystore" locked="false">
-            <KeyStore>
-                <Location>repository/resources/security/wso2carbon.jks</Location>
-                <Type>JKS</Type>
-                <Password>wso2carbon</Password>
-                <KeyPassword>wso2carbon</KeyPassword>
-            </KeyStore>
-        </parameter>
-        <parameter name="truststore" locked="false">
-            <TrustStore>
-                <Location>repository/resources/security/client-truststore.jks</Location>
-                <Type>JKS</Type>
-                <Password>wso2carbon</Password>
-            </TrustStore>
-        </parameter>-->
-        <!--<parameter name="HostnameVerifier">DefaultAndLocalhost</parameter>-->
-            <!--supports Strict|AllowAll|DefaultAndLocalhost or the default if none specified -->
-    <!--</transportSender>-->
+        <transportSender name="httpswss" class="org.apache.synapse.transport.netty.sender.Axis2HttpSSLTransportSender">
+            <parameter name="non-blocking" locked="false">true</parameter>
+            <parameter name="keystore" locked="false">
+                <KeyStore>
+                    <Location>repository/resources/security/wso2carbon.jks</Location>
+                    <Type>JKS</Type>
+                    <Password>wso2carbon</Password>
+                    <KeyPassword>wso2carbon</KeyPassword>
+                </KeyStore>
+            </parameter>
+            <parameter name="truststore" locked="false">
+                <TrustStore>
+                    <Location>repository/resources/security/client-truststore.jks</Location>
+                    <Type>JKS</Type>
+                    <Password>wso2carbon</Password>
+                </TrustStore>
+            </parameter>
+        </transportSender>
 
-     <!-- uncomment this and configure to use connection pools for sending messages>
-     <transportSender name="jms" class="org.apache.axis2.transport.jms.JMSSender"/-->
 
-    <!--transportSender name="vfs" class="org.apache.synapse.transport.vfs.VFSTransportSender"/-->
-
-    <!-- Uncomment and configure the SMTP server information
-    check com.sun.mail.smtp package documentation for descriptions of properties
-    <transportSender name="mailto" class="org.apache.axis2.transport.mail.MailTransportSender">
-        <parameter name="mail.smtp.host">smtp.gmail.com</parameter>
-        <parameter name="mail.smtp.port">587</parameter>
-        <parameter name="mail.smtp.starttls.enable">true</parameter>
-        <parameter name="mail.smtp.auth">true</parameter>
-        <parameter name="mail.smtp.user">synapse.demo.0</parameter>
-        <parameter name="mail.smtp.password">mailpassword</parameter>
-        <parameter name="mail.smtp.from">synapse.demo.0@gmail.com</parameter>
-    </transportSender>-->
-
-    <!--Uncomment this for FIX transport support
-    <transportSender name="fix" class="org.apache.synapse.transport.fix.FIXTransportSender"/>
-    -->
-
-    <!--<transportSender name="http"-->
-                     <!--class="org.apache.axis2.transport.http.CommonsHTTPTransportSender">-->
-        <!--<parameter name="PROTOCOL">HTTP/1.1</parameter>-->
-        <!--<parameter name="Transfer-Encoding">chunked</parameter>-->
-        <!-- This parameter has been added to overcome problems encounted in SOAP action parameter -->
-        <!--<parameter name="OmitSOAP12Action">true</parameter>-->
-    <!--</transportSender>-->
     <transportSender name="ws" class="org.wso2.carbon.websocket.transport.WebsocketTransportSender">
-        <parameter name="ws.outflow.dispatch.sequence" locked="false">outflowDispatchSeq</parameter>
-        <parameter name="ws.outflow.dispatch.fault.sequence" locked="false">outflowFaultSeq</parameter>
+                     <parameter name="ws.outflow.dispatch.fault.sequence" locked="false">outflowFaultSeq</parameter>
+                     <parameter name="ws.outflow.dispatch.sequence" locked="false">outflowDispatchSeq</parameter>
+                     <parameter name="ws.custom.header" locked="false">websocket-custom-header</parameter>
     </transportSender>
-
     <transportSender name="wss" class="org.wso2.carbon.websocket.transport.WebsocketTransportSender">
-        <parameter name="ws.outflow.dispatch.sequence" locked="false">outflowDispatchSeq</parameter>
+        <parameter name="ws.client.enable.hostname.verification" locked="false">true</parameter>
+        <parameter name="ws.custom.header" locked="false">websocket-custom-header</parameter>
         <parameter name="ws.outflow.dispatch.fault.sequence" locked="false">outflowFaultSeq</parameter>
+        <parameter name="ws.outflow.dispatch.sequence" locked="false">outflowDispatchSeq</parameter>
         <parameter name="ws.trust.store" locked="false">
             <ws.trust.store.location>repository/resources/security/client-truststore.jks</ws.trust.store.location>
             <ws.trust.store.Password>wso2carbon</ws.trust.store.Password>
         </parameter>
     </transportSender>
-
-    <!--<transportSender name="https"-->
-                     <!--class="org.apache.axis2.transport.http.CommonsHTTPTransportSender">-->
-        <!--<parameter name="PROTOCOL">HTTP/1.1</parameter>-->
-        <!--<parameter name="Transfer-Encoding">chunked</parameter>-->
-        <!-- This parameter has been added to overcome problems encounted in SOAP action parameter -->
-        <!--<parameter name="OmitSOAP12Action">true</parameter>-->
-    <!--</transportSender>-->
 
     <!-- ================================================= -->
     <!--             Global Engaged Modules                -->
@@ -646,6 +349,7 @@
 
     <!-- Comment this out to disable Addressing -->
     <module ref="addressing"/>
+
 
     <!--
     Uncomment out the following entry if SOAP (text/xml and application/soap+xml) messages
@@ -732,6 +436,7 @@
          -->
         <parameter name="localMemberPort">4000</parameter>
 
+
         <!--
             The bind port of this member. The difference between localMemberPort & localMemberBindPort
             is that localMemberPort is the one that is advertised by this member, while localMemberBindPort
@@ -754,7 +459,7 @@
            The list of static or well-known members. These entries will only be valid if the
            "membershipScheme" above is set to "wka"
         -->
-        <members>
+          <members>
             <member>
                 <hostName>127.0.0.1</hostName>
                 <port>4000</port>

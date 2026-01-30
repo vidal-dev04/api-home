@@ -1,86 +1,90 @@
-<APIManager>
-    <!-- JNDI name of the data source to be used by the API publisher, API store and API
+<APIManager xmlns:svns="http://org.wso2.securevault/configuration">
+    <!-- JNDI name of the data source to be used by the API publisher, API Developer Portal and API
          key manager. This data source should be defined in the master-datasources.xml file
          in conf/datasources directory. -->
     <DataSourceName>jdbc/WSO2AM_DB</DataSourceName>
 
     <!-- This parameter is used when adding api management capability to other products like GReg, AS, DSS etc.-->
-    <GatewayType>Regular</GatewayType>
+    <GatewayType>Regular,APK,AWS,Azure,Kong,Envoy</GatewayType>
 
     <!-- This parameter is used to enable the securevault support when try to publish endpoint secured APIs. Values should be "true" or "false".
     By default secure vault is disabled.-->
     <EnableSecureVault>false</EnableSecureVault>
 
+    <!-- The following parameter is used to determine whether the runtime is act as a read only instance. -->
+    <ReadOnly>false</ReadOnly>
+
     <!-- This parameter is used to enable mutual tls based authentication support for APIs, when this is disabled,
     APIs will be protected with OAuth2 security-->
-    <EnableMTLSForAPIs>false</EnableMTLSForAPIs>
+    <EnableMTLSForAPIs>true</EnableMTLSForAPIs>
 
-    <!-- Authentication manager configuration for API publisher and API store. This is
-         a required configuration for both web applications as their user authentication
-         logic relies on this. -->
-    <AuthManager>
-        <!-- Server URL of the Authentication service -->
-        <ServerURL>https://localhost:${mgt.transport.https.port}${carbon.context}services/</ServerURL>
-        <!-- Admin username for the Authentication manager. -->
-        <Username>${admin.username}</Username>
-        <!-- Admin password for the Authentication manager. -->
-        <Password>${admin.password}</Password>
-        <!-- Indicates whether the permissions checking of the user (on the Publisher and Store) should be done
-           via a remote service. The check will be done on the local server when false. -->
-        <CheckPermissionsRemotely>false</CheckPermissionsRemotely>
-    </AuthManager>
+    <!-- These parameters will be used to set the pool size of HTTP client-->
+    <HttpClient>
+         <MaxTotal>100</MaxTotal>
+         <DefaultMaxPerRoute>50</DefaultMaxPerRoute>
+         <ConnectionTimeout>-1</ConnectionTimeout>
+     </HttpClient>
+
+
 
     <JWTConfiguration>
         <!-- Enable/Disable JWT generation. Default is false. -->
-        <!-- EnableJWTGeneration>false</EnableJWTGeneration-->
-
+        <EnableJWTGeneration>false</EnableJWTGeneration>
+        <!-- Enable/Disable JWKS in memory API deployment. Default is true. -->
+        <EnableJWKSApi>true</EnableJWKSApi>
         <!-- Name of the security context header to be added to the validated requests. -->
         <JWTHeader>X-JWT-Assertion</JWTHeader>
+        <JWTDecoding></JWTDecoding>
 
         <!-- Fully qualified name of the class that will retrieve additional user claims
              to be appended to the JWT. If not specified no claims will be appended.If user wants to add all user claims in the
              jwt token, he needs to enable this parameter.
              The DefaultClaimsRetriever class adds user claims from the default carbon user store. -->
+        <EnableUserClaims></EnableUserClaims>
         <!--ClaimsRetrieverImplClass>org.wso2.carbon.apimgt.impl.token.DefaultClaimsRetriever</ClaimsRetrieverImplClass-->
+
+        <!-- Specifies whether the backend JWT header should include the kid claim. -->
+            <UseKidProperty>true</UseKidProperty>
 
         <!-- The dialectURI under which the claimURIs that need to be appended to the
              JWT are defined. Not used with custom ClaimsRetriever implementations. The
              same value is used in the keys for appending the default properties to the
              JWT. -->
-        <!--ConsumerDialectURI>http://wso2.org/claims</ConsumerDialectURI-->
+        <ConsumerDialectURI>http://wso2.org/claims</ConsumerDialectURI>
 
-        <!-- Whether to convert claims retrieved from AuthorizationGrantCache to ConsumerDialectURI -->
-        <!--ConvertClaimsToConsumerDialect>false</ConvertClaimsToConsumerDialect-->
+        <!-- Whether to convert claims retrieved from AuthorizationGrantCache to the dialect defined in ConsumerDialectURI -->
+        <ConvertClaimsToConsumerDialect>false</ConvertClaimsToConsumerDialect>
 
         <!-- Signature algorithm. Accepts "SHA256withRSA" or "NONE". To disable signing explicitly specify "NONE". -->
-        <!--SignatureAlgorithm>SHA256withRSA</SignatureAlgorithm-->
+        <SignatureAlgorithm>SHA256withRSA</SignatureAlgorithm>
+
+        <!-- Specifies whether to use SHA-256 algorithm to generate the certificate thumbprint -->
+        <UseSHA256Hash>false</UseSHA256Hash>
 
         <!-- This parameter specifies which implementation should be used for generating the Token. JWTGenerator is the
 	     default implementation provided. -->
         <JWTGeneratorImpl>org.wso2.carbon.apimgt.keymgt.token.JWTGenerator</JWTGeneratorImpl>
-
         <!-- This parameter specifies which implementation should be used for generating the Token. For URL safe JWT
              Token generation the implementation is provided in URLSafeJWTGenerator -->
         <!--<JWTGeneratorImpl>org.wso2.carbon.apimgt.keymgt.token.URLSafeJWTGenerator</JWTGeneratorImpl>-->
+        <EnableTenantBasedSigning>false</EnableTenantBasedSigning>
         <GatewayJWTGeneration>
             <ImplClass>org.wso2.carbon.apimgt.common.gateway.jwtgenerator.APIMgtGatewayJWTGeneratorImpl</ImplClass>
+            <EncodeX5tWithoutPadding>false</EncodeX5tWithoutPadding>
             <Configuration>
-                <ClaimMappings>
-                    <Claim>
-                        <RemoteClaim></RemoteClaim>
-                        <LocalClaim></LocalClaim>
-                    </Claim>
-                </ClaimMappings>
+            <ExcludedClaims>            </ExcludedClaims>
+            <EnableUserClaimRetrievalFromKeyManager>false</EnableUserClaimRetrievalFromKeyManager>
             </Configuration>
         </GatewayJWTGeneration>
     </JWTConfiguration>
 
-    <!-- Primary/secondary login configuration for APIstore. If user likes to keep two login attributes in a distributed setup, to login the APIstore,
+    
+    <!-- Primary/secondary login configuration for API Developer Portal. If user likes to keep two login attributes in a distributed setup, to login the API Developer Portal,
 		he should configure this section. Primary login doesn't have a claimUri associated with it. But secondary login, which is a claim attribute,
 		is associated with a claimuri.-->
     <!--LoginConfig>
-            <UserIdLogin  primary="true">
-        <ClaimUri></ClaimUri>
+        <UserIdLogin  primary="true">
+            <ClaimUri></ClaimUri>
         </UserIdLogin>
         <EmailLogin  primary="false">
             <ClaimUri>http://wso2.org/claims/emailaddress</ClaimUri>
@@ -88,7 +92,7 @@
     </LoginConfig-->
 
     <!-- Credentials for the API gateway admin server. This configuration
-         is mainly used by the API publisher and store to connect to the API gateway and
+         is mainly used by the API publisher and API Developer Portal to connect to the API gateway and
          create/update published API configurations. -->
     <APIGateway>
         <!-- The environments to which an API will be published -->
@@ -98,26 +102,49 @@
                  An API deployed on a 'sandbox' type gateway will only support sandbox keys
                  An API deployed on a 'hybrid' type gateway will support both production and sandbox keys. -->
             <!-- api-console element specifies whether the environment should be listed in API Console or not -->
-            <Environment type="hybrid" api-console="true">
+            <Environment type="hybrid" api-console="true" isDefault="true">
                 <Name>Default</Name>
-                <DisplayName>Default</DisplayName>
+                <DisplayName></DisplayName>
                 <GatewayType>Regular</GatewayType>
+                <!-- Configure Visibility -->
                 <Description>This is a hybrid gateway that handles both production and sandbox token traffic.</Description>
                 <!-- Server URL of the API gateway -->
-                <ServerURL>https://localhost:${mgt.transport.https.port}${carbon.context}services/</ServerURL>
-		        <!-- Admin username for the API gateway. -->
+                <ServerURL>https://localhost:${mgt.transport.https.port}/services/</ServerURL>
+                <!-- Admin username for the API gateway. -->
                 <Username>${admin.username}</Username>
                 <!-- Admin password for the API gateway.-->
                 <Password>${admin.password}</Password>
+                <!-- Provider Vendor of the API gateway.-->
+                <Provider>wso2</Provider>
                 <!-- Endpoint URLs for the APIs hosted in this API gateway.-->
-                <GatewayEndpoint>http://${carbon.local.ip}:${http.nio.port},https://${carbon.local.ip}:${https.nio.port}</GatewayEndpoint>
-                <!-- Endpoint of the Websocket APIs hosted in this API Gateway -->
-                <GatewayWSEndpoint>ws://${carbon.local.ip}:9099</GatewayWSEndpoint>
-                <!-- Endpoint of the WebSub APIs hosted in this API Gateway -->
-                <GatewayWebSubEndpoint>http://${carbon.local.ip}:9021</GatewayWebSubEndpoint>
+                <GatewayEndpoint>https://localhost:${https.nio.port},http://localhost:${http.nio.port}</GatewayEndpoint>
+                <!-- Additional properties for External Gateways -->
+                <!-- Endpoint URLs of the WebSocket APIs hosted in this API Gateway -->
+                <GatewayWSEndpoint>ws://localhost:9099,wss://localhost:8099</GatewayWSEndpoint>
+                <!-- Endpoint URLs of the WebSub APIs hosted in this API Gateway -->
+                <GatewayWebSubEndpoint>http://localhost:9021,https://localhost:8021</GatewayWebSubEndpoint>
+                <VirtualHosts>
+                </VirtualHosts>
             </Environment>
         </Environments>
+        <TransactionCounter>
+            <Enabled>false</Enabled>
+            <StoreClass>org.wso2.integration.transaction.counter.store.TransactionRecordStoreImpl</StoreClass>
+            <QueueSize>1000</QueueSize>
+            <ProducerThreadPoolSize>10</ProducerThreadPoolSize>
+            <ProducerScheduledInterval>10</ProducerScheduledInterval>
+            <MaxTransactionCount>20</MaxTransactionCount>
+            <MinTransactionCount>5</MinTransactionCount>
+            <PublisherScheduledInterval>5</PublisherScheduledInterval>
+            <MaxBatchSize>100</MaxBatchSize>
+            <MaxRetryCount>3</MaxRetryCount>
+            <ServiceURL>https://localhost:${mgt.transport.https.port}/internal/data/v1/transaction-records</ServiceURL>
+            <ServiceUsername>admin</ServiceUsername>
+            <ServicePassword>admin</ServicePassword>
+        </TransactionCounter>
     </APIGateway>
+
+    <TokenIssuers>    </TokenIssuers>
 
     <CacheConfigurations>
 	    <!-- Enable/Disable token caching at the Gateway-->
@@ -140,23 +167,19 @@
         <EnablePublisherRoleCache>true</EnablePublisherRoleCache>
         <!-- Enable/Disable token caching at the Product REST APIs-->
         <EnableRESTAPITokenCache>true</EnableRESTAPITokenCache>
+	    <!-- JWT claims Cache expiry in seconds -->
+        <!-- Expiry time for the apim key mgt validation info cache -->
+        <!-- Expiry time for the resource cache  -->
         <!-- Expiry time for the apim REST API token cache -->
         <RESTAPITokenCacheExpiry>300</RESTAPITokenCacheExpiry>
-
         <!-- Enable/Disable cache control headers of the Product REST APIs-->
         <EnableRESTAPICacheControlHeaders>true</EnableRESTAPICacheControlHeaders>
-        <!-- Expiry time for the apim REST API token cache -->
-        <RESTAPICacheControlMaxAge>86400</RESTAPICacheControlMaxAge>
-
-	    <!-- JWT claims Cache expiry in seconds -->
-        <!--JWTClaimCacheExpiry>900</JWTClaimCacheExpiry-->
-        <!-- Expiry time for the apim key mgt validation info cache -->
-        <!--TokenCacheExpiry>900</TokenCacheExpiry-->
-        <!-- GatewayResourceCacheExpiry>3600</GatewayResourceCacheExpiry -->
+        <!-- MaxAge for the cache control headers of the Product REST APIs -->
+        <RESTAPICacheControlHeadersMaxAge>86400</RESTAPICacheControlHeadersMaxAge>
         <!-- This parameter specifies the expiration time of the TagCache. TagCache will
              only be created when this element is uncommented. When the specified
              time duration gets elapsed ,tag cache will get re-generated. -->
-        <!--TagCacheDuration>120000</TagCacheDuration-->
+        <!--change to expiray-->
         <!-- JWT Claim cache can be disabled only if below config <EnableJWTClaimCache> is set as 'false'. The default
           value is 'true'.
           Other than this config, also <EnableGatewayTokenCache> and <EnableKeyManagerTokenCache> should have been set
@@ -173,15 +196,30 @@
         <!-- Enable Analytics for API Manager -->
         <Enabled>false</Enabled>
 
+        <PolicyEnabled></PolicyEnabled>
+
+        <Type>moesif</Type>
+
         <AuthToken></AuthToken>
 
+
         <!-- Event publisher implementation -->
-        <!-- <ReporterClass></ReporterClass> -->
 
         <!-- Properties for Event publisher implementation -->
         <Properties>
+            <Property name="keystore_password">wso2carbon</Property>
+            <Property name="proxy_config_port"></Property>
+            <Property name="truststore_password">wso2carbon</Property>
+            <Property name="proxy_config_username"></Property>
+            <Property name="truststore_location">${carbon.home}/repository/resources/security/client-truststore.jks</Property>
+            <Property name="proxy_config_enable">false</Property>
+            <Property name="proxy_config_host"></Property>
+            <Property name="keystore_location">${carbon.home}/repository/resources/security/wso2carbon.jks</Property>
+            <Property name="proxy_config_password"></Property>
         </Properties>
 
+        <MaskProperties>
+        </MaskProperties>
     </Analytics>
 
     <!--
@@ -194,33 +232,85 @@
 
         <AuthToken></AuthToken>
 
-        <Endpoint>http://localhost:9090</Endpoint>
+        <Key></Key>
+
+        <Endpoint>https://dev-tools.wso2.com/apim-ai-service/v2</Endpoint>
+
+        <TokenEndpoint>https://api.asgardeo.io/t/wso2devtools/oauth2/token</TokenEndpoint>
 
         <Resources>
-            <PrepareResource>/prepare</PrepareResource>
-            <ExecuteResource>/execute</ExecuteResource>
+            <PrepareResource>/ai/api-chat/prepare</PrepareResource>
+            <ExecuteResource>/ai/api-chat/execute</ExecuteResource>
         </Resources>
 
     </APIChat>
 
-    <!--
-        Configurations relevant to Design Assistant AI feature.
-        This enables the Design Assistant feature which leverages AI for API designing within Publisher Portal.
-    -->
-    <DesignAssistant>
-        <!-- Enable API Design Assistant for API Manager -->
-        <Enabled>true</Enabled>
-        <AuthToken></AuthToken>
-        <Endpoint>http://localhost:9090</Endpoint>
-        <Resources>
-            <ChatResource>/chat</ChatResource>
-            <GenApiPayloadResource>/generate-api-payload</GenApiPayloadResource>
-        </Resources>
 
+    <AiConfiguration>
+        <Enabled>true</Enabled>
+        <FailoverConfigurations>
+            <FailoverEndpointsLimit>10</FailoverEndpointsLimit>
+            <DefaultRequestTimout>30</DefaultRequestTimout>
+        </FailoverConfigurations>
+        <DefaultRequestTimout>30</DefaultRequestTimout>
+    </AiConfiguration>
+
+    <MCP>
+        <Enabled>true</Enabled>
+    </MCP>
+
+    <!--
+        Configurations relevant to enable rate limit feature.
+        This enables to use resources considering subscription levels.
+    -->
+    <ResourceQuotaLimit>
+        <EnableAPIQuotaLimit>false</EnableAPIQuotaLimit>
+    </ResourceQuotaLimit>
+
+    <!--
+        Configurations relevant to Marketplace Assistant feature.
+        This enables the Marketplace Assistant feature which leverages AI for API searching within Developer Portal.
+    -->
+    <MarketplaceAssistant>
+        <!-- Enable Marketplace Assistant for API Manager -->
+        <Enabled>true</Enabled>
+
+        <AuthToken></AuthToken>
+
+        <Key></Key>
+
+        <Endpoint>https://dev-tools.wso2.com/apim-ai-service/v2</Endpoint>
+
+        <TokenEndpoint>https://api.asgardeo.io/t/wso2devtools/oauth2/token</TokenEndpoint>
+
+        <Resources>
+            <ChatResource>/ai/marketplace-assistant/chat</ChatResource>
+            <ApiPublishResource>/ai/spec-populator/publish-api</ApiPublishResource>
+            <ApiDeleteResource>/ai/spec-populator/remove-api</ApiDeleteResource>
+            <ApiCountResource>/ai/spec-populator/api-count</ApiCountResource>
+        </Resources>
+    </MarketplaceAssistant>
+
+    <DesignAssistant>
+        <!-- Enable Design Assistant for API Manager -->
+        <Enabled>true</Enabled>
+
+        <AuthToken></AuthToken>
+
+        <Key></Key>
+
+        <Endpoint>https://dev-tools.wso2.com/apim-ai-service/v2</Endpoint>
+
+        <TokenEndpoint>https://api.asgardeo.io/t/wso2devtools/oauth2/token</TokenEndpoint>
+
+        <Resources>
+            <ChatResource>/ai/api-design-assistant/chat</ChatResource>
+            <GenApiPayloadResource>/ai/api-design-assistant/generate-api-payload</GenApiPayloadResource>
+        </Resources>
     </DesignAssistant>
 
     <!--
-        API key validator configuration used by API key manager (IS), API store and API gateway.
+        API key validator configuration used by API key manager (IS), API Developer Portal and API gateway.
         API gateway uses it to validate and authenticate users against the provided API keys.
     -->
     <APIKeyValidator>
@@ -232,50 +322,47 @@
         <!-- Admin password for API key manager. -->
         <Password>${admin.password}</Password>
 
-        <KeyValidatorClientType>WSClient</KeyValidatorClientType>
-        <!--ConnectionPool>
-            <MaxIdle>100</MaxIdle>
-            <InitIdleCapacity>50</InitIdleCapacity>
-        </ConnectionPool-->
-        <!-- Specifies the implementation to be used for KeyValidationHandler. Steps for validating a token can be controlled by plugging in a
-             custom KeyValidation Handler -->
         <KeyValidationHandlerClassName>org.wso2.carbon.apimgt.keymgt.handlers.DefaultKeyValidationHandler</KeyValidationHandlerClassName>
+        <DefaultKeyManagerType>default</DefaultKeyManagerType>
+     <EnableKeyManagerConfigurationRetriever>true</EnableKeyManagerConfigurationRetriever>
+      <EnableProvisionedAppValidation>true</EnableProvisionedAppValidation>
+      <EnableLightWeightAPIKeyGeneration>true</EnableLightWeightAPIKeyGeneration>
+      <AllowSubscriptionValidationDisabling>true</AllowSubscriptionValidationDisabling>
+      <DisableRetrieveKeyMapping>false</DisableRetrieveKeyMapping>
+      <EnableApplicationScopesForResidentKM>false</EnableApplicationScopesForResidentKM>
+      <SkipCreateResidentKeyManager>false</SkipCreateResidentKeyManager>
     </APIKeyValidator>
 
-    <!-- Uncomment this section only if you are going to have an instance other than KeyValidator as your KeyManager.
-         Unless a ThirdParty KeyManager is used, you don't need to configure this section. -->
-    <!--APIKeyManager>
-        <KeyManagerClientImpl>org.wso2.carbon.apimgt.impl.AMDefaultKeyManagerImpl</KeyManagerClientImpl>
-        <Configuration>
-            <ServerURL>https://localhost:${mgt.transport.https.port}${carbon.context}services/</ServerURL>
-            <Username>${admin.username}</Username>
-            <Password>${admin.password}</Password>
-            <TokenURL>https://${carbon.local.ip}:${https.nio.port}/token</TokenURL>
-            <RevokeURL>https://${carbon.local.ip}:${https.nio.port}/revoke</RevokeURL>
-        </Configuration>
-    </APIKeyManager-->
+    <BasicAuthValidator>
+        <ConnectionPool>
+            <MaxIdle>100</MaxIdle>
+            <InitIdleCapacity>50</InitIdleCapacity>
+            <MaxActive>100</MaxActive>
+            <MaxWaitMillis>30000</MaxWaitMillis>
+        </ConnectionPool>
+    </BasicAuthValidator>
 
     <OAuthConfigurations>
         <!-- Remove OAuth headers from outgoing message. -->
-        <!--RemoveOAuthHeadersFromOutMessage>true</RemoveOAuthHeadersFromOutMessage-->
-        <!--Authorization header-->
-        <!--AuthorizationHeader>Authorization</AuthorizationHeader-->
+        <RemoveOAuthHeadersFromOutMessage>true</RemoveOAuthHeadersFromOutMessage>
         <!-- Scope used for marking Application Tokens. If a token is generated with this scope, they will be treated as Application Access Tokens -->
         <ApplicationTokenScope>am_application_scope</ApplicationTokenScope>
         <!-- All  scopes under the AllowedScopes element are not validating against roles that has assigned to it.
-             By default ^device_.* and openid scopes have been white listed internally. -->
-        <!--AllowedScopes>
+             By default ^device_.* and openid scopes have been allowed internally. -->
+        <AllowedScopes>
             <Scope>^device_.*</Scope>
             <Scope>openid</Scope>
-        </AllowedScopes-->
+        </AllowedScopes>
+
         <!-- Name of the token API -->
-        <TokenEndPointName>/oauth2/token</TokenEndPointName>
+        <TokenEndPointName>/token</TokenEndPointName>
+        <RevokeEndpointName>/revoke</RevokeEndpointName>
         <!-- This the API URL for revoke API. When we revoke tokens revoke requests should go through this
              API deployed in API gateway. Then it will do cache invalidations related to revoked tokens.
              In distributed deployment we should configure this property in key manager node by pointing
              gateway https( /http, we recommend users to use 'https' endpoints for security purpose) url.
              Also please note that we should point gateway revoke service to key manager -->
-        <RevokeAPIURL>https://localhost:${https.nio.port}/revoke</RevokeAPIURL>
+        <RevokeAPIURL>https://localhost:${mgt.transport.https.port}/oauth2/revoke</RevokeAPIURL>
         <!-- Whether to encrypt tokens when storing in the Database
         Note: If changing this value to true, change the value of <TokenPersistenceProcessor> to
         org.wso2.carbon.identity.oauth.tokenprocessor.EncryptionDecryptionPersistenceProcessor in the identity.xml -->
@@ -285,18 +372,19 @@
         org.wso2.carbon.identity.oauth.tokenprocessor.HashingPersistenceProcessor and change the value of
         <EnableClientSecretHash> to true in the identity.xml -->
         <EnableTokenHashMode>false</EnableTokenHashMode>
+        <EnableRevokeTokenCleanup>true</EnableRevokeTokenCleanup>
+        <!-- Whether to validate certificate bound access tokens-->
+        <EnableCertificateBoundAccessToken>false</EnableCertificateBoundAccessToken>
+
     </OAuthConfigurations>
 
-    <TokenRevocationNotifiers class="org.wso2.carbon.apimgt.keymgt.events.TokenRevocationNotifierImpl">
+    <AccessTokenBinding>
+    </AccessTokenBinding>
+
+    <TokenRevocationNotifiers class="org.wso2.carbon.apimgt.notification.TokenRevocationNotifierImpl">
         <RealtimeNotifier>
             <Property name="ttl">5000</Property>
         </RealtimeNotifier>
-        <PersistentNotifier>
-            <Property name="hostname">https://localhost:2379/v2/keys/jti/</Property>
-            <Property name="ttl">5000</Property>
-            <Property name="username">root</Property>
-            <Property name="password">root</Property>
-        </PersistentNotifier>
     </TokenRevocationNotifiers>
 
     <TokenValidation>
@@ -311,22 +399,20 @@
         <EnableUnlimitedTier>true</EnableUnlimitedTier>
     </TierManagement>
 
-    <!-- API Store Related Configurations -->
+    <!-- API Developer Portal Related Configurations -->
     <APIStore>
-        <!--GroupingExtractor>org.wso2.carbon.apimgt.impl.DefaultGroupIDExtractorImpl</GroupingExtractor-->
-        <!--This is used to define the group Id Extractor for REST API. Default value for this is DefaultGroupIDExtractorImpl-->
-        <!--RESTApiGroupingExtractor>org.wso2.carbon.apimgt.impl.DefaultGroupIDExtractorImpl</RESTApiGroupingExtractor-->
+        <DefaultGroupExtractorClaimUri>http://wso2.org/claims/organization</DefaultGroupExtractorClaimUri>
         <!--This property is used to indicate how we do user name comparision for token generation https://wso2.org/jira/browse/APIMANAGER-2225-->
         <CompareCaseInsensitively>true</CompareCaseInsensitively>
         <DisplayURL>false</DisplayURL>
         <URL>https://localhost:${mgt.transport.https.port}/devportal</URL>
 
-        <!-- Server URL of the API Store. -->
+        <!-- Server URL of the API Developer Portal. -->
         <ServerURL>https://localhost:${mgt.transport.https.port}${carbon.context}services/</ServerURL>
-        <!-- Admin username for API Store. -->
+        <!-- Admin username for API Developer Portal. -->
         <Username>${admin.username}</Username>
 
-        <!-- Admin password for API Store. -->
+        <!-- Admin password for API Developer Portal. -->
         <Password>${admin.password}</Password>
         <!-- This parameter specifies whether to display multiple versions of same
              API or only showing the latest version of an API. -->
@@ -335,7 +421,7 @@
              [which are having DEPRECATED/PUBLISHED status] or only display the APIs
              with having their status is as 'PUBLISHED' -->
         <DisplayAllAPIs>false</DisplayAllAPIs>
-        <!-- Uncomment this to limit the number of APIs in api the API Store -->
+        <!-- Uncomment this to limit the number of APIs in api the API Developer Portal -->
         <!--APIsPerPage>5</APIsPerPage-->
 
         <!-- This parameter specifies whether to display the comment editing facility or not.
@@ -346,17 +432,22 @@
              Default is "true". If user wants to disable, he must set this param as "false" -->
         <DisplayRatings>true</DisplayRatings>
 
-        <!-- This parameter specifies the  alias value of the Api Key which will be used for Api Key Authentication  -->
+        <!--set isStoreForumEnabled to false for disable forum in API Developer Portal-->
+        <isStoreForumEnabled>true</isStoreForumEnabled>
+
+        <!--This parameter specifies whether Provisioning Out-of-Band OAuth Clients is enabled-->
+        <MapExistingAuthApps>false</MapExistingAuthApps>
+
+        <!--This parameter specifies the alias value of the Api Key which will be used for Api Key Authentication-->
+        <APIKeyKeystore></APIKeyKeystore>
         <ApiKeyAlias>gateway_certificate_alias</ApiKeyAlias>
+        <ApiKeyGeneratorImpl></ApiKeyGeneratorImpl>
 
-        <!--set isStoreForumEnabled to false for disable forum in store-->
-        <!--isStoreForumEnabled>false</isStoreForumEnabled-->
-
-        <!--
-        This is an optional parameter. If this parameter has a value, it will be shown in the token generation
-        cURL command under subscriptions section in API Store.
-        -->
-        <!--StoreTokenDisplayURL>https://${carbon.local.ip}:${https.nio.port}</StoreTokenDisplayURL-->
+        <!--This parameter specifies whether Anonymous Mode is enabled. By default it is true.-->
+        <EnableAnonymousMode>true</EnableAnonymousMode>
+        <EnableCrossTenantSubscription>false</EnableCrossTenantSubscription>
+        <DefaultReservedUsername>apim_reserved_user</DefaultReservedUsername>
+        <Mode>HYBRID</Mode>
     </APIStore>
 
     <APIPublisher>
@@ -366,12 +457,17 @@
              By default any document associate with an API will have the same permissions set as the API.With enabling below
              property,it will show two additional permission levels as visible only to all registered users in a particular
              domain or only visible to API doc creator -->
-        <!--EnableAPIDocVisibilityLevels>true</EnableAPIDocVisibilityLevels-->
-        <!--EnablePortalConfigurationOnlyMode>false</EnablePortalConfigurationOnlyMode-->
+        <EnableAPIDocVisibilityLevels>false</EnableAPIDocVisibilityLevels>
+        <EnablePortalConfigurationOnlyMode>false</EnablePortalConfigurationOnlyMode>
+        <InternalKeyIssuer></InternalKeyIssuer>
         <!-- Uncomment this to limit the number of APIs in api the API Publisher -->
         <!--APIsPerPage>30</APIsPerPage-->
         <!-- This property need to be enabled to enable the publisher access control support -->
         <EnableAccessControl>true</EnableAccessControl>
+        <!-- This property is to add the claims that needs to be displayed in Publisher -->
+        <SubscriberClaims>http://wso2.org/claims/givenname,http://wso2.org/claims/lastname,http://wso2.org/claims/emailaddress,http://wso2.org/claims/organization</SubscriberClaims>
+         <!--This parameter specifies the alias value of the internal Api Key which will be used for Api Key Authentication-->
+        <InternalKeyAlias>gateway_certificate_alias</InternalKeyAlias>
     </APIPublisher>
 
     <!-- Status observers can be registered against the API Publisher to listen for
@@ -385,8 +481,8 @@
 
     <!-- Configuration to configure the email recipient field (To/cc/bcc) and delimeter(, or ;)-->
     <SubscriberContactConfiguration>
-        <Email-Recipient-Field>To</Email-Recipient-Field>
-        <EmailAddressDelimiter>;</EmailAddressDelimiter>
+    <EmailRecipientField></EmailRecipientField>
+        <EmailAddressDelimiter></EmailAddressDelimiter>
     </SubscriberContactConfiguration>
 
     <!-- Configuration to enable/disable sending CORS headers in the Gateway response
@@ -396,53 +492,54 @@
         <Enabled>true</Enabled>
 
         <!-- The value of the Access-Control-Allow-Origin header. Default values are
-             API Store addresses, which is needed for swagger to function. -->
+             API Developer Portal addresses, which is needed for swagger to function. -->
         <Access-Control-Allow-Origin>*</Access-Control-Allow-Origin>
 
         <!-- Configure Access-Control-Allow-Methods -->
         <Access-Control-Allow-Methods>GET,PUT,POST,DELETE,PATCH,OPTIONS</Access-Control-Allow-Methods>
 
         <!-- Configure Access-Control-Allow-Headers -->
-        <Access-Control-Allow-Headers>authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction</Access-Control-Allow-Headers>
+        <Access-Control-Allow-Headers>authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,apikey,Internal-Key</Access-Control-Allow-Headers>
 
-        <!--<Access-Control-Expose-Headers>Cache-Control,Content-Language,Content-Type,Expires,Last-Modified,Pragma</Access-Control-Expose-Headers>-->
+        <!-- Configure Access-Control-Expose-Headers -->
 
         <!-- Configure Access-Control-Allow-Credentials -->
         <!-- Specifying this header to true means that the server allows cookies (or other user credentials) to be included on cross-origin requests.
              It is false by default and if you set it to true then make sure that the Access-Control-Allow-Origin header does not contain the wildcard (*) -->
         <Access-Control-Allow-Credentials>false</Access-Control-Allow-Credentials>
+        <!-- Configuration to enable/disable CORS validation for WebSocket APIs. If enabled (true), the 'Origin' header
+             will be validated for CORS in the handshake of Webscoket API invocations. Else (false), no CORS validation will
+             take place with 'Origin' header -->
+        <EnableValidationForWS>false</EnableValidationForWS>
     </CORSConfiguration>
-
-    <!--
-        Configurations relevant to Marketplace Assistant feature.
-        This enables the Marketplace Assistant feature which leverages AI for API searching within Developer Portal.
-    -->
-    <MarketplaceAssistant>
-        <!-- Enable Marketplace Assistant for API Manager -->
-        <Enabled>true</Enabled>
-        <AuthToken></AuthToken>
-        <Endpoint>http://localhost:9090</Endpoint>
-        <Resources>
-            <ChatResource>/chat</ChatResource>
-            <ApiPublishResource>/publish-api</ApiPublishResource>
-            <ApiDeleteResource>/remove-api</ApiDeleteResource>
-            <ApiCountResource>/api-count</ApiCountResource>
-        </Resources>
-    </MarketplaceAssistant>
 
     <!-- This property is there to configure velocity log output into existing Log4j carbon Logger.
          You can enable this and set preferable Logger name. -->
-    <!-- VelocityLogger>VELOCITY</VelocityLogger -->
+
+    <!-- This property is to configure the API Manager Governance capabilities -->
+    <APIMGovernance>
+        <DataSource>jdbc/WSO2AM_DB</DataSource>
+        <SchedulerConfigurations>
+            <ThreadPoolSize>20</ThreadPoolSize>
+            <QueueSize>20</QueueSize>
+            <TaskCheckIntervalMinutes>2</TaskCheckIntervalMinutes>
+            <TaskCleanupIntervalMinutes>30</TaskCleanupIntervalMinutes>
+        </SchedulerConfigurations>
+    </APIMGovernance>
 
     <RESTAPI>
-        <!--Configure white-listed URIs of REST API. Accessing white-listed URIs does not require credentials (does not require Authorization header). -->
+        <!--Configure allowed URIs of REST API. Accessing allowed URIs does not require credentials (does not require Authorization header). -->
         <AllowedURIs>
+             <AllowedURI>
+                <URI>/api/am/devportal/{version}/tenants</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+             </AllowedURI>
             <AllowedURI>
                 <URI>/api/am/publisher/{version}/swagger.json</URI>
                 <HTTPMethods>GET,HEAD</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
-                <URI>/api/am/store/{version}/swagger.json</URI>
+                <URI>/api/am/devportal/{version}/swagger.json</URI>
                 <HTTPMethods>GET,HEAD</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
@@ -454,7 +551,7 @@
                 <HTTPMethods>GET,HEAD</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
-                <URI>/api/am/store/{version}/swagger.yaml</URI>
+                <URI>/api/am/devportal/{version}/swagger.yaml</URI>
                 <HTTPMethods>GET,HEAD</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
@@ -462,51 +559,155 @@
                 <HTTPMethods>GET,HEAD</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
-                <URI>/api/am/store/{version}/apis</URI>
+                <URI>/api/am/devportal/{version}/apis</URI>
                 <HTTPMethods>GET,HEAD</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
-                <URI>/api/am/store/{version}/apis/{apiId}</URI>
+                <URI>/api/am/devportal/{version}/apis/{apiId}</URI>
                 <HTTPMethods>GET,HEAD</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
-                <URI>/api/am/store/{version}/apis/{apiId}/swagger</URI>
+                <URI>/api/am/devportal/{version}/apis/{apiId}/swagger</URI>
                 <HTTPMethods>GET,HEAD</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
-                <URI>/api/am/store/{version}/apis/{apiId}/documents</URI>
+                <URI>/api/am/devportal/{version}/apis/{apiId}/async-api-specification</URI>
                 <HTTPMethods>GET,HEAD</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
-                <URI>/api/am/store/{version}/apis/{apiId}/documents/{documentId}</URI>
+                <URI>/api/am/devportal/{version}/apis/{apiId}/wsdl</URI>
                 <HTTPMethods>GET,HEAD</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
-                <URI>/api/am/store/{version}/apis/{apiId}/documents/{documentId}/content</URI>
+                <URI>/api/am/devportal/{version}/apis/{apiId}/comments</URI>
                 <HTTPMethods>GET,HEAD</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
-                <URI>/api/am/store/{version}/apis/{apiId}/thumbnail</URI>
+                <URI>/api/am/devportal/{version}/apis/{apiId}/comments/{commentId}</URI>
                 <HTTPMethods>GET,HEAD</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
-                <URI>/api/am/store/{version}/tags</URI>
+                 <URI>/api/am/devportal/{version}/apis/{apiId}/subscription-policies</URI>
+                 <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/mcp-servers</URI>
                 <HTTPMethods>GET,HEAD</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
-                <URI>/api/am/store/{version}/tiers/{tierLevel}</URI>
+                <URI>/api/am/devportal/{version}/mcp-servers/{mcpServerId}</URI>
                 <HTTPMethods>GET,HEAD</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
-                <URI>/api/am/store/{version}/tiers/{tierLevel}/{tierName}</URI>
+                <URI>/api/am/devportal/{version}/mcp-servers/{mcpServerId}/comments</URI>
                 <HTTPMethods>GET,HEAD</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
-                <URI>/api/am/store/{version}/search</URI>
+                <URI>/api/am/devportal/{version}/mcp-servers/{mcpServerId}/comments/{commentId}</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/mcp-servers/{mcpServerId}/subscription-policies</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/mcp-servers/{mcpServerId}/documents</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/mcp-servers/{mcpServerId}/documents/{documentId}</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/mcp-servers/{mcpServerId}/documents/{documentId}/content</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/mcp-servers/{mcpServerId}/thumbnail</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/mcp-servers/{mcpServerId}/ratings</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/throttling-policies/{policyLevel}</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/throttling-policies/{policyLevel}/{policyId}</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                 <URI>/api/am/devportal/{version}/apis/{apiId}/graphql-schema</URI>
+                 <HTTPMethods>GET</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/apis/{apiId}/documents</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/apis/{apiId}/documents/{documentId}</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/apis/{apiId}/documents/{documentId}/content</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/apis/{apiId}/thumbnail</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/apis/{apiId}/ratings</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/api-products</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/api-products/{apiId}</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/api-products/{apiId}/swagger</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/api-products/{apiId}/documents</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/api-products/{apiId}/documents/{documentId}</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/api-products/{apiId}/documents/{documentId}/content</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/api-products/{apiId}/thumbnail</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/tags</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/tiers/{tierLevel}</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/tiers/{tierLevel}/{tierName}</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/search</URI>
                 <HTTPMethods>GET</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
-                <URI>/api/am/store/{version}/settings</URI>
+                <URI>/api/am/devportal/{version}/settings</URI>
                 <HTTPMethods>GET</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
@@ -518,40 +719,40 @@
                 <HTTPMethods>GET</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
-                <URI>/api/am/endpoint-registry/{version}/settings</URI>
+                <URI>/api/am/service-catalog/{serviceCatalogVersion}/settings</URI>
                 <HTTPMethods>GET</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
-                <URI>/api/am/store/{version}/api-products</URI>
-                <HTTPMethods>GET,HEAD</HTTPMethods>
-            </AllowedURI>
-            <AllowedURI>
-                <URI>/api/am/store/{version}/api-products/{apiProductId}</URI>
-                <HTTPMethods>GET,HEAD</HTTPMethods>
-            </AllowedURI>
-            <AllowedURI>
-                <URI>/api/am/store/{version}/api-products/{apiProductId}/swagger</URI>
-                <HTTPMethods>GET,HEAD</HTTPMethods>
-            </AllowedURI>
-            <AllowedURI>
-                <URI>/api/am/store/{version}/api-products/{apiProductId}/documents</URI>
-                <HTTPMethods>GET,HEAD</HTTPMethods>
-            </AllowedURI>
-            <AllowedURI>
-                <URI>/api/am/store/{version}/api-products/{apiProductId}/documents/{documentId}</URI>
-                <HTTPMethods>GET,HEAD</HTTPMethods>
-            </AllowedURI>
-            <AllowedURI>
-                <URI>/api/am/store/{version}/api-products/{apiProductId}/documents/{documentId}/content</URI>
-                <HTTPMethods>GET,HEAD</HTTPMethods>
-            </AllowedURI>
-            <AllowedURI>
-                <URI>/api/am/store/{version}/api-products/{apiProductId}/thumbnail</URI>
-                <HTTPMethods>GET,HEAD</HTTPMethods>
-            </AllowedURI>
-            <AllowedURI>
-                <URI>/api/am/store/{version}/api-categories</URI>
+                <URI>/api/am/devportal/{version}/api-categories</URI>
                 <HTTPMethods>GET</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/apis/{apiId}/graphql-policies/complexity</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/apis/{apiId}/graphql-policies/complexity/types</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/apis/{apiId}/topics</URI>
+                <HTTPMethods>GET</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/service-catalog/{serviceCatalogVersion}/oas.yaml</URI>
+                <HTTPMethods>GET,HEAD</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/gateway/v2/server-startup-healthcheck</URI>
+                <HTTPMethods>GET</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/marketplace-assistant/api-count</URI>
+                <HTTPMethods>GET</HTTPMethods>
+            </AllowedURI>
+            <AllowedURI>
+                <URI>/api/am/devportal/{version}/marketplace-assistant/chat</URI>
+                <HTTPMethods>POST</HTTPMethods>
             </AllowedURI>
             <AllowedURI>
                 <URI>/api/am/governance/{version}/swagger.yaml</URI>
@@ -562,41 +763,44 @@
                 <HTTPMethods>GET,HEAD</HTTPMethods>
             </AllowedURI>
         </AllowedURIs>
+        <BasicAuthBlockedURIs>
+        <!--Configure Basic Auth blocked URIs of REST API. URIs included cannot be invoked with basic auth-->
+        </BasicAuthBlockedURIs>
         <ETagSkipList>
             <ETagSkipURI>
-                <URI>/api/am/store/{version}/apis</URI>
+                <URI>/api/am/devportal/{version}/apis</URI>
                 <HTTPMethods>GET</HTTPMethods>
             </ETagSkipURI>
             <ETagSkipURI>
-                <URI>/api/am/store/{version}/apis/generate-sdk</URI>
+                <URI>/api/am/devportal/{version}/apis/generate-sdk</URI>
                 <HTTPMethods>POST</HTTPMethods>
             </ETagSkipURI>
             <ETagSkipURI>
-                <URI>/api/am/store/{version}/apis/{apiId}/documents</URI>
+                <URI>/api/am/devportal/{version}/apis/{apiId}/documents</URI>
                 <HTTPMethods>GET</HTTPMethods>
             </ETagSkipURI>
             <ETagSkipURI>
-                <URI>/api/am/store/{version}/applications</URI>
+                <URI>/api/am/devportal/{version}/applications</URI>
                 <HTTPMethods>GET</HTTPMethods>
             </ETagSkipURI>
             <ETagSkipURI>
-                <URI>/api/am/store/{version}/applications/generate-keys</URI>
+                <URI>/api/am/devportal/{version}/applications/generate-keys</URI>
                 <HTTPMethods>POST</HTTPMethods>
             </ETagSkipURI>
             <ETagSkipURI>
-                <URI>/api/am/store/{version}/subscriptions</URI>
+                <URI>/api/am/devportal/{version}/subscriptions</URI>
                 <HTTPMethods>GET,POST</HTTPMethods>
             </ETagSkipURI>
             <ETagSkipURI>
-                <URI>/api/am/store/{version}/tags</URI>
+                <URI>/api/am/devportal/{version}/tags</URI>
                 <HTTPMethods>GET</HTTPMethods>
             </ETagSkipURI>
             <ETagSkipURI>
-                <URI>/api/am/store/{version}/tiers/{tierLevel}</URI>
+                <URI>/api/am/devportal/{version}/tiers/{tierLevel}</URI>
                 <HTTPMethods>GET</HTTPMethods>
             </ETagSkipURI>
             <ETagSkipURI>
-                <URI>/api/am/store/{version}/tiers/{tierLevel}/{tierName}</URI>
+                <URI>/api/am/devportal/{version}/tiers/{tierLevel}/{tierName}</URI>
                 <HTTPMethods>GET</HTTPMethods>
             </ETagSkipURI>
             <ETagSkipURI>
@@ -672,15 +876,24 @@
                 <HTTPMethods>POST</HTTPMethods>
             </ETagSkipURI>
         </ETagSkipList>
+        <AdminPermissionRestrictedAPIs>
+            <AdminPermissionRestrictedAPI>
+                <URI>/api/am/gateway/*</URI>
+                <HTTPMethods>GET,DELETE,PUT,POST</HTTPMethods>
+            </AdminPermissionRestrictedAPI>
+        </AdminPermissionRestrictedAPIs>
     </RESTAPI>
     <ThrottlingConfigurations>
-        <EnableAdvanceThrottling>true</EnableAdvanceThrottling>
         <TrafficManager>
             <Type>Binary</Type>
-            <ReceiverUrlGroup>tcp://${carbon.local.ip}:${receiver.url.port}</ReceiverUrlGroup>
+
+
+<ReceiverUrlGroup>tcp://${carbon.local.ip}:${receiver.url.port}</ReceiverUrlGroup>
+
+
             <AuthUrlGroup>ssl://${carbon.local.ip}:${auth.url.port}</AuthUrlGroup>
-            <Username>${admin.username}</Username>
-            <Password>${admin.password}</Password>
+            <Username>admin</Username>
+            <Password>admin</Password>
         </TrafficManager>
         <DataPublisher>
             <Enabled>true</Enabled>
@@ -697,24 +910,24 @@
         <PolicyDeployer>
             <Enabled>true</Enabled>
             <ServiceURL>https://localhost:${mgt.transport.https.port}${carbon.context}services/</ServiceURL>
-            <Username>${admin.username}</Username>
-            <Password>${admin.password}</Password>
+            <Username>admin</Username>
+            <Password>admin</Password>
+            <TenantLoading>
+              <Enable>true</Enable>
+              <Tenants>*</Tenants>
+            </TenantLoading>
         </PolicyDeployer>
         <BlockCondition>
-            <ServiceURL>http://${carbon.local.ip}:${mgt.transport.http.port}/internal/data/v1</ServiceURL>
             <Enabled>true</Enabled>
-            <!--InitDelay>300000</InitDelay>
-            <Period>3600000</Period-->
         </BlockCondition>
         <JMSConnectionDetails>
             <Enabled>true</Enabled>
-            <Destination>throttleData</Destination>
-            <!--InitDelay>300000</InitDelay-->
             <JMSConnectionParameters>
                 <transport.jms.ConnectionFactoryJNDIName>TopicConnectionFactory</transport.jms.ConnectionFactoryJNDIName>
                 <transport.jms.DestinationType>topic</transport.jms.DestinationType>
                 <java.naming.factory.initial>org.wso2.andes.jndi.PropertiesFileInitialContextFactory</java.naming.factory.initial>
-                <connectionfactory.TopicConnectionFactory>amqp://${admin.username}:${admin.password}@clientid/carbon?brokerlist='tcp://${carbon.local.ip}:${jms.port}'</connectionfactory.TopicConnectionFactory>
+                <connectionfactory.TopicConnectionFactory>amqp://<![CDATA[admin]]>:<![CDATA[admin]]>@clientid/carbon?brokerlist='tcp://${carbon.local.ip}:${jms.port}'</connectionfactory.TopicConnectionFactory>
+                <SequentialFailoverFromBeginning>false</SequentialFailoverFromBeginning>
             </JMSConnectionParameters>
         </JMSConnectionDetails>
 
@@ -724,6 +937,7 @@
                 <Silver>2000</Silver>
                 <Bronze>1000</Bronze>
                 <Unauthenticated>60</Unauthenticated>
+                <DefaultSubscriptionless>100000</DefaultSubscriptionless>
             </SubscriptionTierLimits>
             <ApplicationTierLimits>
                 <50PerMin>50</50PerMin>
@@ -740,6 +954,10 @@
         <EnableHeaderConditions>false</EnableHeaderConditions>
         <EnableJWTClaimConditions>false</EnableJWTClaimConditions>
         <EnableQueryParamConditions>false</EnableQueryParamConditions>
+        <SkipRedeployingPolicies>RequestPreProcessorExecutionPlan</SkipRedeployingPolicies>
+        <EnablePolicyDeployment>true</EnablePolicyDeployment>
+        <EnablePolicyRecreationOnStartup>true</EnablePolicyRecreationOnStartup>
+
     </ThrottlingConfigurations>
 
     <WorkflowConfigurations>
@@ -748,7 +966,7 @@
     	<ServerUser>${admin.username}</ServerUser>
     	<ServerPassword>${admin.password}</ServerPassword>
     	<WorkflowCallbackAPI>https://localhost:${mgt.transport.https.port}/api/am/admin/v4/workflows/update-workflow-status</WorkflowCallbackAPI>
-        <TokenEndPoint>https://localhost:${https.nio.port}/token</TokenEndPoint>
+        <TokenEndPoint>https://localhost:${mgt.transport.https.port}/oauth2/token</TokenEndPoint>
         <DCREndPoint>https://localhost:${mgt.transport.https.port}/client-registration/v0.17/register</DCREndPoint>
         <DCREndPointUser>${admin.username}</DCREndPointUser>
         <DCREndPointPassword>${admin.password}</DCREndPointPassword>
@@ -763,7 +981,7 @@
             <!-- Configure supported languages/Frameworks as comma separated values,
              Supported Languages/Frameworks : android, java, scala, csharp, dart, flash, groovy, javascript, jmeter,
              nodejs, perl, php, python, ruby, swift, clojure, asyncScala, csharpDotNet2-->
-            <SupportedLanguages>java,android</SupportedLanguages>
+            <SupportedLanguages>android,java,javascript,jmeter</SupportedLanguages>
         </ClientGeneration>
     </SwaggerCodegen>
 
@@ -771,12 +989,27 @@
     <Monetization>
         <MonetizationImpl>org.wso2.carbon.apimgt.impl.monetization.DefaultMonetizationImpl</MonetizationImpl>
         <UsagePublisher>
-            <Granularity>days</Granularity>
-            <!--Number of days to reduce from the current time to get the last publish time of monetization
-            usgae publish job, when there is no record of the last publish time.-->
-            <PublishTimeDurationInDays>1</PublishTimeDurationInDays>
+            <!--Inorder to reduce configuration migration, previous config name for query API is used for choreo insight API endpoint-->
         </UsagePublisher>
     </Monetization>
+
+
+    <OpenTelemetry>
+        <RemoteTracer>
+            <Enabled></Enabled>
+            <Name></Name>
+            <Url></Url>
+            <HostName></HostName>
+            <Port></Port>
+            <Properties>
+            </Properties>
+        </RemoteTracer>
+        <LogTracer>
+            <Enabled></Enabled>
+        </LogTracer>
+        <ResourceAttributes>
+        </ResourceAttributes>
+    </OpenTelemetry>
 
     <OpenTracer>
         <RemoteTracer>
@@ -785,6 +1018,8 @@
             <Properties>
                 <HostName>localhost</HostName>
                 <Port>9411</Port>
+                <ProxyHost></ProxyHost>
+                <ProxyPort></ProxyPort>
             </Properties>
         </RemoteTracer>
         <LogTracer>
@@ -792,24 +1027,198 @@
         </LogTracer>
     </OpenTracer>
 
-    <JWTAuthentication>
-        <EnableSubscriptionValidationViaKeyManager>false</EnableSubscriptionValidationViaKeyManager>
-    </JWTAuthentication>
+
+
+
+
+    <EnableEmptyValuesInApplicationAttributes>false</EnableEmptyValuesInApplicationAttributes>
+
+
+
     <CertificateReLoaderConfiguration>
-        <Period>10</Period>
+        <Period>600</Period>
     </CertificateReLoaderConfiguration>
-    <MutualSSL>
+
+     <MutualSSL>
         <ClientCertificateHeader>X-WSO2-CLIENT-CERTIFICATE</ClientCertificateHeader>
         <EnableClientCertificateValidation>true</EnableClientCertificateValidation>
-    </MutualSSL>
+     </MutualSSL>
 
-    <MediatorConfigs>
+     <GlobalCacheInvalidation>
+        <Enabled>false</Enabled>
+        <Domain>default</Domain>
+        <Stream>cache.invalidation.stream:1.0.0</Stream>
+        <Topic>globalCacheInvalidation</Topic>
+        <ExcludedCaches>         </ExcludedCaches>
+     </GlobalCacheInvalidation>
+
+     <EventHubConfigurations>
+        <Enable>true</Enable>
+         <Username>admin</Username>
+         <Password>admin</Password>
+         <ServiceURL>https://localhost:${mgt.transport.https.port}${carbon.context}services/</ServiceURL>
+        <InitDelay>1000</InitDelay>
+        <EventPublisherConfiguration>
+            <Type>Binary</Type>
+<ReceiverUrlGroup>tcp://${carbon.local.ip}:${receiver.url.port}</ReceiverUrlGroup>
+                    <AuthUrlGroup>ssl://${carbon.local.ip}:${auth.url.port}</AuthUrlGroup>
+        <Properties>
+        </Properties>
+        </EventPublisherConfiguration>
+         <EventReceiverConfiguration>
+             <transport.jms.ConnectionFactoryJNDIName>TopicConnectionFactory</transport.jms.ConnectionFactoryJNDIName>
+             <transport.jms.DestinationType>topic</transport.jms.DestinationType>
+             <java.naming.factory.initial>org.wso2.andes.jndi.PropertiesFileInitialContextFactory</java.naming.factory.initial>
+             <connectionfactory.TopicConnectionFactory>amqp://<![CDATA[admin]]>:<![CDATA[admin]]>@clientid/carbon?brokerlist='tcp://${carbon.local.ip}:${jms.port}?'</connectionfactory.TopicConnectionFactory>
+             <SequentialFailoverFromBeginning>false</SequentialFailoverFromBeginning>
+         </EventReceiverConfiguration>
+     </EventHubConfigurations>
+
+
+    <SyncRuntimeArtifactsGateway>
+        <Enable>true</Enable>
+        <GatewayLabels>
+            <Label>Default</Label>
+        </GatewayLabels>
+        <ArtifactRetriever>DBRetriever</ArtifactRetriever>
+        <RetryDuration>15000</RetryDuration>
+        <DataRetrievalMode>async</DataRetrievalMode>
+        <EventWaitingTime>5000</EventWaitingTime>
+        <SkipList>
+        <APIS>
+            <API>_OpenService_.xml</API>
+        </APIS>
+        <Endpoints>
+        </Endpoints>
+        <Sequences>
+            <Sequence>_auth_failure_handler_.xml</Sequence>
+            <Sequence>_build_.xml</Sequence>
+            <Sequence>_cors_request_handler_.xml</Sequence>
+            <Sequence>_extension_fault_handler_.xml</Sequence>
+            <Sequence>dispatchSeq.xml</Sequence>
+            <Sequence>fault.xml</Sequence>
+            <Sequence>guardrail_fault.xml</Sequence>
+            <Sequence>_graphql_failure_handler_.xml</Sequence>
+            <Sequence>_mcp_failure_handler_.xml</Sequence>
+            <Sequence>main.xml</Sequence>
+            <Sequence>outDispatchSeq.xml</Sequence>
+            <Sequence>_production_key_error_.xml</Sequence>
+            <Sequence>_resource_mismatch_handler_.xml</Sequence>
+            <Sequence>_sandbox_key_error_.xml</Sequence>
+            <Sequence>_threat_fault_.xml</Sequence>
+            <Sequence>_throttle_out_handler_.xml</Sequence>
+            <Sequence>_token_fault_.xml</Sequence>
+            <Sequence>webhooksFaultSequence.xml</Sequence>
+            <Sequence>_block_api_handler_.xml</Sequence>
+            <Sequence>_backend_failure_handler_.xml</Sequence>
+            <Sequence>_opa_policy_failure_handler_.xml</Sequence>
+        </Sequences>
+        <LocalEntries>
+        </LocalEntries>
+        </SkipList>
+        <FileBasedApiContexts>
+        </FileBasedApiContexts>
+        <EnableOnDemandLoadingAPIS>false</EnableOnDemandLoadingAPIS>
+        <TenantLoading>
+           <Enable>false</Enable>
+           <Tenants>*</Tenants>
+        </TenantLoading>
+    </SyncRuntimeArtifactsGateway>
+
+    <ProxyConfig>
+        <Enable>false</Enable>
+        <Host></Host>
+        <Port></Port>
+        <Username></Username>
+        <Password></Password>
+        <NonProxyHosts></NonProxyHosts>
+        <Protocol></Protocol>
+    </ProxyConfig>
+     <!--This parameter is used to Enable the password changing feature in devportal. When this is enabled, a user can
+      change his/her password via devportal. By default this feature is enabled.-->
+     <EnableChangePassword>true</EnableChangePassword>
+
+
+
+      <MediatorConfigs>
         <OAuth>
-            <!-- If the access token expires, the server should reply with the duration of time the access token is granted for. -->
-            <ExpiresIn>3600</ExpiresIn>
-        </OAuth>
-    </MediatorConfigs>
-    <!--This parameter is used to Enable the password changing feature in devportal. When this is enabled, a user can
-     change his/her password via devportal. By default this feature is enabled.-->
-    <EnableChangePassword>true</EnableChangePassword>
+        <!-- If the access token expires, the server should reply with the duration of time the access token is granted for. -->
+                 <ExpiresIn></ExpiresIn>
+                 <!-- Enable/Disable retry API calls with new access token when the access token is invalid. Default is true. -->
+                 <EnableRetryCallWithNewToken>true</EnableRetryCallWithNewToken>
+                 <ConnectionTimeoutDuration>15000</ConnectionTimeoutDuration>
+                 <ConnectionRequestTimeoutDuration>15000</ConnectionRequestTimeoutDuration>
+                 <SocketTimeoutDuration>15000</SocketTimeoutDuration>
+             </OAuth>
+          </MediatorConfigs>
+
+      <!-- Default Correlation Log Components -->
+      <CorrelationLogComponents>
+          <CorrelationLogComponent>http</CorrelationLogComponent>
+          <CorrelationLogComponent>jdbc</CorrelationLogComponent>
+          <CorrelationLogComponent>ldap</CorrelationLogComponent>
+          <CorrelationLogComponent>synapse</CorrelationLogComponent>
+          <CorrelationLogComponent>method-calls</CorrelationLogComponent>
+      </CorrelationLogComponents>
+
+
+      <TenantSharingConfigs>
+      </TenantSharingConfigs>
+
+      <Hashing>
+        <HashingAlgorithm>SHA-256</HashingAlgorithm>
+      </Hashing>
+
+      <AI>
+          <!-- Custom Guardrail Providers -->
+          <GuardrailProviders>
+          </GuardrailProviders>
+
+          <EmbeddingProvider type="">
+          </EmbeddingProvider>
+
+          <VectorDBProvider type="">
+          </VectorDBProvider>
+      </AI>
+
+      <GatewayNotificationConfiguration>
+          <Enabled>true</Enabled>
+          <GatewayID></GatewayID>
+          <Heartbeat>
+              <NotifyIntervalSeconds>30</NotifyIntervalSeconds>
+          </Heartbeat>
+          <DeploymentAcknowledgement>
+              <BatchSize>100</BatchSize>
+              <BatchIntervalMillis>2000</BatchIntervalMillis>
+              <MaxRetryCount>5</MaxRetryCount>
+              <RetryDuration>10000</RetryDuration>
+              <RetryProgressionFactor>2.0</RetryProgressionFactor>
+              <BatchProcessorMinThread>2</BatchProcessorMinThread>
+              <BatchProcessorMaxThread>8</BatchProcessorMaxThread>
+              <BatchProcessorKeepAlive>60000</BatchProcessorKeepAlive>
+              <BatchProcessorQueueSize>50</BatchProcessorQueueSize>
+          </DeploymentAcknowledgement>
+          <Registration>
+              <MaxRetryCount>5</MaxRetryCount>
+              <RetryDuration>10000</RetryDuration>
+              <RetryProgressionFactor>2.0</RetryProgressionFactor>
+          </Registration>
+          <GatewayCleanup>
+              <ExpireTimeSeconds>120</ExpireTimeSeconds>
+              <DataRetentionPeriodSeconds>2629800</DataRetentionPeriodSeconds>
+          </GatewayCleanup>
+      </GatewayNotificationConfiguration>
+
+      <!-- SynapseArtifactGenerator thread pool configuration -->
+      <SynapseArtifactGenerator>
+          <ThreadPool>
+              <CorePoolSize>4</CorePoolSize>
+              <MaxPoolSize>4</MaxPoolSize>
+              <KeepAliveTimeMs>60000</KeepAliveTimeMs>
+              <QueueCapacity>50</QueueCapacity>
+          </ThreadPool>
+      </SynapseArtifactGenerator>
+
+      <EnableFailoverInLoadbalancedEndpoints>true</EnableFailoverInLoadbalancedEndpoints>
+      <EnableCertificateManagementEventListening>true</EnableCertificateManagementEventListening>
 </APIManager>

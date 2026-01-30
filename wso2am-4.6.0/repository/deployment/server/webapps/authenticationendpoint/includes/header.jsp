@@ -166,6 +166,7 @@
 
 <link rel="icon" href="libs/themes/default/assets/images/favicon.ico" type="image/x-icon"/>
 <link href="libs/themes/default/theme.70534561.min.css" rel="stylesheet">
+<link href="css/custom-branding.css" rel="stylesheet" type="text/css">
 
 <title><%=request.getAttribute("pageTitle")%></title>
 

@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<parameter name="customSSLProfiles">
+<parameter xmlns:svns="http://org.wso2.securevault/configuration"
+           name="customSSLProfiles">
     <profile>
         <servers>*</servers>
-        <KeyStore>
+         <KeyStore>
             <Location>repository/resources/security/wso2carbon.jks</Location>
             <Type>JKS</Type>
             <Password>wso2carbon</Password>
             <KeyPassword>wso2carbon</KeyPassword>
         </KeyStore>
         <TrustStore>
-            <Location>repository/resources/security/client-truststore.jks</Location>
+            <Location>repository\resources\security\client-truststore-temp.jks</Location>
             <Type>JKS</Type>
             <Password>wso2carbon</Password>
         </TrustStore>

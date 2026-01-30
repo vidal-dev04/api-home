@@ -1062,3 +1062,36 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 	... 4 more
 2026-01-30T01:10:35,179 [-] [Thread-61]  WARN {org.wso2.carbon.databridge.agent.endpoint.DataEndpointConnectionWorker} Next Reconnection attempt to Data endpoint : tcp://192.168.1.12:9611 will be after 30 seconds
 2026-01-30T01:10:35,179 [-] [Thread-170]  WARN {org.wso2.carbon.databridge.agent.endpoint.DataEndpointConnectionWorker} Next Reconnection attempt to Data endpoint : tcp://192.168.1.12:9611 will be after 30 seconds
+2026-01-30T14:19:29,387 [-] [Start Level: Equinox Container: 163822e9-449c-41f1-b65f-dbb6b97c9671]  WARN {org.apache.tomcat.util.digester.Digester} Match [Server/Service/Engine/Host/Valve] failed to set property [maxDays] to []
+2026-01-30T14:20:10,715 [-] [Framework Event Dispatcher: Equinox Container: 163822e9-449c-41f1-b65f-dbb6b97c9671]  WARN {org.apache.axis2.description.java2wsdl.DefaultSchemaGenerator} We don't support method overloading. Ignoring [addRemoteServerConfig]
+2026-01-30T14:20:10,715 [-] [Framework Event Dispatcher: Equinox Container: 163822e9-449c-41f1-b65f-dbb6b97c9671]  WARN {org.apache.axis2.description.java2wsdl.DefaultSchemaGenerator} We don't support method overloading. Ignoring [resetRemoteServerConfig]
+2026-01-30T14:20:12,625 [-] [Framework Event Dispatcher: Equinox Container: 163822e9-449c-41f1-b65f-dbb6b97c9671]  WARN {org.apache.axis2.description.java2wsdl.DefaultSchemaGenerator} We don't support method overloading. Ignoring [searchByAttribute]
+2026-01-30T14:20:20,188 [-] [Framework Event Dispatcher: Equinox Container: 163822e9-449c-41f1-b65f-dbb6b97c9671]  WARN {org.wso2.carbon.identity.application.mgt.internal.ApplicationManagementServiceComponent} Templates directory not found at C:\Users\vidal\DOCUME~1\API-M_~1\WSO2AM~1.0\bin\..\repository\resources\identity\authntemplates
+2026-01-30T14:20:21,732 [-] [Framework Event Dispatcher: Equinox Container: 163822e9-449c-41f1-b65f-dbb6b97c9671]  WARN {org.wso2.carbon.identity.auth.valve.internal.AuthenticationValveServiceComponent} File invalid_tenant_domain_response.html not found. The default content will be used as the error page content.
+2026-01-30T14:20:21,869 [-] [Framework Event Dispatcher: Equinox Container: 163822e9-449c-41f1-b65f-dbb6b97c9671]  WARN {org.wso2.carbon.identity.auth.service.internal.AuthenticationServiceComponent} 
+
+##################################  ALERT  ##################################
+[WARNING]: Internal authentication is utilizing default credentials,
+which may expose the environment to potential security risks.
+If this is a production environment, change the credentials immediately.
+Please refer to the WSO2 security advisory: https://security.docs.wso2.com/en/latest/security-announcements/security-advisories/2023/WSO2-2023-2617/
+#############################################################################
+
+2026-01-30T14:20:33,894 [-] [Framework Event Dispatcher: Equinox Container: 163822e9-449c-41f1-b65f-dbb6b97c9671]  WARN {org.wso2.carbon.identity.event.internal.IdentityEventServiceComponent} Properties for OrganizationCreationHandler is not configured. This event handler will not be activated
+2026-01-30T14:20:34,039 [-] [Framework Event Dispatcher: Equinox Container: 163822e9-449c-41f1-b65f-dbb6b97c9671]  WARN {org.wso2.carbon.identity.application.authentication.framework.internal.FrameworkServiceComponent} Adaptive authentication is disabled.
+2026-01-30T14:21:17,100 [-] [Timer-6]  WARN {org.wso2.carbon.application.deployer.internal.AppDeployerServiceComponent} Waiting for required OSGi services: org.wso2.carbon.application.deployer.synapse.service.SynapseAppDeployerService,org.wso2.carbon.mediation.initializer.services.SynapseEnvironmentService,
+2026-01-30T14:21:17,178 [-] [Timer-7]  WARN {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} Waiting for required OSGi services: org.wso2.carbon.application.deployer.service.CappDeploymentService,org.wso2.carbon.server.admin.common.IServerAdmin,org.wso2.carbon.throttling.agent.ThrottlingAgent,
+2026-01-30T14:22:17,095 [-] [Timer-6]  WARN {org.wso2.carbon.application.deployer.internal.AppDeployerServiceComponent} Waiting for required OSGi services: org.wso2.carbon.application.deployer.synapse.service.SynapseAppDeployerService,org.wso2.carbon.mediation.initializer.services.SynapseEnvironmentService,
+2026-01-30T14:22:17,164 [-] [Timer-7]  WARN {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} Waiting for required OSGi services: org.wso2.carbon.application.deployer.service.CappDeploymentService,org.wso2.carbon.server.admin.common.IServerAdmin,org.wso2.carbon.throttling.agent.ThrottlingAgent,
+2026-01-30T14:22:44,164 [-] [PassThrough HTTPS-Listener I/O dispatcher Listener]  WARN {org.apache.synapse.transport.passthru.PassThroughHttpMultiSSLListener} System may be unstable: HTTPS ListeningIOReactor encountered a checked exception : Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.bind(Net.java:573) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344) ~[?:?]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301) ~[?:?]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89) ~[?:?]
+	at org.apache.http.impl.nio.reactor.DefaultListeningIOReactor.processSessionRequests(DefaultListeningIOReactor.java:243) ~[httpcore-nio_4.4.16.wso2v4.jar:?]
+	at org.apache.http.impl.nio.reactor.DefaultListeningIOReactor.processEvents(DefaultListeningIOReactor.java:144) ~[httpcore-nio_4.4.16.wso2v4.jar:?]
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351) ~[httpcore-nio_4.4.16.wso2v4.jar:?]
+	at org.apache.synapse.transport.passthru.core.PassThroughListeningIOReactorManager$1.run(PassThroughListeningIOReactorManager.java:561) ~[synapse-nhttp-transport_4.0.0.wso2v262.jar:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]

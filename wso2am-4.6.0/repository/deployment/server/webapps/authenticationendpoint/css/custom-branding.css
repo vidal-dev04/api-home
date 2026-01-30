@@ -1,0 +1,89 @@
+/* Custom branding - Prevalya colors */
+
+/* Change primary color links from orange to blue */
+a, a:hover, a:focus {
+    color: #31A2D9 !important;
+}
+
+/* Change button primary colors */
+.btn-primary {
+    background: #31A2D9 !important;
+    background: linear-gradient(to bottom, #31A2D9 0%, #2A2559 100%) !important;
+    border-color: #31A2D9 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background: #2A2559 !important;
+    border-color: #2A2559 !important;
+}
+
+/* Change loader color from orange to blue */
+#loader:before {
+    border: 3px solid #31A2D9 !important;
+}
+
+#loader:after {
+    border: 3px solid transparent !important;
+    border-top-color: #31A2D9 !important;
+}
+
+/* Header background to blue */
+header {
+    background: #31A2D9 !important;
+}
+
+/* Footer background to dark blue */
+footer {
+    background: #2A2559 !important;
+}
+
+/* Change alert backgrounds */
+.alert-warning {
+    background-color: #e8f7fd !important;
+    border-color: #31A2D9 !important;
+    color: #2A2559 !important;
+}
+
+/* Logo replacement */
+.product-logo {
+    content: url('../images/logo-removebg-preview.png');
+    height: 80px !important;
+    width: auto !important;
+}
+
+/* If logo is in img tag with specific src */
+img[src*="logo.png"] {
+    content: url('../images/logo-removebg-preview.png');
+    height: 80px !important;
+    width: auto !important;
+}
+
+/* Brand logo styling */
+.brand img.logo {
+    height: 60px !important;
+    width: auto !important;
+}
+
+/* Override orange button to blue */
+button[type="submit"],
+input[type="submit"],
+.btn,
+.ui.primary.button,
+.ui.button.primary {
+    background: #31A2D9 !important;
+    background-color: #31A2D9 !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
+button[type="submit"]:hover,
+input[type="submit"]:hover,
+.btn:hover,
+.ui.primary.button:hover,
+.ui.button.primary:hover {
+    background: #2A2559 !important;
+    background-color: #2A2559 !important;
+    color: #ffffff !important;
+}

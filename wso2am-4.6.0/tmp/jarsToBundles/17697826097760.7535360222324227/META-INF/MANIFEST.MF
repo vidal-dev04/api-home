@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+DynamicImport-Package: *
+Bundle-ManifestVersion: 2
+Bundle-Name: httpmime_4.3.6
+Bundle-SymbolicName: httpmime_4.3.6
+Bundle-Version: 1.0.0
+Export-Package: org.apache.http.entity.mime,org.apache.http.entity.mime.
+ content
+Bundle-ClassPath: .,httpmime-4.3.6.jar
+

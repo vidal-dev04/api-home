@@ -13,7 +13,13 @@
   ~ specific language governing permissions and limitations under the License.
   -->
 
-<outputEventAdaptersConfig>
+<outputEventAdaptersConfig xmlns:svns="http://org.wso2.securevault/configuration">
+
+    <!-- Publisher Thread Pool Related Properties -->
+    <minThread key="minThread">100</minThread>
+    <maxThread key="maxThread">150</maxThread>
+    <keepAliveTime key="keepAliveTime">20000</keepAliveTime>
+    <jobQueueSize key="jobQueueSize">100</jobQueueSize>
 
     <adapterConfig type="wso2event">
         <property key="default.thrift.tcp.url">tcp://localhost:7612</property>
@@ -71,6 +77,10 @@
         <property key="maxThread">100</property>
         <property key="keepAliveTimeInMillis">20000</property>
         <property key="jobQueueSize">10000</property>
+        <property key="maxWait">3000</property>
+        <property key="minIdle">0</property>
+        <property key="minEvictableIdleTimeInMillis">3000</property>
+        <property key="timeBetweenEvictionRunsMillis">5000</property>
     </adapterConfig>
 
     <adapterConfig type="mqtt">
@@ -100,6 +110,8 @@
         <property key="mail.smtp.port">587</property>
         <property key="mail.smtp.starttls.enable">true</property>
         <property key="mail.smtp.auth">true</property>
+        <property key="mail.smtp.signature">abcd</property>
+        <property key="mail.smtp.replyTo">abcd@gmail.com</property>
         <!-- Thread Pool Related Properties -->
         <property key="minThread">8</property>
         <property key="maxThread">100</property>
@@ -144,5 +156,6 @@
         <property key="autoReleaseConnection">true</property>
         <property key="maxConnectionsPerHost">50</property>
     </adapterConfig>
+
 
 </outputEventAdaptersConfig>

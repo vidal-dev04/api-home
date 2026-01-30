@@ -5,7 +5,7 @@
     <p:parameters xmlns:p="http://ws.apache.org/ns/synapse">
         <p:parameter  name="inbound.http.port">8021</p:parameter>
         <p:parameter name="keystore">
-            <KeyStore>
+            <KeyStore xmlns:svns="http://org.wso2.securevault/configuration">
                 <Location>repository/resources/security/wso2carbon.jks</Location>
                 <Type>JKS</Type>
                 <Password>wso2carbon</Password>
@@ -13,7 +13,7 @@
             </KeyStore>
         </p:parameter>
         <p:parameter name="truststore">
-            <TrustStore>
+            <TrustStore xmlns:svns="http://org.wso2.securevault/configuration">
                 <Location>repository/resources/security/client-truststore.jks</Location>
                 <Type>JKS</Type>
                 <Password>wso2carbon</Password>
