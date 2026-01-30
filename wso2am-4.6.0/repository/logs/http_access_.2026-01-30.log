@@ -1,0 +1,795 @@
+127.0.0.1 - - [30/Jan/2026:01:03:04 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 500 335 - Apache-HttpClient/4.5.13 (Java/21.0.10) 12240.857
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:07 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:07 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:08 +0000] GET /devportal/apis HTTP/1.1 200 1691 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.777
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:08 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:08 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:08 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:08 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:08 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:08 +0000] GET /devportal/site/public/css/main.css HTTP/1.1 200 2525 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.099
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:08 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:08 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:08 +0000] GET /devportal/site/public/fonts/iconfont/material-icons.css HTTP/1.1 200 970 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.044
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:09 +0000] GET /devportal/site/public/css/overrides.css HTTP/1.1 200 244 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.073
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:09 +0000] GET /devportal/site/public/fonts/iconfont/MaterialIcons.js HTTP/1.1 200 6703 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.068
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:09 +0000] GET /devportal/services/settings/settings.js HTTP/1.1 200 1667 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.106
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:09 +0000] GET /devportal/site/public/theme/userTheme.js HTTP/1.1 200 30 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.111
+127.0.0.1 - - [30/Jan/2026:01:03:09 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 5.171
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:09 +0000] GET /devportal/site/public/dist/index.1f9e1ab1142655275175.bundle.js HTTP/1.1 200 384199 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.548
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:09 +0000] GET /devportal/site/public/images/_favicon.ico HTTP/1.1 200 1150 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.045
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:09 +0000] GET /devportal/site/public/locales/fr.json HTTP/1.1 404 247 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.152
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:09 +0000] GET /devportal/site/public/images/favicon.ico HTTP/1.1 200 162098 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.101
+127.0.0.1 - - [30/Jan/2026:01:03:09 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.199
+127.0.0.1 - - [30/Jan/2026:01:03:10 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.101
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:10 +0000] GET /api/am/devportal/v3/swagger.yaml HTTP/1.1 200 33642 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.465
+127.0.0.1 - - [30/Jan/2026:01:03:10 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.161
+127.0.0.1 - - [30/Jan/2026:01:03:10 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.086
+127.0.0.1 - - [30/Jan/2026:01:03:11 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.180
+127.0.0.1 - - [30/Jan/2026:01:03:11 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.135
+127.0.0.1 - - [30/Jan/2026:01:03:11 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.101
+127.0.0.1 - - [30/Jan/2026:01:03:12 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.172
+127.0.0.1 - - [30/Jan/2026:01:03:12 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.124
+127.0.0.1 - - [30/Jan/2026:01:03:12 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.128
+127.0.0.1 - - [30/Jan/2026:01:03:13 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.321
+127.0.0.1 - - [30/Jan/2026:01:03:13 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.116
+127.0.0.1 - - [30/Jan/2026:01:03:13 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.036
+127.0.0.1 - - [30/Jan/2026:01:03:14 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.057
+127.0.0.1 - - [30/Jan/2026:01:03:14 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.081
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:14 +0000] GET /api/am/devportal/v3/settings HTTP/1.1 200 800 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 4.120
+127.0.0.1 - - [30/Jan/2026:01:03:14 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.044
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:14 +0000] GET /devportal/site/public/dist/ProtectedApp.da1dd2d61d4da0632ad8.bundle.js HTTP/1.1 200 89959 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.102
+127.0.0.1 - - [30/Jan/2026:01:03:14 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.027
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:14 +0000] GET /devportal/site/public/dist/1221.79c2e610ac2beed56815.bundle.js HTTP/1.1 200 104929 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.155
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:14 +0000] GET /devportal/site/public/theme/temporary_environments_config.json HTTP/1.1 200 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.083
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:14 +0000] GET /devportal/site/public/theme/temporary_features_config.json HTTP/1.1 200 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.098
+127.0.0.1 - - [30/Jan/2026:01:03:14 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.046
+127.0.0.1 - - [30/Jan/2026:01:03:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.076
+127.0.0.1 - - [30/Jan/2026:01:03:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.027
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /api/am/devportal/v3/tenants?state=active HTTP/1.1 200 96 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.387
+127.0.0.1 - - [30/Jan/2026:01:03:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.014
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /devportal/site/public/dist/1512.2b3e8f5b7752fdc8ac0b.bundle.js HTTP/1.1 200 9948 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.014
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /devportal/site/public/dist/9947.39409bf16802d8b4d8a1.bundle.js HTTP/1.1 200 14521 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.014
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /oidc/checksession?client_id=RHarOAq_8mNUAac7Wfr5xW10M_ga&redirect_uri=https://localhost:9443/devportal/services/auth/callback/login HTTP/1.1 200 3134 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.013
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /devportal/site/public/dist/3523.79d8b67bcded34c573d9.bundle.js HTTP/1.1 200 115768 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.049
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /devportal/site/public/dist/1563.847868c15b2d4308002a.bundle.js HTTP/1.1 200 27556 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.018
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /devportal/site/public/fonts/Open_Sans/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2 HTTP/1.1 200 8892 https://localhost:9443/devportal/site/public/css/main.css Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.007
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /devportal/site/public/dist/7629.308e88c9fa7f415afd02.bundle.js HTTP/1.1 200 5691 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.060
+127.0.0.1 - - [30/Jan/2026:01:03:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.015
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /devportal/site/public/images/appbarBack.png HTTP/1.1 200 1964 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.004
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /devportal/site/public/dist/7125.09fe20bc53e0fd0be831.bundle.js HTTP/1.1 200 5716 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.045
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /devportal HTTP/1.1 302 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /devportal/site/public/fonts/Open_Sans/mem5YaGs126MiZpBA-UN7rgOUuhpKKSTjw.woff2 HTTP/1.1 200 8800 https://localhost:9443/devportal/site/public/css/main.css Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.010
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /devportal/site/public/dist/Apis.7f186a2f97cddeaf01be.bundle.js HTTP/1.1 200 7537 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.010
+127.0.0.1 - - [30/Jan/2026:01:03:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.014
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /devportal/ HTTP/1.1 200 1691 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.024
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /devportal/site/public/fonts/iconfont/MaterialIcons-Regular.woff2 HTTP/1.1 200 60840 https://localhost:9443/devportal/site/public/fonts/iconfont/material-icons.css Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.049
+127.0.0.1 - - [30/Jan/2026:01:03:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.010
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /devportal/site/public/dist/8825.5154a2a876c5d9e4a4df.bundle.js HTTP/1.1 200 5434 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.117
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /devportal/site/public/images/logo.svg HTTP/1.1 200 74991 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.049
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /devportal/site/public/dist/4855.673bc555237fd15d29e1.bundle.js HTTP/1.1 200 9264 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.135
+127.0.0.1 - - [30/Jan/2026:01:03:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.010
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /api/am/devportal/v3/api-categories HTTP/1.1 200 21 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.020
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /api/am/devportal/v3/tags?limit=-1 HTTP/1.1 200 143 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.112
+127.0.0.1 - - [30/Jan/2026:01:03:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.176
+127.0.0.1 - - [30/Jan/2026:01:03:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.058
+127.0.0.1 - - [30/Jan/2026:01:03:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.012
+127.0.0.1 - - [30/Jan/2026:01:03:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.157
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:15 +0000] GET /api/am/devportal/v3/apis?limit=10&offset=0 HTTP/1.1 200 708 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.667
+127.0.0.1 - - [30/Jan/2026:01:03:16 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.091
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:16 +0000] GET /devportal/site/public/fonts/Open_Sans/open-sans-v43-latin-600.woff2 HTTP/1.1 200 18600 https://localhost:9443/devportal/site/public/css/main.css Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.088
+127.0.0.1 - - [30/Jan/2026:01:03:16 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.061
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:16 +0000] GET /api/am/devportal/v3/apis/cd4d5065-1f76-4792-a9f8-3a30945ac0cf/thumbnail HTTP/1.1 204 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.278
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:16 +0000] GET /api/am/devportal/v3/apis/4465f418-66b3-45f3-9d93-25c463ea65f2/thumbnail HTTP/1.1 204 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.325
+127.0.0.1 - - [30/Jan/2026:01:03:16 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.116
+127.0.0.1 - - [30/Jan/2026:01:03:16 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.188
+127.0.0.1 - - [30/Jan/2026:01:03:16 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.076
+127.0.0.1 - - [30/Jan/2026:01:03:17 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.801
+127.0.0.1 - - [30/Jan/2026:01:03:17 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.018
+127.0.0.1 - - [30/Jan/2026:01:03:18 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.052
+127.0.0.1 - - [30/Jan/2026:01:03:18 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.032
+127.0.0.1 - - [30/Jan/2026:01:03:18 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.044
+127.0.0.1 - - [30/Jan/2026:01:03:18 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.013
+127.0.0.1 - - [30/Jan/2026:01:03:18 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.030
+127.0.0.1 - - [30/Jan/2026:01:03:18 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.044
+127.0.0.1 - - [30/Jan/2026:01:03:18 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.053
+127.0.0.1 - - [30/Jan/2026:01:03:18 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.025
+127.0.0.1 - - [30/Jan/2026:01:03:18 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.046
+127.0.0.1 - - [30/Jan/2026:01:03:18 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.038
+127.0.0.1 - - [30/Jan/2026:01:03:19 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.064
+127.0.0.1 - - [30/Jan/2026:01:03:19 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.040
+127.0.0.1 - - [30/Jan/2026:01:03:19 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.045
+127.0.0.1 - - [30/Jan/2026:01:03:19 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.057
+127.0.0.1 - - [30/Jan/2026:01:03:19 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.047
+127.0.0.1 - - [30/Jan/2026:01:03:19 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.028
+127.0.0.1 - - [30/Jan/2026:01:03:19 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.081
+127.0.0.1 - - [30/Jan/2026:01:03:19 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.080
+127.0.0.1 - - [30/Jan/2026:01:03:20 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.082
+127.0.0.1 - - [30/Jan/2026:01:03:20 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.111
+127.0.0.1 - - [30/Jan/2026:01:03:20 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.035
+127.0.0.1 - - [30/Jan/2026:01:03:20 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:03:20 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.027
+127.0.0.1 - - [30/Jan/2026:01:03:20 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.077
+127.0.0.1 - - [30/Jan/2026:01:03:21 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.051
+127.0.0.1 - - [30/Jan/2026:01:03:21 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.071
+127.0.0.1 - - [30/Jan/2026:01:03:21 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.090
+127.0.0.1 - - [30/Jan/2026:01:03:21 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.069
+127.0.0.1 - - [30/Jan/2026:01:03:21 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.098
+127.0.0.1 - - [30/Jan/2026:01:03:21 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.069
+127.0.0.1 - - [30/Jan/2026:01:03:22 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.072
+127.0.0.1 - - [30/Jan/2026:01:03:22 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.085
+127.0.0.1 - - [30/Jan/2026:01:03:22 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.067
+127.0.0.1 - - [30/Jan/2026:01:03:22 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.057
+127.0.0.1 - - [30/Jan/2026:01:03:22 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.082
+127.0.0.1 - - [30/Jan/2026:01:03:22 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.084
+127.0.0.1 - - [30/Jan/2026:01:03:23 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.069
+127.0.0.1 - - [30/Jan/2026:01:03:23 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.077
+127.0.0.1 - - [30/Jan/2026:01:03:23 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.065
+127.0.0.1 - - [30/Jan/2026:01:03:23 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:03:23 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.074
+127.0.0.1 - - [30/Jan/2026:01:03:23 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.051
+127.0.0.1 - - [30/Jan/2026:01:03:24 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.048
+127.0.0.1 - - [30/Jan/2026:01:03:24 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.054
+127.0.0.1 - - [30/Jan/2026:01:03:24 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.048
+127.0.0.1 - - [30/Jan/2026:01:03:24 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.039
+127.0.0.1 - - [30/Jan/2026:01:03:24 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.017
+127.0.0.1 - - [30/Jan/2026:01:03:24 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.062
+127.0.0.1 - - [30/Jan/2026:01:03:24 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.051
+127.0.0.1 - - [30/Jan/2026:01:03:24 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.074
+127.0.0.1 - - [30/Jan/2026:01:03:25 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.088
+127.0.0.1 - - [30/Jan/2026:01:03:25 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.060
+127.0.0.1 - - [30/Jan/2026:01:03:25 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.055
+127.0.0.1 - - [30/Jan/2026:01:03:25 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.048
+127.0.0.1 - - [30/Jan/2026:01:03:25 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.068
+127.0.0.1 - - [30/Jan/2026:01:03:25 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.077
+127.0.0.1 - - [30/Jan/2026:01:03:25 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.065
+127.0.0.1 - - [30/Jan/2026:01:03:26 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.089
+127.0.0.1 - - [30/Jan/2026:01:03:26 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.040
+127.0.0.1 - - [30/Jan/2026:01:03:26 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.037
+127.0.0.1 - - [30/Jan/2026:01:03:26 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.061
+127.0.0.1 - - [30/Jan/2026:01:03:26 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.071
+127.0.0.1 - - [30/Jan/2026:01:03:26 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.044
+127.0.0.1 - - [30/Jan/2026:01:03:26 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.046
+127.0.0.1 - - [30/Jan/2026:01:03:26 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.007
+127.0.0.1 - - [30/Jan/2026:01:03:27 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.092
+127.0.0.1 - - [30/Jan/2026:01:03:27 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.075
+127.0.0.1 - - [30/Jan/2026:01:03:27 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.115
+127.0.0.1 - - [30/Jan/2026:01:03:27 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.085
+127.0.0.1 - - [30/Jan/2026:01:03:27 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.057
+127.0.0.1 - - [30/Jan/2026:01:03:27 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.043
+127.0.0.1 - - [30/Jan/2026:01:03:28 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:03:28 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.075
+127.0.0.1 - - [30/Jan/2026:01:03:28 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.074
+127.0.0.1 - - [30/Jan/2026:01:03:28 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.063
+127.0.0.1 - - [30/Jan/2026:01:03:28 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.066
+127.0.0.1 - - [30/Jan/2026:01:03:28 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.066
+127.0.0.1 - - [30/Jan/2026:01:03:29 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.038
+127.0.0.1 - - [30/Jan/2026:01:03:29 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.082
+127.0.0.1 - - [30/Jan/2026:01:03:29 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.054
+127.0.0.1 - - [30/Jan/2026:01:03:29 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.072
+127.0.0.1 - - [30/Jan/2026:01:03:29 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.089
+127.0.0.1 - - [30/Jan/2026:01:03:29 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.067
+127.0.0.1 - - [30/Jan/2026:01:03:30 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.078
+127.0.0.1 - - [30/Jan/2026:01:03:30 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.038
+127.0.0.1 - - [30/Jan/2026:01:03:30 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.071
+127.0.0.1 - - [30/Jan/2026:01:03:30 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.067
+127.0.0.1 - - [30/Jan/2026:01:03:30 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.083
+127.0.0.1 - - [30/Jan/2026:01:03:30 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.071
+127.0.0.1 - - [30/Jan/2026:01:03:31 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.051
+127.0.0.1 - - [30/Jan/2026:01:03:31 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.065
+127.0.0.1 - - [30/Jan/2026:01:03:31 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.078
+127.0.0.1 - - [30/Jan/2026:01:03:31 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.074
+127.0.0.1 - - [30/Jan/2026:01:03:31 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.067
+127.0.0.1 - - [30/Jan/2026:01:03:32 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.063
+127.0.0.1 - - [30/Jan/2026:01:03:32 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.051
+127.0.0.1 - - [30/Jan/2026:01:03:32 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.082
+127.0.0.1 - - [30/Jan/2026:01:03:32 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.055
+127.0.0.1 - - [30/Jan/2026:01:03:32 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.085
+127.0.0.1 - - [30/Jan/2026:01:03:32 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.060
+127.0.0.1 - - [30/Jan/2026:01:03:33 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.076
+127.0.0.1 - - [30/Jan/2026:01:03:33 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.075
+127.0.0.1 - - [30/Jan/2026:01:03:33 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.092
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:33 +0000] GET /devportal/apis HTTP/1.1 200 1691 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.065
+127.0.0.1 - - [30/Jan/2026:01:03:33 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.081
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:33 +0000] GET /devportal/site/public/css/main.css HTTP/1.1 200 2525 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.049
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:33 +0000] GET /devportal/site/public/fonts/iconfont/material-icons.css HTTP/1.1 200 970 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.051
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:33 +0000] GET /devportal/site/public/fonts/iconfont/MaterialIcons.js HTTP/1.1 200 6703 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.051
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:33 +0000] GET /devportal/services/settings/settings.js HTTP/1.1 200 1667 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.077
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:33 +0000] GET /devportal/site/public/theme/userTheme.js HTTP/1.1 200 96 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.078
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:33 +0000] GET /devportal/site/public/css/overrides.css HTTP/1.1 200 244 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.029
+127.0.0.1 - - [30/Jan/2026:01:03:33 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:03:34 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.112
+127.0.0.1 - - [30/Jan/2026:01:03:34 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.081
+127.0.0.1 - - [30/Jan/2026:01:03:34 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.048
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:34 +0000] GET /devportal/site/public/dist/index.1f9e1ab1142655275175.bundle.js HTTP/1.1 200 384199 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.818
+127.0.0.1 - - [30/Jan/2026:01:03:34 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.077
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:34 +0000] GET /devportal/site/public/images/_favicon.ico HTTP/1.1 200 1150 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.032
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:34 +0000] GET /devportal/site/public/locales/fr.json HTTP/1.1 404 247 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.035
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:34 +0000] GET /devportal/site/public/images/favicon.ico HTTP/1.1 200 162098 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.084
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:34 +0000] GET /api/am/devportal/v3/swagger.yaml HTTP/1.1 200 33642 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.148
+127.0.0.1 - - [30/Jan/2026:01:03:34 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.083
+127.0.0.1 - - [30/Jan/2026:01:03:35 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.018
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /api/am/devportal/v3/settings HTTP/1.1 200 800 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.371
+127.0.0.1 - - [30/Jan/2026:01:03:35 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.123
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/dist/ProtectedApp.da1dd2d61d4da0632ad8.bundle.js HTTP/1.1 200 89959 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.129
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/dist/1221.79c2e610ac2beed56815.bundle.js HTTP/1.1 200 104929 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.151
+127.0.0.1 - - [30/Jan/2026:01:03:35 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.015
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/theme/temporary_environments_config.json HTTP/1.1 200 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.017
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /api/am/devportal/v3/tenants?state=active HTTP/1.1 200 96 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.028
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/theme/temporary_features_config.json HTTP/1.1 200 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.032
+127.0.0.1 - - [30/Jan/2026:01:03:35 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.018
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/dist/1512.2b3e8f5b7752fdc8ac0b.bundle.js HTTP/1.1 200 9948 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.040
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/dist/7629.308e88c9fa7f415afd02.bundle.js HTTP/1.1 200 5691 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.080
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/dist/4855.673bc555237fd15d29e1.bundle.js HTTP/1.1 200 9264 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.078
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/dist/8825.5154a2a876c5d9e4a4df.bundle.js HTTP/1.1 200 5434 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.087
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/dist/9947.39409bf16802d8b4d8a1.bundle.js HTTP/1.1 200 14521 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.095
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /oidc/checksession?client_id=RHarOAq_8mNUAac7Wfr5xW10M_ga&redirect_uri=https://localhost:9443/devportal/services/auth/callback/login HTTP/1.1 200 3134 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.024
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/fonts/Open_Sans/mem5YaGs126MiZpBA-UN7rgOUuhpKKSTjw.woff2 HTTP/1.1 200 8800 https://localhost:9443/devportal/site/public/css/main.css Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.017
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/fonts/Open_Sans/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2 HTTP/1.1 200 8892 https://localhost:9443/devportal/site/public/css/main.css Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.036
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal HTTP/1.1 302 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/fonts/iconfont/MaterialIcons-Regular.woff2 HTTP/1.1 200 60840 https://localhost:9443/devportal/site/public/fonts/iconfont/material-icons.css Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.047
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/images/logo.svg HTTP/1.1 200 74991 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.030
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/images/appbarBack.png HTTP/1.1 200 1964 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.033
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/ HTTP/1.1 200 1691 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.031
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/dist/7125.09fe20bc53e0fd0be831.bundle.js HTTP/1.1 200 5716 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.031
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/dist/Apis.7f186a2f97cddeaf01be.bundle.js HTTP/1.1 200 7537 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.041
+127.0.0.1 - - [30/Jan/2026:01:03:35 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.058
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/dist/1563.847868c15b2d4308002a.bundle.js HTTP/1.1 200 27556 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.092
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /devportal/site/public/dist/3523.79d8b67bcded34c573d9.bundle.js HTTP/1.1 200 115768 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.286
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /api/am/devportal/v3/api-categories HTTP/1.1 200 21 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.034
+127.0.0.1 - - [30/Jan/2026:01:03:35 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.076
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:35 +0000] GET /api/am/devportal/v3/tags?limit=-1 HTTP/1.1 200 143 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.163
+127.0.0.1 - - [30/Jan/2026:01:03:36 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.047
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:36 +0000] GET /api/am/devportal/v3/apis?limit=10&offset=0 HTTP/1.1 200 708 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.452
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:36 +0000] GET /devportal/site/public/fonts/Open_Sans/open-sans-v43-latin-600.woff2 HTTP/1.1 200 18600 https://localhost:9443/devportal/site/public/css/main.css Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.044
+127.0.0.1 - - [30/Jan/2026:01:03:36 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.109
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:36 +0000] GET /api/am/devportal/v3/apis/cd4d5065-1f76-4792-a9f8-3a30945ac0cf/thumbnail HTTP/1.1 204 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.183
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:36 +0000] GET /api/am/devportal/v3/apis/4465f418-66b3-45f3-9d93-25c463ea65f2/thumbnail HTTP/1.1 204 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.184
+127.0.0.1 - - [30/Jan/2026:01:03:36 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.060
+127.0.0.1 - - [30/Jan/2026:01:03:36 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.055
+127.0.0.1 - - [30/Jan/2026:01:03:36 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.076
+127.0.0.1 - - [30/Jan/2026:01:03:36 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:03:37 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.024
+127.0.0.1 - - [30/Jan/2026:01:03:37 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.054
+127.0.0.1 - - [30/Jan/2026:01:03:37 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.082
+127.0.0.1 - - [30/Jan/2026:01:03:37 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.062
+127.0.0.1 - - [30/Jan/2026:01:03:37 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.077
+127.0.0.1 - - [30/Jan/2026:01:03:37 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.067
+127.0.0.1 - - [30/Jan/2026:01:03:38 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.065
+127.0.0.1 - - [30/Jan/2026:01:03:38 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.079
+127.0.0.1 - - [30/Jan/2026:01:03:38 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.087
+127.0.0.1 - - [30/Jan/2026:01:03:38 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.119
+127.0.0.1 - - [30/Jan/2026:01:03:38 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.065
+127.0.0.1 - - [30/Jan/2026:01:03:39 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:03:39 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.051
+127.0.0.1 - - [30/Jan/2026:01:03:39 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.076
+127.0.0.1 - - [30/Jan/2026:01:03:39 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.077
+127.0.0.1 - - [30/Jan/2026:01:03:39 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.060
+127.0.0.1 - - [30/Jan/2026:01:03:39 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.066
+127.0.0.1 - - [30/Jan/2026:01:03:40 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:03:40 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.084
+127.0.0.1 - - [30/Jan/2026:01:03:40 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.080
+127.0.0.1 - - [30/Jan/2026:01:03:40 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:03:40 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.098
+127.0.0.1 - - [30/Jan/2026:01:03:41 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.075
+127.0.0.1 - - [30/Jan/2026:01:03:41 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.051
+127.0.0.1 - - [30/Jan/2026:01:03:41 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.035
+127.0.0.1 - - [30/Jan/2026:01:03:41 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.074
+127.0.0.1 - - [30/Jan/2026:01:03:41 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.062
+127.0.0.1 - - [30/Jan/2026:01:03:41 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.049
+127.0.0.1 - - [30/Jan/2026:01:03:42 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.072
+127.0.0.1 - - [30/Jan/2026:01:03:42 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.048
+127.0.0.1 - - [30/Jan/2026:01:03:42 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.074
+127.0.0.1 - - [30/Jan/2026:01:03:42 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.073
+127.0.0.1 - - [30/Jan/2026:01:03:42 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.074
+127.0.0.1 - - [30/Jan/2026:01:03:42 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.080
+127.0.0.1 - - [30/Jan/2026:01:03:43 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.075
+127.0.0.1 - - [30/Jan/2026:01:03:43 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.062
+127.0.0.1 - - [30/Jan/2026:01:03:43 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.068
+127.0.0.1 - - [30/Jan/2026:01:03:43 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.064
+127.0.0.1 - - [30/Jan/2026:01:03:43 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:03:43 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.066
+127.0.0.1 - - [30/Jan/2026:01:03:44 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.073
+127.0.0.1 - - [30/Jan/2026:01:03:44 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.048
+127.0.0.1 - - [30/Jan/2026:01:03:44 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:03:44 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.068
+127.0.0.1 - - [30/Jan/2026:01:03:44 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.056
+127.0.0.1 - - [30/Jan/2026:01:03:45 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.075
+127.0.0.1 - - [30/Jan/2026:01:03:45 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.065
+127.0.0.1 - - [30/Jan/2026:01:03:45 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.073
+127.0.0.1 - - [30/Jan/2026:01:03:45 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.047
+127.0.0.1 - - [30/Jan/2026:01:03:45 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.093
+127.0.0.1 - - [30/Jan/2026:01:03:45 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.063
+127.0.0.1 - - [30/Jan/2026:01:03:46 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:03:46 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.065
+127.0.0.1 - - [30/Jan/2026:01:03:46 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.088
+127.0.0.1 - - [30/Jan/2026:01:03:46 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.052
+127.0.0.1 - - [30/Jan/2026:01:03:46 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.069
+127.0.0.1 - - [30/Jan/2026:01:03:46 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.069
+127.0.0.1 - - [30/Jan/2026:01:03:47 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:03:47 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.066
+127.0.0.1 - - [30/Jan/2026:01:03:47 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.069
+127.0.0.1 - - [30/Jan/2026:01:03:47 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.060
+127.0.0.1 - - [30/Jan/2026:01:03:47 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.066
+127.0.0.1 - - [30/Jan/2026:01:03:47 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.055
+127.0.0.1 - - [30/Jan/2026:01:03:48 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.076
+127.0.0.1 - - [30/Jan/2026:01:03:48 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.055
+127.0.0.1 - - [30/Jan/2026:01:03:48 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.067
+127.0.0.1 - - [30/Jan/2026:01:03:48 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.062
+127.0.0.1 - - [30/Jan/2026:01:03:48 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.050
+127.0.0.1 - - [30/Jan/2026:01:03:48 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.067
+127.0.0.1 - - [30/Jan/2026:01:03:48 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.057
+127.0.0.1 - - [30/Jan/2026:01:03:49 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.062
+127.0.0.1 - - [30/Jan/2026:01:03:49 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.058
+127.0.0.1 - - [30/Jan/2026:01:03:49 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.081
+127.0.0.1 - - [30/Jan/2026:01:03:49 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.066
+127.0.0.1 - - [30/Jan/2026:01:03:49 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.072
+127.0.0.1 - - [30/Jan/2026:01:03:49 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.068
+127.0.0.1 - - [30/Jan/2026:01:03:50 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.083
+127.0.0.1 - - [30/Jan/2026:01:03:50 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.047
+127.0.0.1 - - [30/Jan/2026:01:03:50 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.075
+127.0.0.1 - - [30/Jan/2026:01:03:50 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:03:50 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.050
+127.0.0.1 - - [30/Jan/2026:01:03:50 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:03:51 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.057
+127.0.0.1 - - [30/Jan/2026:01:03:51 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.066
+127.0.0.1 - - [30/Jan/2026:01:03:51 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.073
+127.0.0.1 - - [30/Jan/2026:01:03:51 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.060
+127.0.0.1 - - [30/Jan/2026:01:03:51 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.095
+127.0.0.1 - - [30/Jan/2026:01:03:51 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.049
+127.0.0.1 - - [30/Jan/2026:01:03:51 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.074
+127.0.0.1 - - [30/Jan/2026:01:03:52 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.057
+127.0.0.1 - - [30/Jan/2026:01:03:52 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.056
+127.0.0.1 - - [30/Jan/2026:01:03:52 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.047
+127.0.0.1 - - [30/Jan/2026:01:03:52 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.055
+127.0.0.1 - - [30/Jan/2026:01:03:52 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.073
+127.0.0.1 - - [30/Jan/2026:01:03:52 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.052
+127.0.0.1 - - [30/Jan/2026:01:03:53 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.075
+127.0.0.1 - - [30/Jan/2026:01:03:53 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.081
+127.0.0.1 - - [30/Jan/2026:01:03:53 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:03:53 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.071
+127.0.0.1 - - [30/Jan/2026:01:03:53 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.091
+127.0.0.1 - - [30/Jan/2026:01:03:54 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.077
+127.0.0.1 - - [30/Jan/2026:01:03:54 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.058
+127.0.0.1 - - [30/Jan/2026:01:03:54 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.098
+127.0.0.1 - - [30/Jan/2026:01:03:54 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.083
+127.0.0.1 - - [30/Jan/2026:01:03:54 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.080
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:54 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:54 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:54 +0000] GET /devportal/apis HTTP/1.1 200 1691 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.072
+127.0.0.1 - - [30/Jan/2026:01:03:54 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.062
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:55 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:55 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:55 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:55 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:55 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:55 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:55 +0000] GET /devportal/site/public/css/main.css HTTP/1.1 200 2525 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.056
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:55 +0000] GET /devportal/site/public/css/overrides.css HTTP/1.1 200 244 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.033
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:55 +0000] GET /devportal/site/public/fonts/iconfont/material-icons.css HTTP/1.1 200 970 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.047
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:55 +0000] GET /devportal/site/public/theme/userTheme.js HTTP/1.1 200 96 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.080
+127.0.0.1 - - [30/Jan/2026:01:03:55 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.067
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:55 +0000] GET /devportal/services/settings/settings.js HTTP/1.1 200 1667 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.081
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:55 +0000] GET /devportal/site/public/fonts/iconfont/MaterialIcons.js HTTP/1.1 200 6703 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.103
+127.0.0.1 - - [30/Jan/2026:01:03:55 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.068
+127.0.0.1 - - [30/Jan/2026:01:03:55 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.099
+127.0.0.1 - - [30/Jan/2026:01:03:55 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.087
+127.0.0.1 - - [30/Jan/2026:01:03:55 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.063
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:55 +0000] GET /devportal/site/public/dist/index.1f9e1ab1142655275175.bundle.js HTTP/1.1 200 384199 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.909
+127.0.0.1 - - [30/Jan/2026:01:03:56 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.055
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:56 +0000] GET /devportal/site/public/images/_favicon.ico HTTP/1.1 200 1150 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.039
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:56 +0000] GET /devportal/site/public/locales/fr.json HTTP/1.1 404 247 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.071
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:56 +0000] GET /devportal/site/public/images/favicon.ico HTTP/1.1 200 162098 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.040
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:56 +0000] GET /api/am/devportal/v3/swagger.yaml HTTP/1.1 200 33642 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.206
+127.0.0.1 - - [30/Jan/2026:01:03:56 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.187
+127.0.0.1 - - [30/Jan/2026:01:03:56 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.118
+127.0.0.1 - - [30/Jan/2026:01:03:56 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.048
+127.0.0.1 - - [30/Jan/2026:01:03:56 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.055
+127.0.0.1 - - [30/Jan/2026:01:03:57 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.093
+127.0.0.1 - - [30/Jan/2026:01:03:57 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.061
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:57 +0000] GET /api/am/devportal/v3/settings HTTP/1.1 200 800 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.954
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:57 +0000] GET /devportal/site/public/theme/temporary_environments_config.json HTTP/1.1 200 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.008
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:57 +0000] GET /devportal/site/public/theme/temporary_features_config.json HTTP/1.1 200 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.008
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:57 +0000] GET /api/am/devportal/v3/tenants?state=active HTTP/1.1 200 96 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.011
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:57 +0000] GET /oidc/checksession?client_id=RHarOAq_8mNUAac7Wfr5xW10M_ga&redirect_uri=https://localhost:9443/devportal/services/auth/callback/login HTTP/1.1 200 3134 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.013
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:57 +0000] GET /devportal HTTP/1.1 302 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:57 +0000] GET /devportal/site/public/images/appbarBack.png HTTP/1.1 200 1964 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.022
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:57 +0000] GET /devportal/site/public/fonts/Open_Sans/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2 HTTP/1.1 200 8892 https://localhost:9443/devportal/site/public/css/main.css Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.022
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:57 +0000] GET /devportal/site/public/images/logo.svg HTTP/1.1 200 74991 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.028
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:57 +0000] GET /devportal/site/public/fonts/iconfont/MaterialIcons-Regular.woff2 HTTP/1.1 200 60840 https://localhost:9443/devportal/site/public/fonts/iconfont/material-icons.css Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.022
+127.0.0.1 - - [30/Jan/2026:01:03:57 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.020
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:57 +0000] GET /devportal/site/public/fonts/Open_Sans/mem5YaGs126MiZpBA-UN7rgOUuhpKKSTjw.woff2 HTTP/1.1 200 8800 https://localhost:9443/devportal/site/public/css/main.css Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.020
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:57 +0000] GET /devportal/ HTTP/1.1 200 1691 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.016
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:57 +0000] GET /api/am/devportal/v3/api-categories HTTP/1.1 200 21 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.007
+127.0.0.1 - - [30/Jan/2026:01:03:57 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.031
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:57 +0000] GET /api/am/devportal/v3/tags?limit=-1 HTTP/1.1 200 143 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.135
+127.0.0.1 - - [30/Jan/2026:01:03:57 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.140
+127.0.0.1 - - [30/Jan/2026:01:03:57 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.029
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:57 +0000] GET /api/am/devportal/v3/apis?limit=10&offset=0 HTTP/1.1 200 708 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.495
+127.0.0.1 - - [30/Jan/2026:01:03:57 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.021
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:58 +0000] GET /devportal/site/public/fonts/Open_Sans/open-sans-v43-latin-600.woff2 HTTP/1.1 200 18600 https://localhost:9443/devportal/site/public/css/main.css Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.051
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:58 +0000] GET /api/am/devportal/v3/apis/cd4d5065-1f76-4792-a9f8-3a30945ac0cf/thumbnail HTTP/1.1 204 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.119
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:03:58 +0000] GET /api/am/devportal/v3/apis/4465f418-66b3-45f3-9d93-25c463ea65f2/thumbnail HTTP/1.1 204 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.122
+127.0.0.1 - - [30/Jan/2026:01:03:58 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.041
+127.0.0.1 - - [30/Jan/2026:01:03:58 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.061
+127.0.0.1 - - [30/Jan/2026:01:03:58 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.103
+127.0.0.1 - - [30/Jan/2026:01:03:58 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.078
+127.0.0.1 - - [30/Jan/2026:01:03:58 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.084
+127.0.0.1 - - [30/Jan/2026:01:03:59 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.056
+127.0.0.1 - - [30/Jan/2026:01:03:59 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.045
+127.0.0.1 - - [30/Jan/2026:01:03:59 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.062
+127.0.0.1 - - [30/Jan/2026:01:03:59 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.081
+127.0.0.1 - - [30/Jan/2026:01:03:59 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.057
+127.0.0.1 - - [30/Jan/2026:01:04:00 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:04:00 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.073
+127.0.0.1 - - [30/Jan/2026:01:04:00 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.073
+127.0.0.1 - - [30/Jan/2026:01:04:00 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.084
+127.0.0.1 - - [30/Jan/2026:01:04:00 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.078
+127.0.0.1 - - [30/Jan/2026:01:04:00 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.064
+127.0.0.1 - - [30/Jan/2026:01:04:01 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.068
+127.0.0.1 - - [30/Jan/2026:01:04:01 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.068
+127.0.0.1 - - [30/Jan/2026:01:04:01 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.093
+127.0.0.1 - - [30/Jan/2026:01:04:01 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.056
+127.0.0.1 - - [30/Jan/2026:01:04:01 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.082
+127.0.0.1 - - [30/Jan/2026:01:04:02 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.075
+127.0.0.1 - - [30/Jan/2026:01:04:02 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.058
+127.0.0.1 - - [30/Jan/2026:01:04:02 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.073
+127.0.0.1 - - [30/Jan/2026:01:04:02 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.073
+127.0.0.1 - - [30/Jan/2026:01:04:02 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.066
+127.0.0.1 - - [30/Jan/2026:01:04:02 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.055
+127.0.0.1 - - [30/Jan/2026:01:04:03 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.045
+127.0.0.1 - - [30/Jan/2026:01:04:03 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.055
+127.0.0.1 - - [30/Jan/2026:01:04:03 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.040
+127.0.0.1 - - [30/Jan/2026:01:04:03 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.051
+127.0.0.1 - - [30/Jan/2026:01:04:03 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.052
+127.0.0.1 - - [30/Jan/2026:01:04:03 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.056
+127.0.0.1 - - [30/Jan/2026:01:04:03 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.060
+127.0.0.1 - - [30/Jan/2026:01:04:04 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:04:04 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:04:04 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.087
+127.0.0.1 - - [30/Jan/2026:01:04:04 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.060
+127.0.0.1 - - [30/Jan/2026:01:04:04 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.046
+127.0.0.1 - - [30/Jan/2026:01:04:04 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.046
+127.0.0.1 - - [30/Jan/2026:01:04:04 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.066
+127.0.0.1 - - [30/Jan/2026:01:04:05 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.071
+127.0.0.1 - - [30/Jan/2026:01:04:05 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.056
+127.0.0.1 - - [30/Jan/2026:01:04:05 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.068
+127.0.0.1 - - [30/Jan/2026:01:04:05 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.096
+127.0.0.1 - - [30/Jan/2026:01:04:05 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.073
+127.0.0.1 - - [30/Jan/2026:01:04:05 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.083
+127.0.0.1 - - [30/Jan/2026:01:04:06 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.068
+127.0.0.1 - - [30/Jan/2026:01:04:06 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.068
+127.0.0.1 - - [30/Jan/2026:01:04:06 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.077
+127.0.0.1 - - [30/Jan/2026:01:04:06 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.065
+127.0.0.1 - - [30/Jan/2026:01:04:06 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.063
+127.0.0.1 - - [30/Jan/2026:01:04:06 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.076
+127.0.0.1 - - [30/Jan/2026:01:04:07 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.063
+127.0.0.1 - - [30/Jan/2026:01:04:07 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.069
+127.0.0.1 - - [30/Jan/2026:01:04:07 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.048
+127.0.0.1 - - [30/Jan/2026:01:04:07 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.049
+127.0.0.1 - - [30/Jan/2026:01:04:07 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.057
+127.0.0.1 - - [30/Jan/2026:01:04:07 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.062
+127.0.0.1 - - [30/Jan/2026:01:04:08 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.048
+127.0.0.1 - - [30/Jan/2026:01:04:08 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.043
+127.0.0.1 - - [30/Jan/2026:01:04:08 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.049
+127.0.0.1 - - [30/Jan/2026:01:04:08 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.076
+127.0.0.1 - - [30/Jan/2026:01:04:08 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.094
+127.0.0.1 - - [30/Jan/2026:01:04:08 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.071
+127.0.0.1 - - [30/Jan/2026:01:04:08 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.062
+127.0.0.1 - - [30/Jan/2026:01:04:09 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.051
+127.0.0.1 - - [30/Jan/2026:01:04:09 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.043
+127.0.0.1 - - [30/Jan/2026:01:04:09 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.046
+127.0.0.1 - - [30/Jan/2026:01:04:09 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.040
+127.0.0.1 - - [30/Jan/2026:01:04:09 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.032
+127.0.0.1 - - [30/Jan/2026:01:04:09 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.075
+127.0.0.1 - - [30/Jan/2026:01:04:10 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.068
+127.0.0.1 - - [30/Jan/2026:01:04:10 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.067
+127.0.0.1 - - [30/Jan/2026:01:04:10 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.004
+127.0.0.1 - - [30/Jan/2026:01:04:10 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.053
+127.0.0.1 - - [30/Jan/2026:01:04:10 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.050
+127.0.0.1 - - [30/Jan/2026:01:04:10 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.091
+127.0.0.1 - - [30/Jan/2026:01:04:10 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.024
+127.0.0.1 - - [30/Jan/2026:01:04:10 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.038
+127.0.0.1 - - [30/Jan/2026:01:04:11 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.028
+127.0.0.1 - - [30/Jan/2026:01:04:11 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.034
+127.0.0.1 - - [30/Jan/2026:01:04:11 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.050
+127.0.0.1 - - [30/Jan/2026:01:04:11 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:04:11 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.047
+127.0.0.1 - - [30/Jan/2026:01:04:11 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.054
+127.0.0.1 - - [30/Jan/2026:01:04:11 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.043
+127.0.0.1 - - [30/Jan/2026:01:04:12 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.028
+127.0.0.1 - - [30/Jan/2026:01:04:12 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.043
+127.0.0.1 - - [30/Jan/2026:01:04:12 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.075
+127.0.0.1 - - [30/Jan/2026:01:04:12 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.063
+127.0.0.1 - - [30/Jan/2026:01:04:12 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.053
+127.0.0.1 - - [30/Jan/2026:01:04:12 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.103
+127.0.0.1 - - [30/Jan/2026:01:04:12 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.029
+127.0.0.1 - - [30/Jan/2026:01:04:13 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.073
+127.0.0.1 - - [30/Jan/2026:01:04:13 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:04:13 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.042
+127.0.0.1 - - [30/Jan/2026:01:04:13 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.025
+127.0.0.1 - - [30/Jan/2026:01:04:13 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.040
+127.0.0.1 - - [30/Jan/2026:01:04:13 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.055
+127.0.0.1 - - [30/Jan/2026:01:04:13 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.050
+127.0.0.1 - - [30/Jan/2026:01:04:14 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.075
+127.0.0.1 - - [30/Jan/2026:01:04:14 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.034
+127.0.0.1 - - [30/Jan/2026:01:04:14 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.064
+127.0.0.1 - - [30/Jan/2026:01:04:14 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.062
+127.0.0.1 - - [30/Jan/2026:01:04:14 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.048
+127.0.0.1 - - [30/Jan/2026:01:04:14 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.144
+127.0.0.1 - - [30/Jan/2026:01:04:14 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.049
+127.0.0.1 - - [30/Jan/2026:01:04:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.064
+127.0.0.1 - - [30/Jan/2026:01:04:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.047
+127.0.0.1 - - [30/Jan/2026:01:04:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.079
+127.0.0.1 - - [30/Jan/2026:01:04:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.052
+127.0.0.1 - - [30/Jan/2026:01:04:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.042
+127.0.0.1 - - [30/Jan/2026:01:04:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.047
+127.0.0.1 - - [30/Jan/2026:01:04:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.053
+127.0.0.1 - - [30/Jan/2026:01:04:15 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.062
+127.0.0.1 - - [30/Jan/2026:01:04:16 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.054
+127.0.0.1 - - [30/Jan/2026:01:04:16 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.075
+127.0.0.1 - - [30/Jan/2026:01:04:16 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.062
+127.0.0.1 - - [30/Jan/2026:01:04:16 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.055
+127.0.0.1 - - [30/Jan/2026:01:04:16 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.047
+127.0.0.1 - - [30/Jan/2026:01:04:16 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.047
+127.0.0.1 - - [30/Jan/2026:01:04:16 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.071
+127.0.0.1 - - [30/Jan/2026:01:04:17 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.055
+127.0.0.1 - - [30/Jan/2026:01:04:17 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.074
+127.0.0.1 - - [30/Jan/2026:01:04:17 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.069
+127.0.0.1 - - [30/Jan/2026:01:04:17 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.073
+127.0.0.1 - - [30/Jan/2026:01:04:17 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.071
+127.0.0.1 - - [30/Jan/2026:01:04:17 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.073
+127.0.0.1 - - [30/Jan/2026:01:04:18 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.042
+127.0.0.1 - - [30/Jan/2026:01:04:18 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.072
+127.0.0.1 - - [30/Jan/2026:01:04:18 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.073
+127.0.0.1 - - [30/Jan/2026:01:04:18 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.085
+127.0.0.1 - - [30/Jan/2026:01:04:18 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.050
+127.0.0.1 - - [30/Jan/2026:01:04:18 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.079
+127.0.0.1 - - [30/Jan/2026:01:04:19 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.077
+127.0.0.1 - - [30/Jan/2026:01:04:19 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.082
+127.0.0.1 - - [30/Jan/2026:01:04:19 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.073
+127.0.0.1 - - [30/Jan/2026:01:04:19 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.049
+127.0.0.1 - - [30/Jan/2026:01:04:19 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.065
+127.0.0.1 - - [30/Jan/2026:01:04:19 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.047
+127.0.0.1 - - [30/Jan/2026:01:04:20 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:04:20 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.053
+127.0.0.1 - - [30/Jan/2026:01:04:20 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.041
+127.0.0.1 - - [30/Jan/2026:01:04:20 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.084
+127.0.0.1 - - [30/Jan/2026:01:04:20 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:04:20 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.095
+127.0.0.1 - - [30/Jan/2026:01:04:21 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.053
+127.0.0.1 - - [30/Jan/2026:01:04:21 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.105
+127.0.0.1 - - [30/Jan/2026:01:04:21 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.075
+127.0.0.1 - - [30/Jan/2026:01:04:21 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.019
+127.0.0.1 - - [30/Jan/2026:01:04:21 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.075
+127.0.0.1 - - [30/Jan/2026:01:04:21 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.104
+127.0.0.1 - - [30/Jan/2026:01:04:21 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:04:22 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.100
+127.0.0.1 - - [30/Jan/2026:01:04:22 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.063
+127.0.0.1 - - [30/Jan/2026:01:04:22 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:04:22 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.087
+127.0.0.1 - - [30/Jan/2026:01:04:22 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:04:23 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.067
+127.0.0.1 - - [30/Jan/2026:01:04:23 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.047
+127.0.0.1 - - [30/Jan/2026:01:04:23 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.045
+127.0.0.1 - - [30/Jan/2026:01:04:23 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.091
+127.0.0.1 - - [30/Jan/2026:01:04:23 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.073
+127.0.0.1 - - [30/Jan/2026:01:04:23 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.058
+127.0.0.1 - - [30/Jan/2026:01:04:24 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.061
+127.0.0.1 - - [30/Jan/2026:01:04:24 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.055
+127.0.0.1 - - [30/Jan/2026:01:04:24 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.057
+127.0.0.1 - - [30/Jan/2026:01:04:24 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.068
+127.0.0.1 - - [30/Jan/2026:01:04:24 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.063
+127.0.0.1 - - [30/Jan/2026:01:04:24 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.042
+127.0.0.1 - - [30/Jan/2026:01:04:25 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.096
+127.0.0.1 - - [30/Jan/2026:01:04:25 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:04:25 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.044
+127.0.0.1 - - [30/Jan/2026:01:04:25 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.088
+127.0.0.1 - - [30/Jan/2026:01:04:25 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.034
+127.0.0.1 - - [30/Jan/2026:01:04:25 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.109
+127.0.0.1 - - [30/Jan/2026:01:04:26 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.054
+127.0.0.1 - - [30/Jan/2026:01:04:26 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.052
+127.0.0.1 - - [30/Jan/2026:01:04:26 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.045
+127.0.0.1 - - [30/Jan/2026:01:04:26 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.055
+127.0.0.1 - - [30/Jan/2026:01:04:26 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.076
+127.0.0.1 - - [30/Jan/2026:01:04:27 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.109
+127.0.0.1 - - [30/Jan/2026:01:04:27 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.057
+127.0.0.1 - - [30/Jan/2026:01:04:27 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.052
+127.0.0.1 - - [30/Jan/2026:01:04:27 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:04:27 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.039
+127.0.0.1 - - [30/Jan/2026:01:04:27 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:04:28 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.057
+127.0.0.1 - - [30/Jan/2026:01:04:28 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.066
+127.0.0.1 - - [30/Jan/2026:01:04:28 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.057
+127.0.0.1 - - [30/Jan/2026:01:04:28 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.072
+127.0.0.1 - - [30/Jan/2026:01:04:28 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.047
+127.0.0.1 - - [30/Jan/2026:01:04:28 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.068
+127.0.0.1 - - [30/Jan/2026:01:04:29 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.068
+127.0.0.1 - - [30/Jan/2026:01:04:29 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:04:29 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.051
+127.0.0.1 - - [30/Jan/2026:01:04:29 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:04:29 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.062
+127.0.0.1 - - [30/Jan/2026:01:04:30 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.081
+127.0.0.1 - - [30/Jan/2026:01:04:30 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:04:30 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.060
+127.0.0.1 - - [30/Jan/2026:01:04:30 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.063
+127.0.0.1 - - [30/Jan/2026:01:04:30 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.056
+127.0.0.1 - - [30/Jan/2026:01:04:30 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.067
+127.0.0.1 - - [30/Jan/2026:01:04:31 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.100
+127.0.0.1 - - [30/Jan/2026:01:04:31 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.053
+127.0.0.1 - - [30/Jan/2026:01:04:31 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:04:31 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.063
+127.0.0.1 - - [30/Jan/2026:01:04:31 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.057
+127.0.0.1 - - [30/Jan/2026:01:04:31 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.083
+127.0.0.1 - - [30/Jan/2026:01:04:32 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.098
+127.0.0.1 - - [30/Jan/2026:01:04:32 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.073
+127.0.0.1 - - [30/Jan/2026:01:04:32 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.049
+127.0.0.1 - - [30/Jan/2026:01:04:32 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.062
+127.0.0.1 - - [30/Jan/2026:01:04:32 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.050
+127.0.0.1 - - [30/Jan/2026:01:04:32 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.043
+127.0.0.1 - - [30/Jan/2026:01:04:33 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.051
+127.0.0.1 - - [30/Jan/2026:01:04:33 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.072
+127.0.0.1 - - [30/Jan/2026:01:04:33 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.048
+127.0.0.1 - - [30/Jan/2026:01:04:33 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.054
+127.0.0.1 - - [30/Jan/2026:01:04:33 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.083
+127.0.0.1 - - [30/Jan/2026:01:04:33 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.068
+127.0.0.1 - - [30/Jan/2026:01:04:34 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.055
+127.0.0.1 - - [30/Jan/2026:01:04:34 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.072
+127.0.0.1 - - [30/Jan/2026:01:04:34 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.095
+127.0.0.1 - - [30/Jan/2026:01:04:34 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.074
+127.0.0.1 - - [30/Jan/2026:01:04:34 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.071
+127.0.0.1 - - [30/Jan/2026:01:04:35 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.050
+127.0.0.1 - - [30/Jan/2026:01:04:35 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.065
+127.0.0.1 - - [30/Jan/2026:01:04:35 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.053
+127.0.0.1 - - [30/Jan/2026:01:04:35 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.077
+127.0.0.1 - - [30/Jan/2026:01:04:35 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.071
+127.0.0.1 - - [30/Jan/2026:01:04:35 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.050
+127.0.0.1 - - [30/Jan/2026:01:04:36 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:04:36 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.050
+127.0.0.1 - - [30/Jan/2026:01:04:36 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.072
+127.0.0.1 - - [30/Jan/2026:01:04:36 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.070
+127.0.0.1 - - [30/Jan/2026:01:04:36 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.091
+127.0.0.1 - - [30/Jan/2026:01:04:36 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.052
+127.0.0.1 - - [30/Jan/2026:01:04:37 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.072
+127.0.0.1 - - [30/Jan/2026:01:04:37 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.053
+127.0.0.1 - - [30/Jan/2026:01:04:37 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.056
+127.0.0.1 - - [30/Jan/2026:01:04:37 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.057
+127.0.0.1 - - [30/Jan/2026:01:04:37 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.055
+127.0.0.1 - - [30/Jan/2026:01:04:37 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.090
+127.0.0.1 - - [30/Jan/2026:01:04:38 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.067
+127.0.0.1 - - [30/Jan/2026:01:04:38 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.058
+127.0.0.1 - - [30/Jan/2026:01:04:38 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.057
+127.0.0.1 - - [30/Jan/2026:01:04:38 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.066
+127.0.0.1 - - [30/Jan/2026:01:04:38 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.056
+127.0.0.1 - - [30/Jan/2026:01:04:38 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.079
+127.0.0.1 - - [30/Jan/2026:01:04:39 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.085
+127.0.0.1 - - [30/Jan/2026:01:04:39 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.056
+127.0.0.1 - - [30/Jan/2026:01:04:39 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.081
+127.0.0.1 - - [30/Jan/2026:01:04:39 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.076
+127.0.0.1 - - [30/Jan/2026:01:04:39 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.076
+127.0.0.1 - - [30/Jan/2026:01:04:40 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.082
+127.0.0.1 - - [30/Jan/2026:01:04:40 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.076
+127.0.0.1 - - [30/Jan/2026:01:04:40 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.098
+127.0.0.1 - - [30/Jan/2026:01:04:40 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.090
+127.0.0.1 - - [30/Jan/2026:01:04:40 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.116
+127.0.0.1 - - [30/Jan/2026:01:04:41 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.111
+127.0.0.1 - - [30/Jan/2026:01:04:41 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.077
+127.0.0.1 - - [30/Jan/2026:01:04:41 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.085
+127.0.0.1 - - [30/Jan/2026:01:04:41 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.078
+127.0.0.1 - - [30/Jan/2026:01:04:42 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.080
+127.0.0.1 - - [30/Jan/2026:01:04:42 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.056
+127.0.0.1 - - [30/Jan/2026:01:04:42 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:04:42 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.081
+127.0.0.1 - - [30/Jan/2026:01:04:42 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:04:42 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.113
+127.0.0.1 - - [30/Jan/2026:01:04:43 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.069
+127.0.0.1 - - [30/Jan/2026:01:04:43 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.083
+127.0.0.1 - - [30/Jan/2026:01:04:43 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.078
+127.0.0.1 - - [30/Jan/2026:01:04:43 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.089
+127.0.0.1 - - [30/Jan/2026:01:04:43 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.058
+127.0.0.1 - - [30/Jan/2026:01:04:44 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.068
+127.0.0.1 - - [30/Jan/2026:01:04:44 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.086
+127.0.0.1 - - [30/Jan/2026:01:04:44 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.093
+127.0.0.1 - - [30/Jan/2026:01:04:44 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.089
+127.0.0.1 - - [30/Jan/2026:01:04:44 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.066
+127.0.0.1 - - [30/Jan/2026:01:04:45 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:04:45 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.090
+127.0.0.1 - - [30/Jan/2026:01:04:45 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.065
+127.0.0.1 - - [30/Jan/2026:01:04:45 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.079
+127.0.0.1 - - [30/Jan/2026:01:04:45 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.076
+127.0.0.1 - - [30/Jan/2026:01:04:46 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.103
+127.0.0.1 - - [30/Jan/2026:01:04:46 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.125
+127.0.0.1 - - [30/Jan/2026:01:04:46 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.086
+127.0.0.1 - - [30/Jan/2026:01:04:46 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.129
+127.0.0.1 - - [30/Jan/2026:01:04:46 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.095
+127.0.0.1 - - [30/Jan/2026:01:04:47 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.133
+127.0.0.1 - - [30/Jan/2026:01:04:47 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.083
+127.0.0.1 - - [30/Jan/2026:01:04:47 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.099
+127.0.0.1 - - [30/Jan/2026:01:04:47 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.087
+127.0.0.1 - - [30/Jan/2026:01:04:48 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.091
+127.0.0.1 - - [30/Jan/2026:01:04:48 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.088
+127.0.0.1 - - [30/Jan/2026:01:04:48 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.060
+127.0.0.1 - - [30/Jan/2026:01:04:48 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.092
+127.0.0.1 - - [30/Jan/2026:01:04:48 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.079
+127.0.0.1 - - [30/Jan/2026:01:04:49 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.079
+127.0.0.1 - - [30/Jan/2026:01:04:49 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.085
+127.0.0.1 - - [30/Jan/2026:01:04:49 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.080
+127.0.0.1 - - [30/Jan/2026:01:04:49 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.091
+127.0.0.1 - - [30/Jan/2026:01:04:49 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.089
+127.0.0.1 - - [30/Jan/2026:01:04:50 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.077
+127.0.0.1 - - [30/Jan/2026:01:04:50 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.058
+127.0.0.1 - - [30/Jan/2026:01:04:50 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.060
+127.0.0.1 - - [30/Jan/2026:01:04:50 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.080
+127.0.0.1 - - [30/Jan/2026:01:04:50 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.067
+127.0.0.1 - - [30/Jan/2026:01:04:50 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.091
+127.0.0.1 - - [30/Jan/2026:01:04:51 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.058
+127.0.0.1 - - [30/Jan/2026:01:04:51 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.082
+127.0.0.1 - - [30/Jan/2026:01:04:51 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.068
+127.0.0.1 - - [30/Jan/2026:01:04:51 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.079
+127.0.0.1 - - [30/Jan/2026:01:04:51 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.105
+127.0.0.1 - - [30/Jan/2026:01:04:52 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.074
+127.0.0.1 - - [30/Jan/2026:01:04:52 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.087
+127.0.0.1 - - [30/Jan/2026:01:04:52 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.053
+127.0.0.1 - - [30/Jan/2026:01:04:52 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.059
+127.0.0.1 - - [30/Jan/2026:01:05:01 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.128
+127.0.0.1 - - [30/Jan/2026:01:05:31 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.102
+127.0.0.1 - - [30/Jan/2026:01:06:01 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.124
+127.0.0.1 - - [30/Jan/2026:01:06:31 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.091
+127.0.0.1 - - [30/Jan/2026:01:07:01 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.090
+127.0.0.1 - - [30/Jan/2026:01:07:31 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.014
+127.0.0.1 - - [30/Jan/2026:01:08:01 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.007
+127.0.0.1 - - [30/Jan/2026:01:08:31 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.009
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] GET /devportal/apis HTTP/1.1 200 1691 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.023
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] - 400 - - - 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] GET /devportal/site/public/css/overrides.css HTTP/1.1 200 244 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.010
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] GET /devportal/site/public/fonts/iconfont/material-icons.css HTTP/1.1 200 970 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.015
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] GET /devportal/site/public/css/main.css HTTP/1.1 200 2525 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.026
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] GET /devportal/site/public/theme/userTheme.js HTTP/1.1 200 149 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.020
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] GET /devportal/services/settings/settings.js HTTP/1.1 200 1667 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.017
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] GET /devportal/site/public/fonts/iconfont/MaterialIcons.js HTTP/1.1 200 6703 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.013
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] GET /devportal/site/public/dist/index.1f9e1ab1142655275175.bundle.js HTTP/1.1 200 384199 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.155
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] GET /devportal/site/public/images/_favicon.ico HTTP/1.1 200 1150 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.004
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] GET /devportal/site/public/locales/fr.json HTTP/1.1 404 247 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.009
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] GET /devportal/site/public/images/favicon.ico HTTP/1.1 200 162098 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.007
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:41 +0000] GET /api/am/devportal/v3/swagger.yaml HTTP/1.1 200 33642 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.065
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:42 +0000] GET /api/am/devportal/v3/settings HTTP/1.1 200 800 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 1.031
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:42 +0000] GET /devportal/site/public/dist/ProtectedApp.da1dd2d61d4da0632ad8.bundle.js HTTP/1.1 200 89959 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.026
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:42 +0000] GET /devportal/site/public/dist/1221.79c2e610ac2beed56815.bundle.js HTTP/1.1 200 104929 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.039
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/site/public/theme/temporary_features_config.json HTTP/1.1 200 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.005
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/site/public/theme/temporary_environments_config.json HTTP/1.1 200 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.005
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /api/am/devportal/v3/tenants?state=active HTTP/1.1 200 96 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.009
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/site/public/dist/7629.308e88c9fa7f415afd02.bundle.js HTTP/1.1 200 5691 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.010
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/site/public/dist/1512.2b3e8f5b7752fdc8ac0b.bundle.js HTTP/1.1 200 9948 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.006
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/site/public/dist/9947.39409bf16802d8b4d8a1.bundle.js HTTP/1.1 200 14521 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.009
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/site/public/dist/8825.5154a2a876c5d9e4a4df.bundle.js HTTP/1.1 200 5434 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.012
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /oidc/checksession?client_id=RHarOAq_8mNUAac7Wfr5xW10M_ga&redirect_uri=https://localhost:9443/devportal/services/auth/callback/login HTTP/1.1 200 3134 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.010
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/site/public/fonts/Open_Sans/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2 HTTP/1.1 200 8892 https://localhost:9443/devportal/site/public/css/main.css Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.005
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/site/public/dist/4855.673bc555237fd15d29e1.bundle.js HTTP/1.1 200 9264 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.025
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/site/public/dist/1563.847868c15b2d4308002a.bundle.js HTTP/1.1 200 27556 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.014
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/site/public/dist/Apis.7f186a2f97cddeaf01be.bundle.js HTTP/1.1 200 7537 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.012
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/site/public/dist/3523.79d8b67bcded34c573d9.bundle.js HTTP/1.1 200 115768 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.036
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal HTTP/1.1 302 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.000
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/site/public/fonts/Open_Sans/mem5YaGs126MiZpBA-UN7rgOUuhpKKSTjw.woff2 HTTP/1.1 200 8800 https://localhost:9443/devportal/site/public/css/main.css Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.012
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/site/public/images/logo.svg HTTP/1.1 200 74991 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.008
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/site/public/fonts/iconfont/MaterialIcons-Regular.woff2 HTTP/1.1 200 60840 https://localhost:9443/devportal/site/public/fonts/iconfont/material-icons.css Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.017
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/site/public/dist/7125.09fe20bc53e0fd0be831.bundle.js HTTP/1.1 200 5716 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.033
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/site/public/images/appbarBack.png HTTP/1.1 200 1964 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.011
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/ HTTP/1.1 200 1691 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.017
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /api/am/devportal/v3/api-categories HTTP/1.1 200 21 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.016
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /api/am/devportal/v3/tags?limit=-1 HTTP/1.1 200 143 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.059
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /api/am/devportal/v3/apis?limit=10&offset=0 HTTP/1.1 200 708 https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.144
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /devportal/site/public/fonts/Open_Sans/open-sans-v43-latin-600.woff2 HTTP/1.1 200 18600 https://localhost:9443/devportal/site/public/css/main.css Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.010
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /api/am/devportal/v3/apis/cd4d5065-1f76-4792-a9f8-3a30945ac0cf/thumbnail HTTP/1.1 204 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.048
+0:0:0:0:0:0:0:1 - - [30/Jan/2026:01:08:43 +0000] GET /api/am/devportal/v3/apis/4465f418-66b3-45f3-9d93-25c463ea65f2/thumbnail HTTP/1.1 204 - https://localhost:9443/devportal/apis Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 0.048
+127.0.0.1 - - [30/Jan/2026:01:09:01 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.018
+127.0.0.1 - - [30/Jan/2026:01:09:31 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.008
+127.0.0.1 - - [30/Jan/2026:01:10:01 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.008
+127.0.0.1 - - [30/Jan/2026:01:10:31 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.006
+127.0.0.1 - - [30/Jan/2026:01:11:01 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.007
