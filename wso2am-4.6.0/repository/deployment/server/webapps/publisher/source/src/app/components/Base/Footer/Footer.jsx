@@ -64,7 +64,7 @@ function Footer() {
                         <Typography noWrap>
                             <FormattedMessage
                                 id='Base.Footer.Footer.product_details'
-                                defaultMessage='WSO2 API-M v4.6.0 | © 2025 WSO2 LLC'
+                                defaultMessage='PREVALYA By SAER GROUP API-M v4.6.0 | © 2025 PREVALYA By SAER GROUP LLC'
                             />
                         </Typography>
                     )}

@@ -447,7 +447,7 @@ Agreement, the law that will apply in any dispute arising out of this Agreement,
 venue for any dispute depends on where You are domiciled. 
 
 If You are domiciled in: USA, Canada, any country not listed below
--   The WSO2 entity entering into this Agreement is:  WSO2 LLC a Limited Liability Company in 
+-   The WSO2 entity entering into this Agreement is:  PREVALYA By SAER GROUP LLC a Limited Liability Company in 
     Delaware 
 -   Governing law is:  California without giving effect to the principles of conflict of laws
 -   Method of dispute resolution is:  Arbitration in Santa Clara, California in accordance with the 

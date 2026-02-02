@@ -1,0 +1,15 @@
+TID: [] [2026-02-01 06:21:20,860]  INFO {AUDIT_LOG} - Initiator=w**************r Action=Get-User-Claim-Values Target=a***n Data={"Claims":{},"Profile":"default"} Outcome=Success
+TID: [] [2026-02-01 06:21:20,905]  INFO {AUDIT_LOG} - Initiator=w**************r Action=Get-User-Claim-Values Target=a***n Data={"Claims":{},"Profile":"default"} Outcome=Success
+TID: [] [2026-02-01 06:21:20,906]  INFO {AUDIT_LOG} - Initiator=w**************r Action=Get-User-Claim-Values Target=a***n Data={"Claims":{},"Profile":"default"} Outcome=Success
+TID: [-1234] [2026-02-01 06:21:26,419]  INFO {AUDIT_LOG} - Initiator=w**************r Action=Get-User-Claim-Values Target=a***n Data={"Claims":{},"Profile":"default"} Outcome=Success
+TID: [-1234] [2026-02-01 06:21:26,517]  INFO {AUDIT_LOG} - Initiator=w**************r Action=Get-User-Claim-Values Target=a***n Data={"Claims":{},"Profile":"default"} Outcome=Success
+TID: [-1234] [2026-02-01 06:21:26,537]  INFO {AUDIT_LOG} - Initiator=w**************r Action=Get-User-Claim-Values Target=a***n Data={"Claims":{},"Profile":"default"} Outcome=Success
+TID: [-1234] [2026-02-01 06:21:27,831]  INFO {AUDIT_LOG} - Initiator=w**************r Action=Get-User-Claim-Values Target=a***n Data={"Claims":{},"Profile":"default"} Outcome=Success
+TID: [-1234] [2026-02-01 06:21:27,852]  INFO {AUDIT_LOG} - Initiator=w**************r Action=Get-User-Claim-Values Target=a***n Data={"Claims":{},"Profile":"default"} Outcome=Success
+TID: [-1234] [2026-02-01 06:21:27,888]  INFO {AUDIT_LOG} - Initiator=w**************r Action=Get-User-Claim-Values Target=a***n Data={"Claims":{},"Profile":"default"} Outcome=Success
+TID: [-1234] [2026-02-01 06:21:28,458]  INFO {AUDIT_LOG} - Initiator=w**************r Action=Get-User-Claim-Values Target=a***n Data={"Claims":{},"Profile":"default"} Outcome=Success
+TID: [-1234] [2026-02-01 06:21:28,494]  INFO {AUDIT_LOG} - Initiator=w**************r Action=Get-User-Claim-Values Target=a***n Data={"Claims":{},"Profile":"default"} Outcome=Success
+TID: [-1234] [2026-02-01 06:21:28,495]  INFO {AUDIT_LOG} - Initiator=w**************r Action=Get-User-Claim-Values Target=a***n Data={"Claims":{},"Profile":"default"} Outcome=Success
+TID: [-1234] [2026-02-01 06:21:29,240]  INFO {AUDIT_LOG} - Initiator=w**************r Action=Get-User-Claim-Values Target=a***n Data={"Claims":{},"Profile":"default"} Outcome=Success
+TID: [-1234] [2026-02-01 06:21:29,282]  INFO {AUDIT_LOG} - Initiator=w**************r Action=Get-User-Claim-Values Target=a***n Data={"Claims":{},"Profile":"default"} Outcome=Success
+TID: [-1234] [2026-02-01 06:21:29,770]  INFO {AUDIT_LOG} - Initiator=w**************r Action=Get-User-Claim-Values Target=a***n Data={"Claims":{},"Profile":"default"} Outcome=Success

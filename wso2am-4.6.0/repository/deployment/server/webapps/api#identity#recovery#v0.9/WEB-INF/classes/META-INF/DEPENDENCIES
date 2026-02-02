@@ -434,7 +434,7 @@ From: 'WSO2 Inc' (http://wso2.com)
   - WSO2 Carbon - Feature Manager Web Services (http://wso2.org) org.wso2.carbon:org.wso2.carbon.feature.mgt.services:bundle:4.5.3
     License: Apache License Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
 
-From: 'WSO2 LLC' (http://wso2.com)
+From: 'PREVALYA By SAER GROUP LLC' (http://wso2.com)
   - WSO2 Carbon - JSR 107 API (http://wso2.org) org.wso2.carbon:javax.cache.wso2:bundle:4.9.0
     License: Apache License Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
   - WSO2 Carbon - Default Authenticator Proxy (http://wso2.org) org.wso2.carbon:org.wso2.carbon.authenticator.proxy:bundle:4.9.0

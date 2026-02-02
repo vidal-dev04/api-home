@@ -1,0 +1,4 @@
+127.0.0.1 - - [01/Feb/2026:06:21:27 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 2.026
+127.0.0.1 - - [01/Feb/2026:06:21:27 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.253
+127.0.0.1 - - [01/Feb/2026:06:21:28 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.276
+127.0.0.1 - - [01/Feb/2026:06:21:29 +0000] POST /internal/data/v1/notify-gateway HTTP/1.1 200 76 - Apache-HttpClient/4.5.13 (Java/21.0.10) 0.873

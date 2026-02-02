@@ -1,7 +1,7 @@
 /*
-* Copyright (c) 2024, WSO2 LLC. (http://www.wso2.org) All Rights Reserved.
+* Copyright (c) 2024, PREVALYA By SAER GROUP LLC. (http://www.wso2.org) All Rights Reserved.
 *
-* WSO2 LLC. licenses this file to you under the Apache License,
+* PREVALYA By SAER GROUP LLC. licenses this file to you under the Apache License,
 * Version 2.0 (the 'License"); you may not use this file except
 * in compliance with the License.
 * You may obtain a copy of the License at
@@ -218,7 +218,7 @@ const TransactionPDF = ({ startDate, endDate, totalTransactions }) => (
             <Text style={pdfStyles.footer}>
                 {new Date().getFullYear()}
                 {' '}
-                WSO2 LLC. All Rights Reserved. | Report generated on
+                PREVALYA By SAER GROUP LLC. All Rights Reserved. | Report generated on
                 {' '}
                 {new Date().toLocaleDateString('en-GB')}
             </Text>

@@ -385,3 +385,83 @@ a {
 [data-testid="mcp-playground"] * {
     font-family: "Open Sans", "Helvetica", "Arial", sans-serif !important;
 }
+
+/* Custom: White background for search bar */
+div[class*="HeaderSearch-input"],
+input[class*="HeaderSearch-input"] {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+div[class*="HeaderSearch-inputFocused"],
+input[class*="HeaderSearch-inputFocused"] {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* Custom: Improve logo visibility on blue header */
+header img[alt*="Publisher"],
+header img[src*="logo"],
+.MuiAppBar-root img {
+    background: rgba(255, 255, 255, 0.9) !important;
+    padding: 8px 16px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Custom: Add "Publisher" text next to logo */
+header a:has(img),
+.MuiAppBar-root a:has(img) {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+}
+
+header a:has(img)::after,
+.MuiAppBar-root a:has(img)::after {
+    content: "Publisher Api Manager";
+    color: white !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    font-family: "Open Sans", sans-serif !important;
+    letter-spacing: 0.5px;
+}
+
+/* Custom: PREVALYA footer styling */
+footer,
+footer[class*="MuiPaper"],
+footer[class*="footer"] {
+    background-color: #2A2559 !important;
+    background: #2A2559 !important;
+    text-align: center !important;
+}
+
+footer p,
+footer a,
+footer span,
+footer div {
+    color: #ffffff !important;
+    text-align: center !important;
+    justify-content: center !important;
+}
+
+footer a:hover {
+    color: #31A2D9 !important;
+}
+
+footer a[href*="about.html"],
+footer a[href*="contact.html"] {
+    color: #31A2D9 !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    margin: 0 8px !important;
+    transition: opacity 0.2s;
+}
+
+footer a[href*="about.html"]:hover,
+footer a[href*="contact.html"]:hover {
+    opacity: 0.7;
+    text-decoration: underline !important;
+}

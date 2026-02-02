@@ -176,7 +176,7 @@ From: 'Eclipse Foundation' (http://www.eclipse.org/)
   - OSGi System Bundle (http://www.eclipse.org/platform) org.eclipse.platform:org.eclipse.osgi:jar:3.14.0
     License: Eclipse Public License - v 2.0  (https://www.eclipse.org/legal/epl-2.0/)
 
-From: 'WSO2 LLC' (http://wso2.com)
+From: 'PREVALYA By SAER GROUP LLC' (http://wso2.com)
   - WSO2 Carbon - OSGi Security (http://wso2.org) org.wso2.carbon:org.wso2.carbon.osgi.security:bundle:4.9.33
     License: Apache License Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
 

@@ -1,0 +1,27 @@
+TID: [] [] [2026-02-01 00:12:16,540] ERROR {org.wso2.carbon.databridge.agent.endpoint.DataEndpointConnectionWorker} - Error while trying to connect to the endpoint. Cannot borrow client for ssl://192.168.1.7:9711 org.wso2.carbon.databridge.agent.exception.DataEndpointAuthenticationException: Cannot borrow client for ssl://192.168.1.7:9711
+	at org.wso2.carbon.databridge.agent.endpoint.DataEndpointConnectionWorker.connect(DataEndpointConnectionWorker.java:210)
+	at org.wso2.carbon.databridge.agent.endpoint.DataEndpointConnectionWorker.runConnection(DataEndpointConnectionWorker.java:67)
+	at org.wso2.carbon.databridge.agent.endpoint.DataEndpoint.connect(DataEndpoint.java:165)
+	at org.wso2.carbon.databridge.agent.endpoint.DataEndpointGroup$ReconnectionTask.run(DataEndpointGroup.java:455)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.wso2.carbon.databridge.agent.exception.DataEndpointException: Error while opening socket to 192.168.1.7:9711. Network is unreachable: connect
+	at org.wso2.carbon.databridge.agent.endpoint.binary.BinarySecureClientPoolFactory.createClient(BinarySecureClientPoolFactory.java:75)
+	at org.wso2.carbon.databridge.agent.client.AbstractClientPoolFactory.makeObject(AbstractClientPoolFactory.java:39)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1212)
+	at org.wso2.carbon.databridge.agent.endpoint.DataEndpointConnectionWorker.connect(DataEndpointConnectionWorker.java:200)
+	... 4 more
+Caused by: java.net.SocketException: Network is unreachable: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:597)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at java.base/sun.security.ssl.SSLSocketImpl.<init>(SSLSocketImpl.java:163)
+	at java.base/sun.security.ssl.SSLSocketFactoryImpl.createSocket(SSLSocketFactoryImpl.java:86)
+	at org.wso2.carbon.databridge.agent.endpoint.binary.BinarySecureClientPoolFactory.createClient(BinarySecureClientPoolFactory.java:58)
+	... 7 more
+
+TID: [] [] [2026-02-01 00:12:16,578]  WARN {org.wso2.carbon.databridge.agent.endpoint.DataEndpointConnectionWorker} - Next Reconnection attempt to Data endpoint : tcp://192.168.1.7:9611 will be after 30 seconds
+TID: [] [] [2026-02-01 06:21:19,242]  INFO {org.wso2.carbon.databridge.core.DataBridge} - user admin connected

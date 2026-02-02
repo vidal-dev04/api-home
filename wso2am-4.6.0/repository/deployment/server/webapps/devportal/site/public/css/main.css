@@ -542,3 +542,47 @@ a {
 [data-testid="mcp-playground"] * {
     font-family: "Open Sans", "Helvetica", "Arial", sans-serif !important;
 }
+
+/* Custom: Improve logo visibility on blue header */
+header img[alt*="Dev Portal"],
+header img[src*="logo"],
+.MuiAppBar-root img {
+    background: rgba(255, 255, 255, 0.9) !important;
+    padding: 8px 16px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Custom: Add "Devportail" text next to logo */
+header a:has(img),
+.MuiAppBar-root a:has(img) {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+}
+
+header a:has(img)::after,
+.MuiAppBar-root a:has(img)::after {
+    content: "Devportail Api Manager";
+    color: white !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    font-family: "Open Sans", sans-serif !important;
+    letter-spacing: 0.5px;
+}
+
+/* Custom: Style for footer custom links */
+footer a[href*="about.html"],
+footer a[href*="contact.html"] {
+    color: #31A2D9 !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    margin: 0 8px !important;
+    transition: opacity 0.2s;
+}
+
+footer a[href*="about.html"]:hover,
+footer a[href*="contact.html"]:hover {
+    opacity: 0.7;
+    text-decoration: underline !important;
+}

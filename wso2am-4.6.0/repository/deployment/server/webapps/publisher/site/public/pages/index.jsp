@@ -1,7 +1,7 @@
 <%--
-  ~ Copyright (c) 2017-2023, WSO2 LLC (https://www.wso2.com).
+  ~ Copyright (c) 2017-2023, PREVALYA By SAER GROUP LLC (https://www.wso2.com).
   ~
-  ~ WSO2 LLC licenses this file to you under the Apache License,
+  ~ PREVALYA By SAER GROUP LLC licenses this file to you under the Apache License,
   ~ Version 2.0 (the "License"); you may not use this file except
   ~ in compliance with the License.
   ~ You may obtain a copy of the License at
@@ -64,6 +64,54 @@
         *              https://github.com/wso2/product-apim/issues/10694 issue, need to change webpack config too -->
         <!-- <script src="<%= context%>/"></script> -->
         <link rel="stylesheet" href="<%= context%>/site/public/fonts/iconfont/material-icons.css">
+        
+        <script>
+        (function() {
+            let attempts = 0;
+            
+            function addFooterLinks() {
+                attempts++;
+                const footer = document.querySelector('footer');
+                const copyrightText = footer ? footer.querySelector('p, div, span') : null;
+                
+                if (copyrightText && !document.getElementById('prevalya-links')) {
+                    const separator1 = document.createTextNode(' | ');
+                    
+                    const aboutLink = document.createElement('a');
+                    aboutLink.id = 'prevalya-links';
+                    aboutLink.href = '<%= context%>/site/public/pages/about.html';
+                    aboutLink.target = '_blank';
+                    aboutLink.textContent = 'About';
+                    aboutLink.style.cssText = 'color: #31A2D9; text-decoration: none; font-weight: 600; margin: 0 8px;';
+                    
+                    const separator2 = document.createTextNode(' | ');
+                    
+                    const contactLink = document.createElement('a');
+                    contactLink.href = '<%= context%>/site/public/pages/contact.html';
+                    contactLink.target = '_blank';
+                    contactLink.textContent = 'Contact';
+                    contactLink.style.cssText = 'color: #31A2D9; text-decoration: none; font-weight: 600; margin: 0 8px;';
+                    
+                    copyrightText.appendChild(separator1);
+                    copyrightText.appendChild(aboutLink);
+                    copyrightText.appendChild(separator2);
+                    copyrightText.appendChild(contactLink);
+                    
+                    console.log('PREVALYA: Footer links integrated in Publisher');
+                } else if (attempts < 20 && !document.getElementById('prevalya-links')) {
+                    setTimeout(addFooterLinks, 500);
+                }
+            }
+            
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', function() {
+                    setTimeout(addFooterLinks, 1000);
+                });
+            } else {
+                setTimeout(addFooterLinks, 1000);
+            }
+        })();
+        </script>
     </body>
 
 </html>

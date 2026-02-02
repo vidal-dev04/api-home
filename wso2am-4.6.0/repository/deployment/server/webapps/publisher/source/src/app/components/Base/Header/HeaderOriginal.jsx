@@ -92,7 +92,7 @@ export default function HeaderOriginal(props) {
                                 </Link>
                             </Box>
                             <Box display='flex'>
-                                <Hidden mdDown>
+                                {/* <Hidden mdDown>
                                     <HeaderSearch />
                                 </Hidden>
                                 <Hidden mdUp>
@@ -107,7 +107,7 @@ export default function HeaderOriginal(props) {
                                         && (
                                             <HeaderSearch toggleSmSearch={toggleMiniSearch} smSearch={openMiniSearch} />
                                         )}
-                                </Hidden>
+                                </Hidden> */}
                                 <div style={{ paddingTop: 6}}>
                                     {menuItems}
                                     {avatar || <Avatar user={user} />}

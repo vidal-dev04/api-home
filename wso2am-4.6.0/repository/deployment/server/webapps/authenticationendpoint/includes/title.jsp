@@ -20,4 +20,4 @@
 <!-- localize.jsp MUST already be included in the calling script -->
 
 <%-- title --%>
-<title>WSO2 API Manager</title>
+<title>PREVALYA By SAER GROUP API Manager</title>

@@ -1,0 +1,14 @@
+/* Hide search bar completely */
+[class*="HeaderSearch"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+div[class*="HeaderSearch"] {
+    display: none !important;
+}
+
+/* Hide search icon on mobile */
+button[aria-label*="Search"] {
+    display: none !important;
+}

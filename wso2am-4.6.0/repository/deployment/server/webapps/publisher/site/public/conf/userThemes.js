@@ -25,7 +25,7 @@ const userThemes = {
                 },
                 custom: {
                     logo: '/site/public/images/logo-removebg-preview.png',
-                    logoHeight: 60,
+                    logoHeight: 40,
                     logoWidth: 'auto',
                     appBar: {
                         background: '#31A2D9',
@@ -69,21 +69,6 @@ const userThemes = {
                             '&$checked': { color: theme.palette.primary.main },
                             '&$disabled': {
                                 color: theme.palette.action.disabled,
-                            },
-                        },
-                    },
-                    MuiInputBase: {
-                        root: {
-                            '&.HeaderSearch-input': {
-                                background: '#ffffff !important',
-                            },
-                            '&.HeaderSearch-inputFocused': {
-                                background: '#ffffff !important',
-                            },
-                        },
-                        input: {
-                            '&::placeholder': {
-                                color: '#666666',
                             },
                         },
                     },
